@@ -5,14 +5,14 @@
 <div class="content">
     <div class="content-title">
     	<!-- title -->
-        <h3>Trang chủ</h3>&nbsp;&nbsp;&nbsp;
+        <h3><a href="{{route('employ')}}" style="font-size: 1.75rem; color:black;">Trang chủ</a></h3>&nbsp;&nbsp;&nbsp;
         <span>
             <img 
                 src="https://img.icons8.com/fluent-systems-filled/24/000000/more-than.png"
                 class="icon"                        
                />
         </span>&nbsp;&nbsp;&nbsp;
-        <h3>Tuyển dụng</h3>&nbsp;&nbsp;&nbsp;
+        <h3><a href="{{route('employ')}}" style="font-size: 1.75rem; color:black;">Tuyển dụng</a></h3>&nbsp;&nbsp;&nbsp;
         <span>
             <img 
                 src="https://img.icons8.com/fluent-systems-filled/24/000000/more-than.png"
