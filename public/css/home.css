@@ -1,0 +1,468 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-size: 16px;
+}
+img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+img.icon{
+	width: 30px;
+}
+img.icon-small{
+	width: 13px;
+	margin-right: 5px;
+}
+a:hover{	
+	text-decoration: none !important;
+}
+ul {
+	padding-left: 20px;
+}
+select {
+	-webkit-appearance: none;
+	/*webkit browsers */
+	-moz-appearance: none;
+	/*Firefox */
+	appearance: none;
+}
+.link-no-decoration {
+	text-decoration: none;
+}
+.link-no-decoration:hover {
+	color: white;
+	font-weight: 600;
+}
+.m-card {
+	background-color: white;
+    border-radius: 10px;
+    padding: 18px;
+    margin-bottom: 20px;  
+	box-shadow: 0px 10px 40px rgba(39, 52, 125, 0.12);
+}
+input[type='file']{
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	z-index: 2;
+	padding: 8px;
+	position: relative;
+}
+.custom-input-file {
+    border: 1px solid #CCCCCC;
+    border-radius: 8px;
+}
+.file-upload-label, .text-input-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-left: 36px;
+    font-size: 13px;
+    line-height: 48px;
+    color: #827C7C;
+}
+.wrap {
+	background-color: #F2F2F2;
+	font-size: 16px;
+}
+.header {
+	max-width: 1140px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin: auto;
+	height: 104px;
+	padding: 28px 0;
+}
+.headerImage {
+	display: flex;
+	height: 38px;
+}
+.headerItems {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+.headerItem {
+	margin-left: 20px;
+}
+.search-box{
+	position: relative;
+	margin-left: 20px;
+}
+.inputSearch{
+	position: relative;
+	height: 48px;
+	width: 190px;
+	padding-left: 40px;
+	padding-right: 16px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	font-size: 16px;
+	background: #F6FAFA;
+	opacity: 0.4;
+	border: 1px solid #878DA4;
+	border-radius: 8px;
+}
+.inputSearch:focus{
+	outline: none;
+}
+.searchIcon {
+	position: absolute;
+	height: 20px;
+	width: 20px;
+	left: 14px;
+	top: 14px;
+}
+/* Menu List*/
+.menu-list {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-bottom: -2px;
+	background-color: #0063af;
+	width: 100%;
+	height: 77px;
+}
+.menu-list-item {
+	height: 40px;
+	margin: 20px;
+	padding: 10px;
+	border-radius: 10px;
+	line-height: 20px;
+}
+.menu-list-item.active {
+	background-color: white;
+}
+.menu-list-item.active a{
+	color: #237BD3;
+	font-weight: 600;
+}
+.menu-list-item a {
+	color: white;
+}
+/* carosel banner */
+.carousel-control-prev-icon, .carousel-control-next-icon {
+	width: 50px !important;
+	height: 50px !important;
+}
+/*form search job*/
+.form-search-job {	
+	position: relative;
+	top: -100px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin: 0;
+	padding-top: 30px;
+	border-top: 2px solid rgba(255, 255, 255, 0.2);
+	max-width: 1140px;
+	margin: auto;
+}
+.form-search-job-data{
+	flex: 1;
+	display: flex;
+}
+.input-search-job{
+	position: relative;
+	height: 48px;
+	width: 284px;
+	padding-left: 16px;
+	padding-right: 36px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	font-size: 14px;
+	background-color: rgba(0, 1, 4, 0.181764);
+	border: 1px solid #FFFFFF;
+	border-radius: 8px;
+	color: white;
+	z-index: 2;
+}
+.input-search-job::placeholder {
+	color: white;
+}
+.input-search-job:focus{
+	outline: none;
+}
+select.input-search-job option {
+    background: white;
+    color: black;
+}
+.search-job-box{
+	position: relative;
+	margin-right: 30px;
+}
+.search-job-icon {
+	position: absolute;
+	height: 20px;
+	width: 20px;
+	right: 10px;
+	top: 14px;
+}
+
+/* card job */
+.content {
+	max-width: 1140px;
+	margin: auto;
+}
+.content-title {
+	display: flex;
+	flex-direction: row;
+}
+.content-body {
+	display: table;
+	padding-top: 30px;
+	width: 100%;
+}
+.card-job-title {
+	color: #0F1C49;
+    font-size: 22px;
+    line-height: 38px;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+.card-job-title.has-share {
+	display: flex;
+	justify-content: space-between;
+}
+.card-job-title.has-share .card-job-title__button {
+	color: #237BD3;
+	font-size: 13px;
+}
+.card-job-body-item{
+	align-items: center;
+}
+.card-job-bottom .title {
+	font-size: 20px;
+	padding-top: 19px;
+}
+.benefit-content {
+	margin-bottom: 8px;
+}
+/* footer */
+.footer {
+	position: relative;
+	background-color: #0E418A;
+	width: 100%;
+	color: white;
+	margin-top: 50px;
+	padding: 50px 0;
+}
+.footer-row {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	max-width: 1140px;
+	margin: auto;
+}
+.footer-column-first {
+	width: 34%;
+	line-height: 32px;
+}
+.footer-column{
+	line-height: 24px;
+}
+.column-item-first {
+	font-size: 25px;
+	padding-top: 20px;
+	padding-bottom: 15px;
+	line-height: 32px;
+}
+.column-item a {
+	line-height: 32px;
+	color: #BDD3F2 !important;
+}
+.social-media img {
+	margin-right: 40px;
+	margin-top: 60px;
+}
+.line {
+	height: 2px;
+	width: 1140px;
+	background: rgba(255, 255, 255, 0.2);
+	margin: 60px auto;
+}
+.footer-row__bottom-left {
+	position: relative;
+	width: 30%;
+	left: 0;
+	color: rgba(255, 255, 255, 0.6);
+}
+.footer-row__bottom-right {
+	position: relative;
+	width: 440px;
+	right: 0;
+	color: rgba(255, 255, 255, 0.6);
+}
+.footer-row__bottom-right p{
+	padding-top: 24px;
+}
+.logo-footer{
+	position: relative;
+	width: 100%;
+	right: 0;
+}
+.logo-footer img{
+	height: 24px;
+    width: 80px;
+    right: 0;
+    position: absolute;
+}
+.footer-last{
+	background-color: #103365;
+	padding-top: 16px;
+	padding-bottom: 16px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+}
+/* card detail */
+.card-job-left {
+	max-width: 770px;
+	width: 100%;
+}
+.card-job-right {
+	padding-left: 2rem !important;
+	padding-right: 0 !important;
+}
+.card-top-right {
+	width: 100%;
+}
+.card-job-top {
+	display: flex;
+	padding-bottom: 45px;
+	border-bottom: 2px solid #D8D8D8;
+}
+.card-job-content-top {
+	flex: 1;
+}
+.card-job-image img{
+	width: 97px;
+	height: 97px;
+	margin-right: 22px;
+	border-radius: 8px;
+}
+.card-job-body-button {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding-left: 24px;
+}
+.card-job-body-button-left{
+	color: #666666;
+}
+.card-job-body-button-right {
+	width: 106px;
+	height: 32px;
+	background: #237BD3;
+	padding-top: 5px;
+	border-radius: 24px;
+	color: white;
+	text-align: center;
+	text-transform: uppercase;
+}
+.card-job-body-button-right:hover {
+	cursor: pointer;
+}
+.card-job-body-button-right.m-btn-detail {
+	width: 106px;
+	height: 32px;
+	background: white;
+	padding-top: 5px;
+	border-radius: 24px;
+	color: #237BD3;
+	text-align: center;
+	text-transform: none;
+	border: 1px solid #237BD3;
+	font-size: 13px;
+}
+
+/* modal send cv */
+.modal-header-btn {
+	position: relative;
+	padding-right: 16px;
+    padding-top: 16px;
+    z-index: 2;
+}
+.modal-header-btn span {
+	float: right;
+}
+#modal-close-btn {
+	cursor: pointer;
+}
+.m-modal-body {
+	margin-top: -5rem;
+}
+.input-box-data {
+	position: relative;
+	height: 48px;
+	width: 100%;
+	padding-left: 36px;
+	padding-right: 16px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	font-size: 14px;
+	border: 1px solid #CCCCCC;
+	border-radius: 8px;
+	margin-bottom: 16px;
+}
+.input-box{
+	position: relative;
+	margin-right: 30px;
+}
+.input-box-icon {
+	position: absolute;
+	height: 20px;
+	width: 20px;
+	left: 10px;
+	top: 14px;
+}
+.modal-body-item {
+	margin-bottom: 10px;
+}
+.modal-body-item .input-box{
+	margin-right: 0;
+}
+.modal-body-item .card-job-body-item {
+	line-height: 28px;
+}
+.submit-box{
+	width: 100%;
+}
+.submitbtn {
+	background-color: #237BD3;
+	border-radius: 24px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	text-align: center;
+	width: 224px;
+	margin: auto;
+	color: white;
+	text-transform: uppercase;
+	margin-bottom: 32px;
+	display: block;
+	border: none;
+	outline: none;
+}
+.submitbtn:focus {
+	outline: none;
+}
+.navigator {
+	display: flex;
+	justify-content: center;
+}
+.pagination a {
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	background-color: gray;
+	margin: 0.5rem;
+}
+.pagination a:hover, .pagination a.active {
+	background-color: #237BD3;
+	transform: scale(2);
+}
