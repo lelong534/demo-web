@@ -1,0 +1,84 @@
+.modal-header-btn {
+	position: relative;
+	padding-right: 16px;
+    padding-top: 16px;
+    z-index: 2;
+}
+.modal-header-btn span {
+	float: right;
+}
+#modal-close-btn {
+	cursor: pointer;
+}
+.m-modal-body {
+	margin-top: -5rem;
+}
+.input-box-data {
+	position: relative;
+	height: 48px;
+	width: 100%;
+	padding-left: 36px;
+	padding-right: 16px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	font-size: 14px;
+	border: 1px solid #CCCCCC;
+	border-radius: 8px;
+	margin-bottom: 16px;
+}
+.input-box{
+	position: relative;
+	margin-right: 30px;
+}
+.input-box-icon {
+	position: absolute;
+	height: 20px;
+	width: 20px;
+	left: 10px;
+	top: 14px;
+}
+.modal-body-item {
+	margin-bottom: 10px;
+}
+.modal-body-item .input-box{
+	margin-right: 0;
+}
+.modal-body-item .card-job-body-item {
+	line-height: 28px;
+}
+.submit-box{
+	width: 100%;
+}
+.submitbtn {
+	background-color: #237BD3;
+	border-radius: 24px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	text-align: center;
+	width: 224px;
+	margin: auto;
+	color: white;
+	text-transform: uppercase;
+	margin-bottom: 32px;
+	display: block;
+	border: none;
+	outline: none;
+}
+.submitbtn:focus {
+	outline: none;
+}
+.navigator {
+	display: flex;
+	justify-content: center;
+}
+.pagination a {
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	background-color: gray;
+	margin: 0.5rem;
+}
+.pagination a:hover, .pagination a.active {
+	background-color: #237BD3;
+	transform: scale(2);
+}

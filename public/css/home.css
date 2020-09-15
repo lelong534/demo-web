@@ -33,7 +33,6 @@ select {
 }
 .link-no-decoration:hover {
 	color: white;
-	font-weight: 600;
 }
 .m-card {
 	background-color: white;
@@ -242,84 +241,6 @@ select.input-search-job option {
 .benefit-content {
 	margin-bottom: 8px;
 }
-/* footer */
-.footer {
-	position: relative;
-	background-color: #0E418A;
-	width: 100%;
-	color: white;
-	margin-top: 50px;
-	padding: 50px 0;
-}
-.footer-row {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	max-width: 1140px;
-	margin: auto;
-}
-.footer-column-first {
-	width: 34%;
-	line-height: 32px;
-}
-.footer-column{
-	line-height: 24px;
-}
-.column-item-first {
-	font-size: 25px;
-	padding-top: 20px;
-	padding-bottom: 15px;
-	line-height: 32px;
-}
-.column-item a {
-	line-height: 32px;
-	color: #BDD3F2 !important;
-}
-.social-media img {
-	margin-right: 40px;
-	margin-top: 60px;
-}
-.line {
-	height: 2px;
-	width: 1140px;
-	background: rgba(255, 255, 255, 0.2);
-	margin: 60px auto;
-}
-.footer-row__bottom-left {
-	position: relative;
-	width: 30%;
-	left: 0;
-	color: rgba(255, 255, 255, 0.6);
-}
-.footer-row__bottom-right {
-	position: relative;
-	width: 440px;
-	right: 0;
-	color: rgba(255, 255, 255, 0.6);
-}
-.footer-row__bottom-right p{
-	padding-top: 24px;
-}
-.logo-footer{
-	position: relative;
-	width: 100%;
-	right: 0;
-}
-.logo-footer img{
-	height: 24px;
-    width: 80px;
-    right: 0;
-    position: absolute;
-}
-.footer-last{
-	background-color: #103365;
-	padding-top: 16px;
-	padding-bottom: 16px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	color: white;
-}
 /* card detail */
 .card-job-left {
 	max-width: 770px;
@@ -379,90 +300,4 @@ select.input-search-job option {
 	text-transform: none;
 	border: 1px solid #237BD3;
 	font-size: 13px;
-}
-
-/* modal send cv */
-.modal-header-btn {
-	position: relative;
-	padding-right: 16px;
-    padding-top: 16px;
-    z-index: 2;
-}
-.modal-header-btn span {
-	float: right;
-}
-#modal-close-btn {
-	cursor: pointer;
-}
-.m-modal-body {
-	margin-top: -5rem;
-}
-.input-box-data {
-	position: relative;
-	height: 48px;
-	width: 100%;
-	padding-left: 36px;
-	padding-right: 16px;
-	padding-top: 4px;
-	padding-bottom: 4px;
-	font-size: 14px;
-	border: 1px solid #CCCCCC;
-	border-radius: 8px;
-	margin-bottom: 16px;
-}
-.input-box{
-	position: relative;
-	margin-right: 30px;
-}
-.input-box-icon {
-	position: absolute;
-	height: 20px;
-	width: 20px;
-	left: 10px;
-	top: 14px;
-}
-.modal-body-item {
-	margin-bottom: 10px;
-}
-.modal-body-item .input-box{
-	margin-right: 0;
-}
-.modal-body-item .card-job-body-item {
-	line-height: 28px;
-}
-.submit-box{
-	width: 100%;
-}
-.submitbtn {
-	background-color: #237BD3;
-	border-radius: 24px;
-	padding-top: 8px;
-	padding-bottom: 8px;
-	text-align: center;
-	width: 224px;
-	margin: auto;
-	color: white;
-	text-transform: uppercase;
-	margin-bottom: 32px;
-	display: block;
-	border: none;
-	outline: none;
-}
-.submitbtn:focus {
-	outline: none;
-}
-.navigator {
-	display: flex;
-	justify-content: center;
-}
-.pagination a {
-	width: 6px;
-	height: 6px;
-	border-radius: 50%;
-	background-color: gray;
-	margin: 0.5rem;
-}
-.pagination a:hover, .pagination a.active {
-	background-color: #237BD3;
-	transform: scale(2);
 }
