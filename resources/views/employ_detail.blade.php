@@ -2,6 +2,16 @@
 
 @section('content')
 <!-- content -->
+@if (count($errors) > 0)
+	<div class="alert alert-danger text-center"> 
+		<!-- <ul style="list-style: none">
+			@foreach($errors->all() as $error)
+				<li> {{ $error }} </li>
+			@endforeach
+		</ul> -->
+		{{$errors->first()}}
+	</div>
+@endif
 <div class="content">
     <div class="content-title">
     	<!-- title -->

@@ -6,6 +6,7 @@ use App\Jobs;
 use App\Candidates;
 use Carbon\Carbon;
 use DB;
+use App\Http\Requests\RequestPostCV;
 
 /**
  * 
@@ -47,7 +48,12 @@ class EmployController extends Controller
 		return view('employ_detail', compact('job', 'relate_jobs'));
 	}
 
-	public function postCV(Request $req) {
+	public function postCV(RequestPostCV $req) {
+		
+		if(!$req->validate()) {
+			return back()->withErrors($validate)->withInput();
+		}
+
 		$candidate = new Candidates();
 		$candidate->name = $req->name;
 		$candidate->email = $req->email;
