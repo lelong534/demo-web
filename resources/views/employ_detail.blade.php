@@ -98,7 +98,7 @@
 	                    		</div>
 		                        <div class="card-job-body-item">
 		                        	<img src="{{asset('source/icons/icon-money.svg')}}" alt="money" class="icon-small" />
-	                    			Mức lương: {{$relate_job->min_salary}} đ - {{$job->max_salary}} đ
+	                    			Mức lương: {{$relate_job->min_salary}} đ - {{$relate_job->max_salary}} đ
 	                    		</div>
 		                        <div class="card-job-body-item">
 		                        	<img src="{{asset('source/icons/icon-time.svg')}}" alt="time" class="icon-small" />

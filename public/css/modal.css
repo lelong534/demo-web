@@ -82,3 +82,15 @@
 	background-color: #237BD3;
 	transform: scale(2);
 }
+.icon-require-name {
+    color: red;
+    position: absolute;
+    top: 0.7rem;
+    left: 5.2rem;
+}
+.icon-require-email {
+    color: red;
+    position: absolute;
+    top: 0.7rem;
+    left: 4.7rem;
+}	

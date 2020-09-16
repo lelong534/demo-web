@@ -27,12 +27,15 @@
 						<div class="card-job-title">Thông tin của bạn</div>
 				        <div class="input-box">
 				        	<div class="custom-input-text">
-					            <input type="text" name="name" class="input-box-data" placeholder="Họ tên">					            <span><img src="{{asset('source/icons/icon-person_gray.svg')}}" class="input-box-icon"/></span>
+					            <input type="text" name="name" class="input-box-data" placeholder="Họ tên">					     
+					            <span><img src="{{asset('source/icons/icon-person_gray.svg')}}" class="input-box-icon"/></span>
+					            <span class="icon-require-name">*</span>
 					        </div>
 				        </div>
 				        <div class="input-box">
 				            <input type="text" name="email" class="input-box-data" placeholder="Email">
 				            <span><img src="{{asset('source/icons/icon-email.svg')}}" class="input-box-icon"/></span>
+				            <span class="icon-require-email">*</span>
 				        </div>
 				        <div class="input-box">
 				            <input type="text" name="phone" class="input-box-data" placeholder="Số điện thoại">	
