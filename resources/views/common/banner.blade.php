@@ -5,7 +5,13 @@
             <img src="{{asset('source/image/banner.png')}}" class="d-block w-100" alt="banner">
         </div>
         <div class="carousel-item">
-            <img src="{{asset('source/image/banner.png')}}" class="d-block w-100" alt="banner">
+            <img src="{{asset('source/image/banner2.jpg')}}" class="d-block w-100" alt="banner">
+        </div>
+        <div class="carousel-item">
+            <img src="{{asset('source/image/banner3.jpg')}}" class="d-block w-100" alt="banner">
+        </div>
+        <div class="carousel-item">
+            <img src="{{asset('source/image/banner4.jpg')}}" class="d-block w-100" alt="banner">
         </div>
     </div>
     <a class="carousel-control-prev" href="#caroselBanner" role="button" data-slide="prev">

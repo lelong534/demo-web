@@ -56,8 +56,11 @@
 		                    </div>
 		                    <div class="card-job-body-button">
 			                	<div class="card-job-body-button-left">5 ngày trước</div>
-			                	<div class="card-job-body-button-right" 
-			                		data-toggle="modal" data-target="#uploadCV">Nộp đơn</div>
+			                	<!-- <div class="card-job-body-button-right" 
+			                		data-toggle="modal" data-target="#uploadCV">Nộp đơn</div> -->
+			                	<div class="card-job-body-button-right">
+			                		<a href="{{route('sendcv', $job->id)}}" class="text-decoration-none text-white">Nộp đơn</a>
+			                	</div>
 			                </div>
 		                </div>
 		            </div>
@@ -109,9 +112,6 @@
 	            	</a>
 	                @endforeach
 	            </div>
-	            
-	            <!-- modal -->
-	            @include('modal')
 	        </div>
 	    </div>
     </div>

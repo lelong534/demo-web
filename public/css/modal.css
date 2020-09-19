@@ -46,6 +46,10 @@
 .modal-body-item .card-job-body-item {
 	line-height: 28px;
 }
+.modal-body-item.last {
+	margin-top: 2rem;
+	margin-bottom: 3rem;
+}
 .submit-box{
 	width: 100%;
 }

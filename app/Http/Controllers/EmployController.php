@@ -6,7 +6,7 @@ use App\Jobs;
 use App\Candidates;
 use Carbon\Carbon;
 use DB;
-use App\Http\Requests\RequestPostCV;
+use App\Http\Requests\RequestPost;
 
 /**
  * 
@@ -48,11 +48,11 @@ class EmployController extends Controller
 		return view('employ_detail', compact('job', 'relate_jobs'));
 	}
 
-	public function postCV(RequestPostCV $req) {
-		
-		if(!$req->validate()) {
-			return back()->withErrors($validate)->withInput();
-		}
+	public function postCV(Request $req) {
+
+		// if(!$req->validate()) {
+		// 	return back()->with('message', 'Gửi thất bại');
+		// }
 
 		$candidate = new Candidates();
 		$candidate->name = $req->name;
@@ -67,7 +67,7 @@ class EmployController extends Controller
 
 		$candidate->save();
 
-		return back();
+		return back()->with('message', 'Gửi thành công');
 	}
 
 	public function convertMoney($str) {
@@ -84,6 +84,12 @@ class EmployController extends Controller
 		$job->min_salary = $this->convertMoney((string)$job->min_salary);
 		$job->max_salary = $this->convertMoney((string)$job->max_salary);
 		return $job;
+	}
+	public function getSendcv($id) {
+		$job = Jobs::getJobById($id);
+		$job = $this->formatObjectData($job);
+
+		return view('sendcv', ['id'=>$id, 'job'=>$job]);
 	}
 }
 ?>

@@ -20,6 +20,12 @@
     <body>
         <div class="wrap">
             <!-- header -->
+
+            @if ( session('message') )
+                <div class="alert alert-danger text-center"> 
+                    {{ session('message') }}
+                </div>
+            @endif
             @include('common.header')
             @include('common.banner')
 
@@ -34,6 +40,8 @@
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
         <script src="{{ asset('js/bootstrap/bootstrap.min.js') }}"></script>
         <script src="{{ asset('js/employ.js') }}"></script>
-        <script src="{{ asset('js/modal.js') }}"></script>
+        <script src="{{ asset('js/validation.js') }}"></script>
+        <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
     </body>
 </html>

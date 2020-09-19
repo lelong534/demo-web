@@ -12,30 +12,28 @@
 						<div class="card-job-title">Tên công việc</div>
 						<div class="card-job-body-item">
 	                        <img src="{{asset('source/icons/icon-person.svg')}}" alt="location" class="icon-small" />
-                    		Chức danh: {{$relate_job->name}}
+                    		Chức danh: {{$job->name}}
                 		</div>
                         <div class="card-job-body-item">
                         	<img src="{{asset('source/icons/icon-location.svg')}}" alt="time" class="icon-small" />
-                        	Nơi làm việc: {{$relate_job->address}}
+                        	Nơi làm việc: {{$job->address}}
                         </div>
                         <div class="card-job-body-item">
                         	<img src="{{asset('source/icons/icon-money.svg')}}" alt="money" class="icon-small" />
-                			Mức lương: {{$relate_job->min_salary}} đ - {{$job->max_salary}} đ
+                			Mức lương: {{$job->min_salary}} đ - {{$job->max_salary}} đ
                 		</div>
 					</div>
 					<div class="modal-body-item">
 						<div class="card-job-title">Thông tin của bạn</div>
 				        <div class="input-box">
-				        	<div class="custom-input-text">
-					            <input type="text" name="name" class="input-box-data" placeholder="Họ tên">					     
-					            <span><img src="{{asset('source/icons/icon-person_gray.svg')}}" class="input-box-icon"/></span>
-					            <span class="icon-require-name">*</span>
-					        </div>
+				            <input type="text" name="name" class="input-box-data" placeholder="Họ tên">					     
+				            <span><img src="{{asset('source/icons/icon-person_gray.svg')}}" class="input-box-icon"/></span>
+				            <span class="icon-require-name icon-require">*</span>
 				        </div>
 				        <div class="input-box">
 				            <input type="text" name="email" class="input-box-data" placeholder="Email">
 				            <span><img src="{{asset('source/icons/icon-email.svg')}}" class="input-box-icon"/></span>
-				            <span class="icon-require-email">*</span>
+				            <span class="icon-require-email icon-require">*</span>
 				        </div>
 				        <div class="input-box">
 				            <input type="text" name="phone" class="input-box-data" placeholder="Số điện thoại">	

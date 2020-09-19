@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class RequestPostCV extends FormRequest
+class RequestPost extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -26,7 +26,8 @@ class RequestPostCV extends FormRequest
         return [
             'name'              => 'required|max:50',
             'email'             => 'required|email',
-            'cv'                => 'required',
+            'phone'             => 'numeric',
+            'cv'                => 'required|mimes:dpf,xls,xlsx,doc|size:2048',
             'invitation'        => 'max:3000',
         ];
     }

@@ -52,6 +52,8 @@ input[type='file']{
 .custom-input-file {
     border: 1px solid #CCCCCC;
     border-radius: 8px;
+    height: 3rem;
+    margin-bottom: 3px;
 }
 .file-upload-label, .text-input-label {
     position: absolute;
@@ -229,7 +231,7 @@ select.input-search-job option {
 }
 .card-job-title.has-share .card-job-title__button {
 	color: #237BD3;
-	font-size: 13px;
+	font-size: 20px;
 }
 .card-job-body-item{
 	align-items: center;
@@ -300,4 +302,32 @@ select.input-search-job option {
 	text-transform: none;
 	border: 1px solid #237BD3;
 	font-size: 13px;
+}
+.card-sendcv {
+	max-width: 1140px;
+	width: 100%;
+	margin: auto;
+	padding: 2rem 14rem;
+}
+/* validation form */
+.text-note {
+    float: right;
+    font-style: italic;
+    font-size: 13px;
+}
+.text-note-invite {
+    float: right;
+    font-style: italic;
+    font-size: 13px;
+}
+label.error {
+    color: red;
+    font-style: italic;
+    font-size: 0.9rem;
+}
+input[type='text'].error {
+	margin-bottom: 3px;
+}
+textarea.input-box-data {
+	margin-bottom: 0;
 }

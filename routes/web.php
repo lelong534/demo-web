@@ -16,5 +16,7 @@ Route::get('/detail/{id}', [
 	'as' => 'detail',
 	'uses' => 'EmployController@getDetail'
 ]);
-Route::post('/detail/{id}', 'EmployController@postCV');
+// Route::post('/detail/{id}', 'EmployController@postCV');
+Route::get('/sendcv/{id}', 'EmployController@getSendcv')->name('sendcv');
+Route::post('/sendcv/{id}', 'EmployController@postCV')->name('sendcv');
 
