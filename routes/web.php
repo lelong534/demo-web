@@ -19,4 +19,5 @@ Route::get('/detail/{id}', [
 // Route::post('/detail/{id}', 'EmployController@postCV');
 Route::get('/sendcv/{id}', 'EmployController@getSendcv')->name('sendcv');
 Route::post('/sendcv/{id}', 'EmployController@postCV')->name('sendcv');
+Route::get('/home' , 'HomeController@index')->name('home');
 
