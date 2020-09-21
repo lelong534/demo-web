@@ -57,7 +57,7 @@ a{
 }
 img{
 	width: 100%;
-	height: 100%;
+	height: auto;
 	display: block;
 }
 .inner {
@@ -375,10 +375,94 @@ h1.title {
 	font-size: var(--smaller-font-size);
 	padding: 0.75rem;
 }
-
+/*=== CAROUSEL ===*/
+ol.carousel-indicators{
+}
+ol.carousel-indicators li,
+ol.carousel-indicators li.active {
+	border: 0;
+	width: 0.5rem;
+	height: 0.5rem;
+	border-radius: 50%;
+	background: rgba(251, 251, 251, 0.6);
+}
+ol.carousel-indicators li.active {
+ 	background: white;
+ 	transform: scale(1.25);
+}
+/*=== dropdown menu desktop ===*/
+ul.nav-list li {
+	position: relative;
+}
+.m-dropdown {
+	padding: 1rem 1.5rem;
+	position: absolute;
+	background-color: white;
+	top: 3.3rem;
+    left: 1.75rem;
+    z-index: 999;
+    width: 15rem;
+    border: 1px solid #E0E0E0;
+	box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.06);
+}
+.m-dropdown li a {
+	font-size: 1rem;
+	line-height: 2.625rem;
+	color: #000;
+}
+.m-dropdown-item li a {
+	font-size: 1rem;
+	line-height: 1.5rem;
+	color: #000;
+}
+.m-dropdown:after {
+	bottom: 100%;
+	left: 25%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-bottom-color: white;
+	border-width: 1rem;
+}
+.m-dropdown.news-dropdown:after {
+	left: 7%;
+}
+.m-dropdown.mobifone-dropdown:after {
+	left: 89%;
+}
+.m-dropdown.mobifone-dropdown {
+	width: 37.5rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	left: -28.5rem;
+	padding-top: 1.6875rem;
+	padding-left: 3.75rem;
+	grid-row-gap: 1.5rem;
+	grid-column-gap: 2rem;
+}
+.m-dropdown-title {
+	display: flex;
+	font-size: 1rem;
+	line-height: 38px;
+	color: var(--blue);
+	text-transform: uppercase;
+	font-weight: var(--biger-font-weight);
+	position: relative;
+	margin-left: -1.1rem;
+}
+.m-dropdown-title span {
+	margin: auto 0;
+	margin-right: 0.3rem;
+}
+.m-dropdown-title img {
+	width: 0.8rem;
+}
 /*=== Show menu ===*/
 .show{
-  left: 0;
+ 	left: 0;
 }
 /*===== MEDIA QUERY =====*/
 @media screen and (max-width: 767px){
@@ -418,13 +502,15 @@ h1.title {
 		color: white;
 		padding: 0;
 		padding: 0.5rem;
-		margin: 1.25rem;
+		margin: 1.75rem;
 		font-weight: var(--biger-font-weight);
+		font-size: 1rem;
 	}
 	.nav-list li .nav-item.active, .nav-list li .nav-item:hover {
 		background-color: white;
 		color: var(--blue);
 		border-radius: 0.5rem;
+		font-size: 1rem;
 	}
 	.content-header h2, .content-header p {
 		line-height: 1.75rem;

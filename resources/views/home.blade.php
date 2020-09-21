@@ -42,16 +42,21 @@
                             <span class="sr-only">Next</span>
                         </a>
                     </div>
-                    <div id="caroselBannerDesktop" class="carousel slide is-desktop" data-ride="carousel">
+                    <div id="caroselBannerDesktop" class="carousel slide is-desktop" data-ride="carousel">   
+                        <ol class="carousel-indicators">
+                            <li data-target="#caroselBannerDesktop" data-slide-to="0" class="active"></li>
+                            <li data-target="#caroselBannerDesktop" data-slide-to="1"></li>
+                            <li data-target="#caroselBannerDesktop" data-slide-to="2"></li>
+                        </ol>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="{{asset('source/image/banner_bluezone.png')}}" class="d-block w-100" alt="banner">
+                                <img src="{{asset('source/image/banner.png')}}" class="d-block w-100" alt="banner">
                             </div>
                             <div class="carousel-item">
-                                <img src="{{asset('source/image/banner_bluezone.png')}}" class="d-block w-100" alt="banner">
+                                <img src="{{asset('source/image/banner.png')}}" class="d-block w-100" alt="banner">
                             </div>
                             <div class="carousel-item">
-                                <img src="{{asset('source/image/banner_bluezone.png')}}" class="d-block w-100" alt="banner">
+                                <img src="{{asset('source/image/banner.png')}}" class="d-block w-100" alt="banner">
                             </div>
                         </div>                       
                         <a class="carousel-control-prev" href="#caroselBannerDesktop" role="button" data-slide="prev">
