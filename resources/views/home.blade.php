@@ -153,7 +153,7 @@
                                 </div>
                                 <div class="m-card service">
                                     <div class="content-image">
-                                        <img src="{{asset('source/icon_mobile/data_d5.png')}}">
+                                        <img src="{{asset('source/icon_mobile/iflix.png')}}">
                                     </div>
                                     <h1 class="title">Gói Data ngày D5</h1>
                                     <div class="m-card-body">
@@ -162,7 +162,7 @@
                                 </div>
                                 <div class="m-card service">
                                     <div class="content-image">
-                                        <img src="{{asset('source/icon_mobile/data_d5.png')}}">
+                                        <img src="{{asset('source/icon_mobile/tiktok.png')}}">
                                     </div>
                                     <h1 class="title">Gói Data ngày D5</h1>
                                     <div class="m-card-body">
@@ -378,7 +378,7 @@
             </div>
         </div>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
         <script src="{{ asset('js/bootstrap/bootstrap.min.js') }}"></script>
         <script src="{{ asset('js/home.js')}}"></script>
