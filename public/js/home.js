@@ -2,14 +2,18 @@
 const showMenu = (toggleId, navId) =>{
     const toggle = document.getElementById(toggleId),
     nav = document.getElementById(navId)
+    const background = document.getElementById('bg-nav-menu')
 
     if(toggle && nav){
         toggle.addEventListener('click', ()=>{
-            nav.classList.toggle('show')
+            // nav.classList.toggle('show')
+            nav.style.left = '0';
+            background.style.left = '0';
         })
     }
 }
 showMenu('nav-toggle','nav-menu');
+showMenu('nav-toggle-tablet','nav-menu');
 /*===== Menu mobile ======*/ 
 const showItemMenu = (toggleId, navId) =>{
     const toggle = document.getElementById(toggleId),
@@ -30,6 +34,7 @@ showItemMenu('item-fourth', 'item-menu-fourth');
 const hideItemMenu = (iconId, menuId) => {
     const icon = document.getElementById(iconId),
     menu = document.getElementById(menuId)
+    const background = document.getElementById('bg-nav-menu')
 
     if(icon && menu) {
         icon.addEventListener('click', () => {
@@ -55,9 +60,18 @@ navListLi.forEach(n => n.addEventListener('click', () => {
 	linkAction();
 }));
 
-const navMenu = document.getElementById('nav-menu'); 
-window.onClick = function(e) {
-    if(e.target.id != 'nav-menu') {
-        navMenu.style.display('none');
+window.addEventListener('mouseup', function(e) {
+    const navMenu = document.getElementById('nav-menu'); 
+    const background = document.getElementById('bg-nav-menu')
+    if(e.target != navMenu &&
+        e.target.parentNode != navMenu &&
+        e.target.parentNode.parentNode != navMenu &&
+        e.target.parentNode.parentNode.parentNode != navMenu &&
+        e.target.parentNode.parentNode.parentNode.parentNode != navMenu
+    ) {
+        if (navMenu.style.left == '0px') {
+            navMenu.style.left = '-100%';
+            background.style.left = '-100%';
+        }
     }
-}
+})

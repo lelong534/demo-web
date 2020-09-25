@@ -13,6 +13,7 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
         <link href="{{ asset('css/home.css') }}" rel="stylesheet">
+        <link href="{{ asset('css/lightslider/lightslider.css') }}" rel="stylesheet">
         <link href="{{ asset('css/bootstrap/bootstrap.min.css') }}" rel="stylesheet">
     </head>
     <body>
@@ -83,7 +84,22 @@
                                 <p class="is-desktop">Gói data</p>
                                 <a href="#" class="all is-desktop">Xem tất cả<span> ></span></a>
                             </div>
-                            <div class="content-body"> 
+                            <div id="lightSlider"> 
+                                <div class="m-card mobile-service">
+                                    <h1 class="title">Gói Data ngày D5</h1>
+                                    <ul class="m-card-body">
+                                        <li class="m-card-item">Thoại nội mạng: <strong>1000 phút</strong>
+                                        </li>
+                                        <li class="m-card-item">Data: <strong>2.5GB</strong>
+                                        </li>
+                                        <li class="m-card-item">HSD: <strong>30 ngày</strong>
+                                        </li>
+                                        <li style="color:#237BD3;">99.000 đ</li>
+                                    </ul>
+                                    <div class="m-card-detail">
+                                        <a href="#">Chi tiết</a>
+                                    </div>
+                                </div>
                                 <div class="m-card mobile-service">
                                     <h1 class="title">Gói Data ngày D5</h1>
                                     <ul class="m-card-body">
@@ -382,5 +398,7 @@
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
         <script src="{{ asset('js/bootstrap/bootstrap.min.js') }}"></script>
         <script src="{{ asset('js/home.js')}}"></script>
+        <script src="{{ asset('js/lightslider/lightslider.js')}}"></script>
+        <script src="{{ asset('js/slide.js')}}"></script>
     </body>
 </html>

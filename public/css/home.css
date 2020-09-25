@@ -129,6 +129,19 @@ img{
     margin-right: 0.5rem;
 }
 /*=== nav item's menu mobile ===*/
+.wrap {
+	position: relative;
+}
+.bg-nav-menu{
+	left: -100%;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+    background-color: #000;
+    z-index: 100;
+}
 .nav-item-menu {
 	position: absolute;
 	left: -100%;	
@@ -539,6 +552,10 @@ ul.nav-list li {
 		height: 5.1875rem;
 		max-width: 56.5rem;
 	}
+	.main-content .inner {
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
 	h2.title, h1.title {
 		font-size: 1.5rem;
 	}
@@ -660,6 +677,57 @@ ul.nav-list li {
 	.mobile-service-content, .service-content, .events-content, .customer-content {
 		padding: 0;
 	}
+	.footer-row-mobile.is-mobile {
+		display: block;
+	}
+	.footer {
+		padding: 0;
+		margin-top: 2.625rem;
+	}
+	.footer .inner {
+		max-width: 50.9375rem;
+	}
+}
+@media screen and (min-width: 992px){
+	.nav-list li .nav-item {
+		margin: 0.90625rem 0;
+	}
+	.nav-list {
+		padding-top: 0;
+		width: 100%;
+	}
+	.header.is-desktop .inner {
+		height: 6.5rem;
+		max-width: 73.125rem;
+	}
+	.header-menu.is-desktop .inner {
+		height: 4.8125rem;
+	}
+	.headerImage img {
+		width: 100%;
+	}
+	.header-item img{
+		display: block;
+	}
+	.header-items form{
+		display: block;
+	}
+	.service-content .content-body, .mobile-service-content .content-body {
+		grid-gap: 1.875rem;
+	}
+	.events-content .content-body {
+		grid-column-gap: 3.375rem;
+	}
+	.customer-content .content-body {
+		grid-column-gap: 3.5rem;
+	}
+	.header-menu.is-desktop .inner {
+		max-width: 47.125rem;
+	}
+	.header-menu.is-desktop .inner .nav-toggle, 
+	.header-menu.is-desktop .inner .search-icon {
+		display: none;
+	}
 	.footer {
 		margin-top: 4.5rem;
 		padding: 0;
@@ -747,45 +815,11 @@ ul.nav-list li {
 	.m-dropdown-item li a {
 		margin-left: 1rem;
 	}
-}
-@media screen and (min-width: 992px){
-	.nav-list li .nav-item {
-		margin: 0.90625rem 1.75rem;
-	}
-	.nav-list {
-		padding-top: 0;
-		width: 100%;
-	}
-	.header.is-desktop .inner {
-		height: 6.5rem;
+	.footer .inner {
 		max-width: 73.125rem;
 	}
-	.header-menu.is-desktop .inner {
-		height: 4.8125rem;
-	}
-	.headerImage img {
-		width: 100%;
-	}
-	.header-item img{
-		display: block;
-	}
-	.header-items form{
-		display: block;
-	}
-	.service-content .content-body, .mobile-service-content .content-body {
-		grid-gap: 1.875rem;
-	}
-	.events-content .content-body {
-		grid-column-gap: 3.375rem;
-	}
-	.customer-content .content-body {
-		grid-column-gap: 3.5rem;
-	}
-	.header-menu.is-desktop .inner {
-		width: auto;
-	}
-	.header-menu.is-desktop .nav-toggle, 
-	.header-menu.is-desktop .search-icon, {
-		display: none;
+	.main-content .inner {
+		padding-left: 0;
+		padding-right: 0;
 	}
 }
