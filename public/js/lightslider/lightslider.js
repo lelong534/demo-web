@@ -478,6 +478,7 @@
                 var sc = 0;
                 if (scene * settings.slideMove < length) {
                     ob.removeClass('active');
+                    ob.removeClass('currentSlide');
                     if (!this.doCss() && settings.mode === 'fade' && t === false) {
                         ob.fadeOut(settings.speed);
                     }
@@ -517,6 +518,9 @@
                         ob.eq(sc).fadeIn(settings.speed);
                     }
                     ob.eq(sc).addClass('active');
+                    ob.eq(sc).addClass('currentSlide');
+                    ob.eq(sc+1).addClass('currentSlide');
+                    ob.eq(sc+2).addClass('currentSlide');
                 } else {
                     ob.removeClass('active');
                     ob.eq(ob.length - 1).addClass('active');

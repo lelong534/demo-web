@@ -70,6 +70,9 @@ img{
 	background-color: var(--blue);
 	height: var(--header-height);
 }
+.nav-menu .headerImage {
+	display: none;
+}
 .nav {
 	display: flex;
 	justify-content: space-between;
@@ -108,7 +111,7 @@ img{
 	width: 6.125rem;
 	text-align: center;
 }
-.nav-list {
+.nav-list-mobile {
 	font-size: var(--smaller-font-size);
 	margin-left: 0.75rem;
 	padding-right: 0.75rem;
@@ -127,6 +130,7 @@ img{
     float: right;
     margin: auto;
     margin-right: 0.5rem;
+   	cursor: pointer;
 }
 /*=== nav item's menu mobile ===*/
 .wrap {
@@ -158,6 +162,7 @@ img{
 	height: 100%;
     margin: auto 0;
     margin-right: 0.5rem;
+    cursor: pointer;
 }
 .nav-item-menu li.title {
 	border-top: 1px solid #dddddd;
@@ -230,10 +235,10 @@ img{
 	box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.06);
 	border-radius: 0.5rem;
 }
-.m-card.mobile-service, .m-card.service  {
+/*.m-card.mobile-service, .m-card.service  {
 	max-width: 19.25rem;
 	width: 100%;
-}
+}*/
 .m-card.mobile-service {
 	padding: 1.125rem 1.3125rem 1.0625rem 1.5rem;
 }
@@ -445,7 +450,7 @@ ol.carousel-indicators li.active {
  	transform: scale(1.25);
 }
 /*=== dropdown menu desktop ===*/
-ul.nav-list li {
+ul.nav-list-mobile li {
 	position: relative;
 }
 .m-dropdown {
@@ -454,7 +459,7 @@ ul.nav-list li {
 	position: absolute;
 	background-color: white;
 	top: 4.7rem;
-    left: 1.75rem;
+    /*left: 1.75rem;*/
     z-index: 999;
     width: 15rem;
     border: 1px solid #E0E0E0;
@@ -472,7 +477,7 @@ ul.nav-list li {
 }
 .m-dropdown:after {
 	bottom: 100%;
-	left: 25%;
+	left: 22%;
 	border: solid transparent;
 	content: " ";
 	height: 0;
@@ -492,7 +497,7 @@ ul.nav-list li {
 	width: 37.5rem;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	left: -28.5rem;
+	left: -30.5rem;
 	padding-top: 1.6875rem;
 	padding-left: 3.75rem;
 	grid-row-gap: 1.5rem;
@@ -533,8 +538,14 @@ ul.nav-list li {
 .is-desktop {
 	display: none;
 }
+.lSAction {
+	display: none !important;
+}
 /*===== MEDIA QUERY =====*/
 @media screen and (min-width: 768px){
+	ul.nav-list li {
+		position: relative;
+	}
 	.m-card.mobile-service, .m-card.service  {
 		max-width: none;
 		width: 100%;
@@ -572,12 +583,24 @@ ul.nav-list li {
 	.headerImage img {
 		width: 9rem;
 	}
+	.content-header .is-desktop {
+		display: block;
+	}
 	.m-card {
 		border-radius: 1.5rem;
 	}
+	.nav-menu .headerImage {
+		display: block;
+		padding-top: 3.25rem;
+    	padding-left: 1rem;
+    	max-width: 11.25rem;
+	}
+	.nav-user {
+		/*height: 4.75rem;*/
+	}
 	.nav-list {
 		display: flex;
-		padding-top: 0.4rem;
+		/*padding-top: 0.4rem;*/
 		justify-content: space-between;
 	}
 	.carousel.is-desktop {
@@ -598,14 +621,14 @@ ul.nav-list li {
 	.nav-list {
 		margin: 0;
 		height: 100%;
-		width: 90%;
+		width: 80%;
 	}
 	ul.nav-list li {
 		height: 100%;
+		padding: 0.5rem 0;
 	}
 	.nav-list li .nav-item {
 		color: white;
-		padding: 0;
 		padding: 0.5rem;
 		margin: 0;
 		font-weight: var(--biger-font-weight);
@@ -686,15 +709,40 @@ ul.nav-list li {
 	}
 	.footer .inner {
 		max-width: 50.9375rem;
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+	.nav-list-li:hover .m-dropdown {
+		display: block;
+	}
+	.nav-list-li:hover .nav-item {
+		background-color: white;
+		color: var(--blue);
+		border-radius: .5rem;
+	}
+	.nav-list-li:hover .m-dropdown.mobifone-dropdown {
+		display: grid;
+	}
+	.m-dropdown-item li a {
+		margin-left: 1rem;
+	}
+	.showItem {
+		top: 11rem;
 	}
 }
 @media screen and (min-width: 992px){
+	.wrap {
+		overflow: hidden;
+	}
 	.nav-list li .nav-item {
 		margin: 0.90625rem 0;
 	}
 	.nav-list {
 		padding-top: 0;
 		width: 100%;
+	}
+	ul.nav-list li {
+		padding-top: 0;
 	}
 	.header.is-desktop .inner {
 		height: 6.5rem;
@@ -801,25 +849,29 @@ ul.nav-list li {
 	.footer-row .info {
 		font-size: 1rem;
 	}
-	.nav-list-li:hover .m-dropdown {
-		display: block;
-	}
-	.nav-list-li:hover .nav-item {
-		background-color: white;
-		color: var(--blue);
-		border-radius: .5rem;
-	}
-	.nav-list-li:hover .m-dropdown.mobifone-dropdown {
-		display: grid;
-	}
-	.m-dropdown-item li a {
-		margin-left: 1rem;
-	}
+	
 	.footer .inner {
 		max-width: 73.125rem;
+		padding-left: 1rem;
+		padding-right: 1rem;
 	}
-	.main-content .inner {
-		padding-left: 0;
-		padding-right: 0;
+	.footer-row-mobile.is-mobile {
+		display: flex;
+	}
+	.lSAction {
+		display: block !important;
+		margin-top: 3rem !important;
+	}
+	.m-card.lslide {
+		opacity: 0 !important;
+	}
+	.m-card.lslide.currentSlide {
+		opacity: 1 !important;
+	}
+	.content-footer {
+		display: none;
+	}
+	.customer-content .content-header {
+		margin-top: 4.625rem;
 	}
 }

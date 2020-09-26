@@ -21,11 +21,16 @@
     </div>
 
     <div class="nav-menu" id="nav-menu">
+        <div class="headerImage">
+            <a href="{{route('employ')}}">
+                <img src="{{asset('source/image/logo-header.svg')}}" alt="#"/>
+            </a>
+        </div>
         <div class="nav-user">
             <a href="#">Đăng kí</a>
             <a href="#">Đăng nhập</a>
         </div>
-        <ul class="nav-list">
+        <ul class="nav-list-mobile">
             <li class="nav-item">
                 Dịch vụ di động
                 <img src="{{asset('source/icon_mobile/arrow_right_gray.png')}}" class="nav-item-toggle" id="item-first" alt="arrow">
@@ -173,7 +178,7 @@
         </div>
         <ul class="nav-list">   
             <li class="nav-list-li">
-                <a href="#" class="nav-item active">Dịch vụ di động</a>
+                <a href="#" class="nav-item">Dịch vụ di động</a>
                 <ul class="m-dropdown mobile-service-dropdown">
                     <li><a href="#">Gói cước</a></li>
                     <li><a href="#">Gói data</a></li>

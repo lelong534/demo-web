@@ -7,7 +7,7 @@
 /** /!!! core css Should not edit !!!/**/ 
 
 .lSSlideOuter {
-    overflow: hidden;
+    /*overflow: hidden;*/
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -20,16 +20,19 @@
     display: table;
 }
 .lightSlider {
-    overflow: hidden;
+    /*overflow: hidden;*/
     margin: 0;
 }
 .lSSlideWrapper {
     max-width: 100%;
-    overflow: hidden;
+    /*overflow: hidden;*/
     position: relative;
 }
 .lSSlideWrapper > .lightSlider:after {
     clear: both;
+}
+.lSSlideWrapper {
+    position: relative;
 }
 .lSSlideWrapper .lSSlide {
     -webkit-transform: translate(0px, 0px);
@@ -153,33 +156,35 @@
 
 /* slider actions */
 .lSAction > a {
-    width: 32px;
+    width: 48px;
     display: block;
     top: 50%;
-    height: 32px;
-    background-image: url('../../source/image/controls.png');
+    height: 48px;
+    background-repeat: no-repeat;
     cursor: pointer;
     position: absolute;
     z-index: 99;
     margin-top: -16px;
     -webkit-transition: opacity 0.35s linear 0s;
     transition: opacity 0.35s linear 0s;
-    background-color: black;
-    background: #FFFFFF;
     border: 1px solid #E0E0E0;
+    border-radius: 50%;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.06);
     transform: matrix(-1, 0, 0, 1, 0, 0);
+    background-color: #fff;
 }
 .lSAction > a:hover {
     opacity: 1;
 }
 .lSAction > .lSPrev {
-    background-position: 0 0;
-    left: 10px;
+    background-image: url('../../source/icon_mobile/arrow_right.png');
+    background-position: 17px;
+    left: -4rem;
 }
 .lSAction > .lSNext {
-    background-position: -32px 0;
-    right: 10px;
+    background-image: url('../../source/icon_mobile/arrow_left_large.png');
+    background-position: 15px;
+    right: -4rem;
 }
 .lSAction > a.disabled {
     pointer-events: none;

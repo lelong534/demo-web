@@ -66,7 +66,6 @@ window.addEventListener('mouseup', function(e) {
     if(e.target != navMenu &&
         e.target.parentNode != navMenu &&
         e.target.parentNode.parentNode != navMenu &&
-        e.target.parentNode.parentNode.parentNode != navMenu &&
         e.target.parentNode.parentNode.parentNode.parentNode != navMenu
     ) {
         if (navMenu.style.left == '0px') {

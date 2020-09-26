@@ -15,6 +15,8 @@
         <link href="{{ asset('css/home.css') }}" rel="stylesheet">
         <link href="{{ asset('css/lightslider/lightslider.css') }}" rel="stylesheet">
         <link href="{{ asset('css/bootstrap/bootstrap.min.css') }}" rel="stylesheet">
+        <link href="{{ asset('css/slick/slick.css') }}" rel="stylesheet">
+        <link href="{{ asset('css/slick/slick-theme.css') }}" rel="stylesheet">
     </head>
     <body>
         <div class="wrap">
@@ -84,7 +86,7 @@
                                 <p class="is-desktop">Gói data</p>
                                 <a href="#" class="all is-desktop">Xem tất cả<span> ></span></a>
                             </div>
-                            <div id="lightSlider"> 
+                            <div id="lightSlider" class="cs-hidden"> 
                                 <div class="m-card mobile-service">
                                     <h1 class="title">Gói Data ngày D5</h1>
                                     <ul class="m-card-body">
@@ -157,7 +159,16 @@
                                 <h2 class="title">Dịch vụ</h2>
                                 <a href="#" class="all is-desktop">Xem tất cả<span> ></span></a>
                             </div>
-                            <div class="content-body"> 
+                            <div id="lightSlider_two"> 
+                                <div class="m-card service">
+                                    <div class="content-image">
+                                        <img src="{{asset('source/icon_mobile/data_d5.png')}}">
+                                    </div>
+                                    <h1 class="title">Gói Data ngày D5</h1>
+                                    <div class="m-card-body">
+                                        Với gói cước D5 bạn sẽ có 1 GB tốc độ cao/ngày và trong suốt 30 ngày, bạn sẽ không còn nỗi lo thiếu data để làm việc, giải trí…
+                                    </div>
+                                </div>
                                 <div class="m-card service">
                                     <div class="content-image">
                                         <img src="{{asset('source/icon_mobile/data_d5.png')}}">
@@ -400,5 +411,8 @@
         <script src="{{ asset('js/home.js')}}"></script>
         <script src="{{ asset('js/lightslider/lightslider.js')}}"></script>
         <script src="{{ asset('js/slide.js')}}"></script>
+        <script src="{{ asset('js/slick.js')}}"></script>
+        <script src="{{ asset('js/slick/slick.js')}}"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     </body>
 </html>
