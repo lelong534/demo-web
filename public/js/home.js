@@ -66,6 +66,7 @@ window.addEventListener('mouseup', function(e) {
     if(e.target != navMenu &&
         e.target.parentNode != navMenu &&
         e.target.parentNode.parentNode != navMenu &&
+        e.target.parentNode.parentNode.parentNode != navMenu &&
         e.target.parentNode.parentNode.parentNode.parentNode != navMenu
     ) {
         if (navMenu.style.left == '0px') {
@@ -73,4 +74,39 @@ window.addEventListener('mouseup', function(e) {
             background.style.left = '-100%';
         }
     }
+}) 
+/*======= switch tabs ========*/ 
+const tabs = document.querySelectorAll('[data-tab-target]')
+const tabContents = document.querySelectorAll('[data-tab-content]')
+
+tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+        tabs.forEach(tab => {
+            tab.classList.remove('active')
+        })
+        tab.classList.add('active')
+        const target = document.querySelector(tab.dataset.tabTarget)
+        tabContents.forEach(tabContent => {
+            tabContent.classList.add('hidden')
+        })
+        target.classList.remove('hidden')
+    })
+})
+
+/*=== login pages ===*/ 
+const methods = document.querySelectorAll('[data-method-login-target]')
+const methodContents = document.querySelectorAll('[data-method-login-content]')
+
+methods.forEach(method => {
+    method.addEventListener('click', () => {
+        methods.forEach(method => {
+            method.classList.remove('active')
+        })
+        method.classList.add('active')
+        var target = document.querySelector(method.dataset.methodLoginTarget)
+        methodContents.forEach(methodContent => {
+            methodContent.classList.add('hidden')
+        })
+        target.classList.remove('hidden')
+    })
 })
