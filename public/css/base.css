@@ -14,7 +14,7 @@
 /*===== FONT-FACE =====*/
 @font-face {
 	font-family: SFUIText;
-	src: url(font/SF-UI-Text-Regular.ttf);
+	src: url(../font/SF-UI-Text-Regular.ttf);
 }
 
 /*===== VARIABLE CSS =====*/
@@ -40,6 +40,10 @@
 	--gray: #DDDDDD !important;
 	--body-color: #666666 !important;
 };
+:root {
+	--card-row-gap: 0.8125rem;
+	--card-column-gap: 0.75rem;
+}
 
 /*===== BASE =====*/
 *{
@@ -56,10 +60,27 @@ body{
 	font-size: var(--normal-font-size);
 	color: var(--body-color);
 }
-h1,h2,p{
-  	margin: 0;
+h1,h2,h3,p{
+  	margin: 0 !important;
+  	padding: 0 !important;
+}
+div.content {
+	font-size: 0.875rem;
+}
+div.content span.text-blue {
+	color: var(--blue);
+	padding: 0;
+}
+h3.active {
+	color: var(--blue);
+	border-bottom: 1px solid var(--blue);
 }
 h3 { font-size: 1rem !important; }
+p.text-bold {
+	padding: 0;
+	margin: 0;
+	font-weight: 500;
+}
 ul{
 	margin: 0;
 	padding: 0;
@@ -153,7 +174,7 @@ img{
 .wrap {
 	position: relative;
 	overflow: hidden;
-	background: #e9faf6;
+	background: #fdfdfd;
 }
 .bg-nav-menu{
 	left: -100%;
@@ -295,6 +316,13 @@ img{
 	padding-bottom: 0.375rem;
 	padding-right: 1rem;
 }
+.time {
+	font-size: 0.75rem;
+	line-height: 1.375rem;
+	text-align: right;
+	padding-bottom: 0.375rem;
+	padding-right: 1rem;
+}
 h2.title {
 	font-size: 0.875rem;
 	color: #0F1C49;
@@ -340,6 +368,11 @@ h1.title {
 }
 .m-card.event-nd .event-image img {
 	height: 100%;
+	width: auto;
+}
+.events-content.news-page .m-card.event-nd .event-image img {
+	height: 100%;
+	width: 100%;
 }
 .event-nd-content {
 	width: 100%;
@@ -411,7 +444,7 @@ h1.title {
 	font-size: var(--smaller-font-size);
 	line-height: 1.3125rem;
 	color: rgba(255, 255, 255, 0.6);
-	margin-top: 1rem;
+	margin-top: 1rem !important;
 }
 .footer-img img{
 	width: 7.0625rem;
@@ -638,7 +671,7 @@ ul.nav-list-mobile li {
 	background-color: white;
 }
 .social-media {
-	margin-bottom: 1.5rem;
+	margin-top: 1rem;
 }
 .social-media__box {
 	display: flex;
@@ -686,9 +719,38 @@ ul.nav-list-mobile li {
 .service-content.news-page img {
 	border-radius: 0.5rem 0 0 0.5rem;
 }
+.service-content.news-detail-page .event-nd img {
+	border-radius: 0;
+}
 .service-content.news-page .time {
 	text-align: right;
 	padding-right: 1rem;
+}
+.mobile-service-content {
+	position: relative;
+}
+.m-tab {
+	max-width: 1170px;
+	width: 100%;
+}
+.hidden.m-tab {
+	right: -999%;
+	position: absolute;
+}
+.active.m-tab {
+	right: 0;
+	position: relative;
+}
+.theme-title {
+	font-size: var(--smaller-font-size);
+	line-height: 1rem;
+	text-transform: uppercase;
+	letter-spacing: -0.337647px;
+	font-weight: var(--biger-font-weight);
+}
+ul.introduction {
+	list-style: disc;
+	padding-left: 1rem;
 }
 /*===== MEDIA QUERY =====*/
 @media screen and (min-width: 768px){
@@ -701,6 +763,26 @@ ul.nav-list-mobile li {
 	}
 	h3 {
 		font-size: 1.125rem !important;
+	}
+	div.content {
+		font-size: 1rem;
+		padding-right: 2rem;
+		padding-left: 1.875rem;
+	}
+	div.content span.text-blue {
+		font-size: 1rem;
+	}
+	:root {
+		--card-row-gap: 1.5625rem;
+		--card-column-gap: 1.5rem;
+	}
+	.theme-title {
+		margin-top: 1.5rem;
+		font-size: 1.25rem;
+		line-height: 1.5rem;
+	}
+	.inner .content-title {
+		margin-bottom: 1.625rem;
 	}
 	.item-title {
 		font-size: 1.125rem;
@@ -987,8 +1069,18 @@ ul.nav-list-mobile li {
 		border-radius: 1.5rem;
 		margin-right: 1.5rem;
 	}
+	.service-content.news-detail-page h2 {
+		font-size: 1.5rem
+	}
+	.events-content.news-page .event-nd img {
+		border-radius: 0.5rem 0 0 0.5rem;
+	}
 }
 @media screen and (min-width: 992px){
+	:root {
+		--card-row-gap: 1.875rem;
+		--card-column-gap: 2.25rem;
+	}
 	.wrap {
 		overflow: hidden;
 	}
@@ -1001,6 +1093,11 @@ ul.nav-list-mobile li {
 	}
 	ul.nav-list li {
 		padding-top: 0;
+	}
+	.theme-title {
+		margin-top: 2.25rem;
+		font-size: 1.5rem;
+		line-height: 1.75rem;
 	}
 	.header.is-desktop .inner {
 		height: 6.5rem;
@@ -1141,9 +1238,7 @@ ul.nav-list-mobile li {
 	/*.lSSlideOuter:nth-of-type(2) {
 		display: none;
 	}*/
-	.hidden.m-tab {
-		display: none;
-	}
+
 	/*=== news page ===*/
 	.login.is-desktop {
 		display: flex;

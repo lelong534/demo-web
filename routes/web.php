@@ -28,3 +28,14 @@ Route::get('/forget-password', 'UserController@forgetPassword')->name('forget_pa
 Route::get('/customer/reflect', 'CustomerController@reflect')->name('customer_reflect');
 Route::get('/customer/question', 'CustomerController@question')->name('customer_question');
 Route::get('/customer/location', 'CustomerController@location')->name('customer_location');
+Route::prefix('introduction')->group(function () {
+	Route::get('/', 'HomeController@introduct')->name('introduction');
+	Route::get('history', 'HomeController@history')->name('introduction_history');
+	Route::get('structure', 'HomeController@structure')->name('introduction_structure');
+	Route::get('commit', 'HomeController@commit')->name('introduction_commit');
+	Route::get('mission', 'HomeController@mission')->name('introduction_mission');
+	Route::get('quality', 'HomeController@quality')->name('introduction_quality');
+	Route::get('cooperate', 'HomeController@cooperate')->name('introduction_cooperate');
+	Route::get('partner', 'HomeController@partner')->name('introduction_partner');
+	Route::get('supplier', 'HomeController@supplier')->name('introduction_supplier');
+});

@@ -9,11 +9,11 @@
                 </div>
                 <div>
                     <a href="{{route('home')}}" class="nav-logo">
-                        <img src="{{asset('source/icon_mobile/logo.png')}}" alt="logo">
+                        <img src="{{asset('source/icon_mobile/logo.svg')}}" alt="logo">
                     </a>
                 </div>
                 <div>
-                    <img src="{{asset('source/icon_mobile/search.png')}}" alt="search">
+                    <img src="{{asset('source/icon_mobile/search.svg')}}" alt="search">
                 </div>
             </div>
                
@@ -22,7 +22,7 @@
 
     <div class="nav-menu" id="nav-menu">
         <div class="headerImage">
-            <a href="{{route('employ')}}">
+            <a href="{{route('home')}}">
                 <img src="{{asset('source/image/logo-header.svg')}}" alt="#"/>
             </a>
         </div>
@@ -143,7 +143,7 @@
     <div class="header is-desktop">
         <div class="inner">
             <div class="headerImage">
-                <a href="{{route('employ')}}">
+                <a href="{{route('home')}}">
                     <img src="{{asset('source/image/logo-header.svg')}}" alt="#"/>
                 </a>
             </div>

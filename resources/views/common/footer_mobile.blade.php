@@ -52,7 +52,7 @@
     <div class="footer-row-mobile is-mobile">
     <div class="footer-row right">   
         <div class="footer-img">
-            <img src="{{asset('source/icon_mobile/logo-last.png')}}" alt="logo">
+            <img src="{{asset('source/icon_mobile/logo-last.svg')}}" alt="logo">
         </div>
         <p class="sign">Giấy chứng nhận đăng ký doanh nghiệp. mã số doanh nghiệp: 0100686209, Đăng ký thay đổi lần thứ 9 ngày 27/7/2018,<br class="is-desktop" /> cấp bởi sở KHĐT thành phố Hà Nội.</p> 
         <div class="social-media is-mobile">

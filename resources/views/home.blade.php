@@ -66,7 +66,7 @@
                     <a href="#" class="all is-desktop">Xem tất cả<span> ></span></a>
                 </div>
                 <!-- start light slider to view mobile service -->
-                <div class="m-tab" id="charge" data-tab-content>
+                <div class="m-tab active" id="charge" data-tab-content>
                     <div class="mb cs-hidden lightSlider"> 
                         <div class="m-card mobile-service">
                             <h1 class="title">Gói Data ngày</h1>
@@ -130,7 +130,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="m-tab" id="data" data-tab-content>
+                <div class="m-tab hidden" id="data" data-tab-content>
                     <div class="mb cs-hidden lightSlider"> 
                         <div class="m-card mobile-service">
                             <h1 class="title">Gói Data ngày D5</h1>
@@ -209,7 +209,7 @@
                 <div id="lightSlider_two"> 
                     <div class="m-card service">
                         <div class="content-image">
-                            <img src="{{asset('source/icon_mobile/data_d5.png')}}">
+                            <img src="{{asset('source/icon_mobile/tiktok.png')}}">
                         </div>
                         <h1 class="title">Gói Data ngày D5</h1>
                         <div class="m-card-body">

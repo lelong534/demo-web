@@ -22,7 +22,7 @@
 		        <h2 class="text-primary">Vị trí cửa hàng</h2>
 		    </div>
 		    <div class="content-title is-mobile">
-		        Câu hỏi thường gặp
+		        Ví trí cửa hàng
 		    </div>
 
 		    <!-- CONTENT BODY -->
@@ -69,8 +69,57 @@
 					</div>
 
 					<div class="location-body__right">
+						<div class="body-title">
+							Có thể bạn quan tâm
+						</div>
+						<div class="m-card">
+							<ul class="body-content">
+								<li class="store">
+									<div class="store-name item-title">Đại lí Nguyễn Hoàng Mobifone</div>
+						    		<div class="store-address">Số 7, Đội Cấn, Ba Đình, Hà Nội</div>
+						    		<div class="store-phone">0936316699</div>
+						    		<div class="store-time">Giờ làm việc: 8:00 - 17:30</div>
+								</li>
+								<li class="store">
+									<div class="store-name item-title">Cửa hàng Mobifone Nguyễn Hoàng</div>
+						    		<div class="store-address">Số 7, Đội Cấn, Ba Đình, Hà Nội</div>
+						    		<div class="store-phone">0936316699</div>
+						    		<div class="store-time">Giờ làm việc: 8:00 - 17:30</div>
+								</li>
+								<li class="store">
+									<div class="store-name item-title">Cửa hàng Mobifone Nguyễn Hoàng</div>
+						    		<div class="store-address">Số 7, Đội Cấn, Ba Đình, Hà Nội</div>
+						    		<div class="store-phone">0936316699</div>
+						    		<div class="store-time">Giờ làm việc: 8:00 - 17:30</div>
+								</li>
+								<li class="store">
+									<div class="store-name item-title">Cửa hàng Mobifone Nguyễn Hoàng</div>
+						    		<div class="store-address">Số 7, Đội Cấn, Ba Đình, Hà Nội</div>
+						    		<div class="store-phone">0936316699</div>
+						    		<div class="store-time">Giờ làm việc: 8:00 - 17:30</div>
+								</li>
+								<li class="store">
+									<div class="store-name item-title">Cửa hàng Mobifone Nguyễn Hoàng</div>
+						    		<div class="store-address">Số 7, Đội Cấn, Ba Đình, Hà Nội</div>
+						    		<div class="store-phone">0936316699</div>
+						    		<div class="store-time">Giờ làm việc: 8:00 - 17:30</div>
+								</li>
+								<li class="store">
+									<div class="store-name item-title">Cửa hàng Mobifone Nguyễn Hoàng</div>
+						    		<div class="store-address">Số 7, Đội Cấn, Ba Đình, Hà Nội</div>
+						    		<div class="store-phone">0936316699</div>
+						    		<div class="store-time">Giờ làm việc: 8:00 - 17:30</div>
+								</li>
+								<li class="store">
+									<div class="store-name item-title">Cửa hàng Mobifone Nguyễn Hoàng</div>
+						    		<div class="store-address">Số 7, Đội Cấn, Ba Đình, Hà Nội</div>
+						    		<div class="store-phone">0936316699</div>
+						    		<div class="store-time">Giờ làm việc: 8:00 - 17:30</div>
+								</li>
+							</ul>
+						</div>
 					</div>
-		    	</div>
+				</div>
 		    </div>
 		</div>
 	</div>

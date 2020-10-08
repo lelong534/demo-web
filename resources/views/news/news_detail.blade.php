@@ -12,7 +12,7 @@
 		                class="icon"       
 		            />
 		        </span>&nbsp;&nbsp;&nbsp;
-		        <h2 class="text-primary">Tin tức</h2>&nbsp;&nbsp;&nbsp;
+		        <h2>Tin tức</h2>&nbsp;&nbsp;&nbsp;
 		        <span>
 		            <img 
 		                src="https://img.icons8.com/fluent-systems-filled/24/000000/more-than.png"
@@ -39,7 +39,7 @@
     		</div>
 
     		<!-- OTHER NEWS -->
-    		<div class="service-content news-page">
+    		<div class="service-content news-detail-page">
                 <div class="content-header">
                     <h2>Tin tức khác</h2>
                 </div>
@@ -52,7 +52,7 @@
                             MobiFone tặng 5GB miễn phí khi cài ứng dụng Bluezone
                         </div>
                         <div class="time">
-                            Thứ hai, 01/09/2020
+                            3 ngày trước
                         </div>
                     </div>
                     <div class="m-card service">
@@ -63,7 +63,7 @@
                             MobiFone tặng 120 GB co học sinh, sinh viên vùng dịch đến hết năm 2020
                         </div>
                         <div class="time">
-                            Thứ hai, 01/09/2020
+                            3 ngày trước
                         </div>
                     </div>
                     <div class="m-card service">
@@ -74,7 +74,7 @@
                             Ưu đãi “chồng” ưu đãi chào tháng 9 cùng MobiFone
                         </div>
                         <div class="time">
-                            Thứ hai, 01/09/2020
+                            3 ngày trước
                         </div>
                     </div>
                     <div class="m-card service">
@@ -85,7 +85,7 @@
                             Ưu đãi “chồng” ưu đãi chào tháng 9 cùng MobiFone
                         </div>
                         <div class="time">
-                            Thứ hai, 01/09/2020
+                            3 ngày trước
                         </div>
                     </div>
                 </div>

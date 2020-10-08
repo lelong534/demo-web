@@ -11,17 +11,12 @@
         </title>
 
         <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
         <link href="{{ asset('css/base.css') }}" rel="stylesheet">
-        <link href="{{ asset('css/button.css') }}" rel="stylesheet">
-        <link href="{{ asset('css/input.css') }}" rel="stylesheet">
         <link href="{{ asset('css/customer.css') }}" rel="stylesheet">
-        <link href="{{ asset('css/lightslider/lightslider.css') }}" rel="stylesheet">
         <link href="{{ asset('css/jquery-ui/jquery-ui.min.css') }}" rel="stylesheet">
         <link href="{{ asset('css/bootstrap/bootstrap.min.css') }}" rel="stylesheet">
-        <link href="{{ asset('css/icon.css') }}" rel="stylesheet">
-        <link href="{{ asset('css/jquery-ui/jquery-ui.theme.min.css') }}" rel="stylesheet">
-        <link href="{{ asset('css/pagination.css') }}" rel="stylesheet">
+        <link href="{{ asset('css/introduction.css') }}" rel="stylesheet">
+        <link href="{{ asset('css/bootstrap/bootstrap.min.css') }}" rel="stylesheet">
     </head>
     <body>
         <div class="wrap">
@@ -29,7 +24,24 @@
             @include('common.header_mobile')
 
             <!-- MAIN CONTENT -->
-            @yield('content')
+            <main class="l-main">
+                <div class="main-content">
+                    <div class="inner">
+                        <div class="content-title is-desktop">
+                            <h2>Trang chủ</h2>&nbsp;&nbsp;&nbsp;
+                            <span>
+                                <img 
+                                    src="https://img.icons8.com/fluent-systems-filled/24/000000/more-than.png"
+                                    class="icon"       
+                                />
+                            </span>&nbsp;&nbsp;&nbsp;
+                            <h2>Giới thiệu Mobifone</h2>
+                        </div> 
+                        @yield('content')      
+                    </div>
+                </div>
+            </main>
+            
 
             <!-- FOOTER -->
             @include('common.footer_mobile')
@@ -39,10 +51,7 @@
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
         <script src="{{ asset('js/bootstrap/bootstrap.min.js') }}"></script>
         <script src="{{ asset('js/home.js')}}"></script>
-        <script src="{{ asset('js/lightslider/lightslider.js')}}"></script>
-        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-        <script src="{{ asset('js/slide.js')}}"></script>
         <script src="{{ asset('js/jquery-ui/jquery-ui.min.js')}}"></script>
-        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script src="{{ asset('js/bootstrap/bootstrap.min.js') }}"></script>
     </body>
 </html>

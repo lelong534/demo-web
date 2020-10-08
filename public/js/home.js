@@ -87,8 +87,10 @@ tabs.forEach(tab => {
         tab.classList.add('active')
         const target = document.querySelector(tab.dataset.tabTarget)
         tabContents.forEach(tabContent => {
+            tabContent.classList.remove('active')
             tabContent.classList.add('hidden')
         })
+        target.classList.remove('active')
         target.classList.remove('hidden')
     })
 })
@@ -109,4 +111,11 @@ methods.forEach(method => {
         })
         target.classList.remove('hidden')
     })
+})
+$(document).ready(function() {
+    var height = $(".location-body__left .location-content").height();
+    var title = $(".location-body__right .body-title").height();
+    if ($(window).width() > 767) {
+        $(".location-body__right .m-card .body-content").height(height-title-75);
+    }
 })
