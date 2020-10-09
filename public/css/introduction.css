@@ -164,6 +164,9 @@ ul#partner-menu li.active {
 	.other-introduction .m-card.customer .customer-img img {
 		height: 5.75rem;
 	}
+	.other-introduction .m-card.customer .customer-content {
+		bottom: 1.5rem;
+	}
 	#partner-menu {
 		display: flex;
 		background: #EEEEEE;

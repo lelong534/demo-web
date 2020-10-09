@@ -33,7 +33,7 @@
 	                    </div>
 	                    <p class="title">Khuyến mãi</p>
 	                    <div class="m-card-body">
-	                        MobiFonetăngk 100k mua sắm Tiki cho hội viên kết nối dài lâu.
+	                        MobiFone tặng 100k mua sắm Tiki cho hội viên kết nối dài lâu.
 	                    </div>
 	                </div>
 	                <div class="m-card event-nd">

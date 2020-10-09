@@ -30,6 +30,8 @@
 
 		Đây là năm thứ 6 Anphabe thực hiện khảo sát "Nơi làm việc tốt nhất Việt Nam”. Năm nay, quy mô của khảo sát được mở rộng để đo lường sức hấp dẫn thương hiệu nhà tuyển dụng của 674 doanh nghiệp, thuộc 24 ngành nghề, với sự tham gia của 75.481 người đi làm có kinh nghiệm.
     </div>
+
+    @include('common.theme-introduction')
 </div>
 
 @endsection

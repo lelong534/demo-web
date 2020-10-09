@@ -43,6 +43,5 @@
         <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
         <script src="{{ asset('js/slide.js')}}"></script>
         <script src="{{ asset('js/jquery-ui/jquery-ui.min.js')}}"></script>
-        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     </body>
 </html>

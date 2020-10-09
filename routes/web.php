@@ -39,3 +39,7 @@ Route::prefix('introduction')->group(function () {
 	Route::get('partner', 'HomeController@partner')->name('introduction_partner');
 	Route::get('supplier', 'HomeController@supplier')->name('introduction_supplier');
 });
+Route::prefix('service')->group(function () {
+	Route::get('/pack-of-data', 'ServiceController@packOfData')->name('packofdata');
+	Route::get('/pack-of-charge', 'ServiceController@packOfCharge')->name('packofcharge');
+});

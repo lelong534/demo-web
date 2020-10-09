@@ -61,14 +61,13 @@ body{
 	color: var(--body-color);
 }
 h1,h2,h3,p{
-  	margin: 0 !important;
-  	padding: 0 !important;
+  	margin: 0;
+  	padding: 0;
 }
 div.content {
 	font-size: 0.875rem;
 }
 div.content span.text-blue {
-	color: var(--blue);
 	padding: 0;
 }
 h3.active {
@@ -102,6 +101,9 @@ img{
 .item-title {
 	font-weight: 500;
 	font-size: 0.875rem;
+}
+.text-blue {
+	color: var(--blue);
 }
 /*===== CLASS CSS =====*/
 .header.is-mobile {
@@ -277,7 +279,9 @@ img{
 }
 .m-card.mobile-service {
 	padding: 1.125rem 1.3125rem 1.0625rem 1.5rem;
-	width: 30rem;
+}
+.package-content .m-card {
+	padding: 0.75rem 1.125rem;
 }
 .m-card.service .m-card-body, 
 .m-card.events .m-card-body {
@@ -290,9 +294,9 @@ img{
 	padding-bottom: 1rem;
 }
 .m-card.service .title {
-	padding-top: 1.0625rem;
-	padding-left: 1.25rem;
-	padding-bottom: 0.6875rem;
+	padding-top: 1.0625rem !important;
+	padding-left: 1.25rem !important;
+	padding-bottom: 0.6875rem !important;
 }
 .m-card.events .title {
 	font-size: 0.75rem;
@@ -304,6 +308,9 @@ img{
 .m-card.events .m-card-body {
 	padding: 0 0 0 1rem;
 	line-height: 1.3125rem;
+	font-size: 1.25rem;
+	line-height: 1.875rem;
+	font-weight: 500;
 }
 .mobile-service-content, .service-content, .events-content, .customer-content {
 	padding-top: 0.75rem;
@@ -406,8 +413,11 @@ h1.title {
 	font-size: 0.875rem;
 	line-height: 1rem;
 	font-weight: 500;
-    bottom: -0.75rem;
     width: 100%;
+}
+.m-card.customer .customer-content{
+	position: absolute;
+	bottom: 0.75rem;
 }
 .customer-content .content-body {
 	display: grid;
@@ -417,10 +427,10 @@ h1.title {
 }
 .m-card.customer .customer-img {
 	padding: 1rem;
+	padding-bottom: 3.125rem;
 }
 .m-card.customer .customer-img img {		
 	max-height: 6.125rem;
-	width: fit-content;
     margin: auto;
 }
 .content-header {
@@ -472,17 +482,21 @@ h1.title {
 }
 .footer-row .info img{
 	width: 1rem;
-	margin-top: 0.2rem;
 	margin-right: 0.5rem;
 }
 .footer-row .info {
 	font-size: var(--smaller-font-size);
-	line-height: 1.3125rem;
 	color: rgba(255, 255, 255, 0.6);
+	margin-top: 0.625rem;
+}
+.footer-row .info:first-child {
 	margin-top: 1rem;
 }
 .footer-row .info-last{
-	padding-bottom: 0.75rem;
+	padding-bottom: 0.75rem;	
+}
+.footer-row .info span {
+	line-height: 1.3125rem;
 }
 .footer-last {
 	font-family: Rubik, sans-serif;
@@ -752,6 +766,21 @@ ul.introduction {
 	list-style: disc;
 	padding-left: 1rem;
 }
+.m-card.using-pack {
+	padding: 0.75rem 1.125rem;
+}
+.pack-items li {
+	display: flex;
+	line-height: 1.125rem;
+}
+.pack-items li img {
+	margin-right: 1rem;
+    margin-bottom: 0.5rem;
+}
+.pack-charge {
+	color: var(--blue);
+	font-weight: 500;
+}
 /*===== MEDIA QUERY =====*/
 @media screen and (min-width: 768px){
 	main {
@@ -790,6 +819,9 @@ ul.introduction {
 	.m-card.mobile-service, .m-card.service  {
 		max-width: none;
 		width: 100%;
+	}
+	.package-content .m-card {   
+		padding: 1.125rem 1.3125rem 1.0625rem 1.5rem;
 	}
 	.header.is-desktop {
 		display: block;
@@ -887,7 +919,7 @@ ul.introduction {
 	}
 	.content-header h2, .content-header p {
 		line-height: 1.75rem;
-		margin-right: 4rem;
+		margin-right: 4rem !important;
 	}
 	.content-header p.active {
 		border-bottom: 1px solid var(--blue);
@@ -920,6 +952,7 @@ ul.introduction {
 	}
 	.m-card.event-nd {
 		margin-top: 0;
+		height: 100%;
 	}
 	.customer-content .content-body {
 		display: grid;
@@ -932,14 +965,14 @@ ul.introduction {
 	}
 	.m-card.customer .customer-img {
 		padding: 1.75rem 1.125rem;
+		padding-bottom: 6.5625rem;
 	}
 	.m-card.customer .customer-img img {		
 		max-height: 9.6rem;
 	}
 	.m-card.customer .customer-content {
-		margin-bottom: 1.5rem;
-		padding: 0;
-		position: relative;
+		position: absolute;
+		bottom: 2.75rem;
 	}
 	.mobile-service-content, .service-content, .events-content, .customer-content {
 		padding: 0;
@@ -1041,6 +1074,7 @@ ul.introduction {
 	}
 	.events-content.news-page .content-body .m-card{
 		border-radius: 0.5rem;
+		height: 100%;
 	}
 	/*=== news detail ===*/
 	.news-detail-content{

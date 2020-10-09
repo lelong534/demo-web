@@ -60,7 +60,7 @@
             <!-- MOBILE SERVICE CONTENT -->
             <div class="mobile-service-content">
                 <div class="content-header">
-                    <h2 class="title">Dịch vụ di động</h2>
+                    <div class="title"><h2>Dịch vụ di động</h2></div>
                     <p href="#" data-tab-target="#charge" class="active is-desktop">Gói cước</p>
                     <p href="#" data-tab-target= "#data" class="is-desktop">Gói data</p>
                     <a href="#" class="all is-desktop">Xem tất cả<span> ></span></a>
@@ -77,7 +77,7 @@
                                 </li>
                                 <li class="m-card-item">HSD: <strong>30 ngày</strong>
                                 </li>
-                                <li style="color:#237BD3;">99.000 đ</li>
+                                <li class="text-blue">99.000 đ</li>
                             </ul>
                             <div class="m-card-detail">
                                 <a href="#">Chi tiết</a>
@@ -92,7 +92,7 @@
                                 </li>
                                 <li class="m-card-item">HSD: <strong>30 ngày</strong>
                                 </li>
-                                <li style="color:#237BD3;">99.000 đ</li>
+                                <li class="text-blue">99.000 đ</li>
                             </ul>
                             <div class="m-card-detail">
                                 <a href="#">Chi tiết</a>
@@ -107,7 +107,7 @@
                                 </li>
                                 <li class="m-card-item">HSD: <strong>30 ngày</strong>
                                 </li>
-                                <li style="color:#237BD3;">99.000 đ</li>
+                                <li class="text-blue">99.000 đ</li>
                             </ul>
                             <div class="m-card-detail">
                                 <a href="#">Chi tiết</a>
@@ -122,7 +122,7 @@
                                 </li>
                                 <li class="m-card-item">HSD: <strong>30 ngày</strong>
                                 </li>
-                                <li style="color:#237BD3;">99.000 đ</li>
+                                <li class="text-blue">99.000 đ</li>
                             </ul>
                             <div class="m-card-detail">
                                 <a href="#">Chi tiết</a>
@@ -141,7 +141,7 @@
                                 </li>
                                 <li class="m-card-item">HSD: <strong>30 ngày</strong>
                                 </li>
-                                <li style="color:#237BD3;">99.000 đ</li>
+                                <li class="text-blue">99.000 đ</li>
                             </ul>
                             <div class="m-card-detail">
                                 <a href="#">Chi tiết</a>
@@ -156,7 +156,7 @@
                                 </li>
                                 <li class="m-card-item">HSD: <strong>30 ngày</strong>
                                 </li>
-                                <li style="color:#237BD3;">99.000 đ</li>
+                                <li class="text-blue">99.000 đ</li>
                             </ul>
                             <div class="m-card-detail">
                                 <a href="#">Chi tiết</a>
@@ -171,7 +171,7 @@
                                 </li>
                                 <li class="m-card-item">HSD: <strong>30 ngày</strong>
                                 </li>
-                                <li style="color:#237BD3;">99.000 đ</li>
+                                <li class="text-blue">99.000 đ</li>
                             </ul>
                             <div class="m-card-detail">
                                 <a href="#">Chi tiết</a>
@@ -186,7 +186,7 @@
                                 </li>
                                 <li class="m-card-item">HSD: <strong>30 ngày</strong>
                                 </li>
-                                <li style="color:#237BD3;">99.000 đ</li>
+                                <li class="text-blue">99.000 đ</li>
                             </ul>
                             <div class="m-card-detail">
                                 <a href="#">Chi tiết</a>
@@ -206,7 +206,7 @@
                     <h2 class="title">Dịch vụ</h2>
                     <a href="#" class="all is-desktop">Xem tất cả<span> ></span></a>
                 </div>
-                <div id="lightSlider_two"> 
+                <div class="lightSlider"> 
                     <div class="m-card service">
                         <div class="content-image">
                             <img src="{{asset('source/icon_mobile/tiktok.png')}}">
@@ -262,7 +262,7 @@
                         <div class="content-image">
                             <img src="{{asset('source/icon_mobile/event.png')}}">
                         </div>
-                        <p class="title">Tin tức</p>
+                        <div class="title">Tin tức</div>
                         <div class="m-card-body">
                             MobiFone đạt top 6 thương hiệu giá trị nhất Việt Nam
                         </div>
@@ -324,7 +324,7 @@
                     <a href="#">
                         <div class="m-card customer">
                             <div class="customer-img">
-                                <img src="{{asset('source/icon_mobile/customer-first.png')}}">
+                                <img src="{{asset('source/icon_mobile/customer-first.svg')}}">
                             </div>
                             <div class="customer-content">
                                 Gửi phản ánh
@@ -334,7 +334,7 @@
                     <a href="#">
                         <div class="m-card customer">
                             <div class="customer-img">
-                                <img src="{{asset('source/icon_mobile/customer-second.png')}}">
+                                <img src="{{asset('source/icon_mobile/customer-second.svg')}}">
                             </div>
                             <div class="customer-content">
                                 Câu hỏi thường gặp
@@ -344,7 +344,7 @@
                     <a href="#">
                         <div class="m-card customer">
                             <div class="customer-img">
-                                <img src="{{asset('source/icon_mobile/customer-third.png')}}">
+                                <img src="{{asset('source/icon_mobile/customer-third.svg')}}">
                             </div>
                             <div class="customer-content">
                                 Tìm kiếm cửa hàng
@@ -354,7 +354,7 @@
                     <a href="#">
                         <div class="m-card customer">
                             <div class="customer-img">
-                                <img src="{{asset('source/icon_mobile/customer-fourth.png')}}">
+                                <img src="{{asset('source/icon_mobile/customer-fourth.svg')}}">
                             </div>
                             <div class="customer-content">
                                 Chuyển mạng giữ số

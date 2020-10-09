@@ -55,9 +55,9 @@
                     Quay lại
                 </div>
                 <li class="title">Hỗ trợ khách hàng</li>
-                <li><a href="#">Gửi phản ánh</a></li>
+                <li><a href="{route('customer_reflect')}">Gửi phản ánh</a></li>
                 <li><a href="#">Chat online</a></li>
-                <li><a href="#">Câu hỏi thường gặp</a></li>
+                <li><a href="{route('customer_question')}">Câu hỏi thường gặp</a></li>
                 <li><a href="#">Chọn số Mobifone</a></li>
                 <li><a href="#">Chuyển mạng giữ số</a></li>
             </ul>
@@ -158,7 +158,7 @@
                     <a class="dropdown-item" href="#">Something else here</a>
                   </div>
                 </div>
-                <div class="header-item">Đăng nhập/Đăng ký</div>
+                <div class="header-item"><a href="{{route('pre_login')}}">Đăng nhập/Đăng ký</a></div>
                 <div class="header-item flag">
                     <img src="{{asset('source/icons/icon-flag.svg')}}" class="icon" />
                 </div>
@@ -188,9 +188,9 @@
             <li class="nav-list-li">
                 <a href="#" class="nav-item">Hỗ trợ khách hàng</a>
                 <ul class="m-dropdown customer-support-dropdown">
-                    <li><a href="#">Gửi phản ánh</a></li>
+                    <li><a href="{{route('customer_reflect')}}">Gửi phản ánh</a></li>
                     <li><a href="#">Chat online</a></li>
-                    <li><a href="#">Câu hỏi thường gặp</a></li>
+                    <li><a href="{{route('customer_question')}}">Câu hỏi thường gặp</a></li>
                     <li><a href="#">Chọn số Mobifone</a></li>
                     <li><a href="#">Chuyển mạng giữ số</a></li>
                 </ul>
@@ -198,10 +198,10 @@
             <li class="nav-list-li">
                 <a href="#" class="nav-item">Tin tức</a>
                 <ul class="m-dropdown news-dropdown">
-                    <li><a href="#">Khuyến mại cho bạn</a></li>
-                    <li><a href="#">Chương trình khuyến mại</a></li>
-                    <li><a href="#">Tin tức sự kiện</a></li>
-                    <li><a href="#">Thông cáo báo chí</a></li>
+                    <li><a href="{{route('news')}}">Khuyến mại cho bạn</a></li>
+                    <li><a href="{{route('news')}}">Chương trình khuyến mại</a></li>
+                    <li><a href="{{route('news')}}">Tin tức sự kiện</a></li>
+                    <li><a href="{{route('news')}}">Thông cáo báo chí</a></li>
                 </ul>
             </li>
             <li><a href="#" class="nav-item">Tuyển dụng</a></li>
