@@ -3,11 +3,11 @@
 @section('content')  
 <div id="menu-wrapper">
     <ul id="introduction-menu">
-        <li><h3 class="active">Giới thiệu chung</h3></li>
-        <li><h3>Hợp tác với Mobifone</h3></li>
-        <li><h3>Đối tác</h3></li>
-        <li><h3>Điểm cung cấp dịch vụ viễn thông</h3></li>
-        <li><h3>Cửa hàng bán lẻ</h3></li>
+        <li><a href="{{route('introduction_history')}}"><h3 class="active">Giới thiệu chung</h3></a></li>
+        <li><a href="{{route('introduction_cooperate')}}"><h3>Hợp tác với Mobifone</h3></a></li>
+        <li><a href="{{route('introduction_partner')}}"><h3>Đối tác</h3></a></li>
+        <li><a href="{{route('customer_location')}}"><h3>Điểm cung cấp dịch vụ viễn thông</h3></a></li>
+        <li><a href="{{route('introduction_structure')}}"><h3>Cửa hàng bán lẻ</h3></a></li>
     </ul>
 </div>
 <div class="introduction-content"> 	

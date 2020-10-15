@@ -17,10 +17,9 @@
         <link href="{{ asset('css/input.css') }}" rel="stylesheet">
         <link href="{{ asset('css/customer.css') }}" rel="stylesheet">
         <link href="{{ asset('css/lightslider/lightslider.css') }}" rel="stylesheet">
-        <link href="{{ asset('css/jquery-ui/jquery-ui.min.css') }}" rel="stylesheet">
         <link href="{{ asset('css/bootstrap/bootstrap.min.css') }}" rel="stylesheet">
         <link href="{{ asset('css/icon.css') }}" rel="stylesheet">
-        <link href="{{ asset('css/jquery-ui/jquery-ui.theme.min.css') }}" rel="stylesheet">
+        <link href="{{ asset('css/service.css') }}" rel="stylesheet">
         <link href="{{ asset('css/pagination.css') }}" rel="stylesheet">
     </head>
     <body>
@@ -42,6 +41,5 @@
         <script src="{{ asset('js/lightslider/lightslider.js')}}"></script>
         <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
         <script src="{{ asset('js/slide.js')}}"></script>
-        <script src="{{ asset('js/jquery-ui/jquery-ui.min.js')}}"></script>
     </body>
 </html>

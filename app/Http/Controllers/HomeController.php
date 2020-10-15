@@ -22,7 +22,7 @@ class HomeController extends Controller
     public function commit() {
         return view('introduction.commit');
     }
-    public function misson() {
+    public function mission() {
         return view('introduction.mission');
     }
     public function quality() {

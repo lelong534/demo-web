@@ -28,7 +28,7 @@
         </div>
         <div class="nav-user">
             <a href="#">Đăng kí</a>
-            <a href="#">Đăng nhập</a>
+            <a href="{{route('pre_login')}}">Đăng nhập</a>
         </div>
         <ul class="nav-list-mobile">
             <li class="nav-item">
@@ -41,9 +41,9 @@
                     Quay lại
                 </div>
                 <li class="title">Dịch vụ di động</li>
-                <li><a href="#">Gói cước</a></li>
-                <li><a href="#">Gói data</a></li>
-                <li><a href="#">Dịch vụ</a></li>
+                <li><a href="{{route('pack_of_charge')}}">Gói cước</a></li>
+                <li><a href="{{route('pack_of_data')}}">Gói data</a></li>
+                <li><a href="{{route('pack_of_service')}}">Dịch vụ</a></li>
             </ul>
             <li class="nav-item">
                 Hỗ trợ khách hàng
@@ -180,19 +180,19 @@
             <li class="nav-list-li">
                 <a href="#" class="nav-item">Dịch vụ di động</a>
                 <ul class="m-dropdown mobile-service-dropdown">
-                    <li><a href="#">Gói cước</a></li>
-                    <li><a href="#">Gói data</a></li>
-                    <li><a href="#">Dịch vụ</a></li>
+                    <li><a href="{{route('pack_of_charge')}}">Gói cước</a></li>
+                    <li><a href="{{route('pack_of_data')}}">Gói data</a></li>
+                    <li><a href="{{route('pack_of_service')}}">Dịch vụ</a></li>
                 </ul>
             </li>
             <li class="nav-list-li">
                 <a href="#" class="nav-item">Hỗ trợ khách hàng</a>
                 <ul class="m-dropdown customer-support-dropdown">
                     <li><a href="{{route('customer_reflect')}}">Gửi phản ánh</a></li>
-                    <li><a href="#">Chat online</a></li>
+                    <li><a href="{{route('customer_question')}}">Chat online</a></li>
                     <li><a href="{{route('customer_question')}}">Câu hỏi thường gặp</a></li>
-                    <li><a href="#">Chọn số Mobifone</a></li>
-                    <li><a href="#">Chuyển mạng giữ số</a></li>
+                    <li><a href="{{route('customer_location')}}">Chọn số Mobifone</a></li>
+                    <li><a href="{{route('customer_location')}}">Chuyển mạng giữ số</a></li>
                 </ul>
             </li>
             <li class="nav-list-li">
@@ -214,9 +214,9 @@
                             Tài khoản
                         </div>
                         <ul>
-                            <li><a href="#">Thông tin tài khoản</a></li>
-                            <li><a href="#">Thông tin cá nhân</a></li>
-                            <li><a href="#">Cập nhật thông tin cá nhân</a></li>
+                            <li><a href="{{route('prepaid_info')}}">Thông tin tài khoản</a></li>
+                            <li><a href="{{route('user_information')}}">Thông tin cá nhân</a></li>
+                            <li><a href="{{route('user_information')}}">Cập nhật thông tin cá nhân</a></li>
                         </ul>
                     </div>
                     <div class="m-dropdown-item">
@@ -237,9 +237,9 @@
                             Kết nối dài lâu
                         </div>
                         <ul>
-                            <li><a href="#">Thông tin hội viên</a></li>
-                            <li><a href="#">Đổi điểm</a></li>
-                            <li><a href="#">Danh sách ưu đãi</a></li>
+                            <li><a href="{{route('user_check')}}">Thông tin hội viên</a></li>
+                            <li><a href="{{route('user_check')}}">Đổi điểm</a></li>
+                            <li><a href="{{route('user_check')}}">Danh sách ưu đãi</a></li>
                         </ul>
                     </div>
                     <div class="m-dropdown-item">
@@ -248,8 +248,8 @@
                             Cước
                         </div>
                         <ul>
-                            <li><a href="#">Tra cước</a></li>
-                            <li><a href="#">Lịch sử nạp tiền/thanh toán</a></li>
+                            <li><a href="{{route('user_check')}}">Tra cước</a></li>
+                            <li><a href="{{route('user_check')}}">Lịch sử nạp tiền/thanh toán</a></li>
                         </ul>
                     </div>
                 </div>

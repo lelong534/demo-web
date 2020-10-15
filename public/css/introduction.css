@@ -9,6 +9,10 @@
 }
 #introduction-menu li h3{
 	line-height: 1.75rem;
+	color: black;
+}
+#introduction-menu li h3.active{
+	color: var(--blue);
 }
 #introduction-menu::-webkit-scrollbar {
 	width: 0;
@@ -147,9 +151,10 @@ ul#partner-menu li.active {
 	}
 	.introduction-body{
 		padding-top: 1.5rem;
+		padding-left: 1.5rem;
 		margin: 0;
 		margin-top: 2rem;
-		border-radius: 1.125rem;
+		border-radius: 0.5rem;
 	}
 	.other-introduction .content-body {
 		display: grid;
@@ -159,7 +164,7 @@ ul#partner-menu li.active {
 		margin-top: 4.5rem;
 	}
 	.other-introduction .m-card.customer .customer-img {
-		padding-bottom: 5rem;
+		padding-bottom: 4.2rem;
 	}
 	.other-introduction .m-card.customer .customer-img img {
 		height: 5.75rem;
@@ -206,6 +211,10 @@ ul#partner-menu li.active {
 		width: 30%;
 	}
 	.other-introduction .m-card.customer .customer-img img {
-		height: 9.125rem;
+		height: 7.125rem;
+	}
+	.introduction-body{
+		padding-left: 2.1875rem;
+		border-radius: 1.5rem;
 	}
 }

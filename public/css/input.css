@@ -16,10 +16,38 @@
 	letter-spacing: 0.196px;
 	-webkit-appearance: none;
 	margin-bottom: 1rem;
+	outline:none;
+}
+.input-box-default:focus {
+	border: 1px solid #CCCCCC !important;
+}
+.input-box-default {
+	position: relative;
+	line-height: 2rem;
+	height: 2.875rem;
+	font-size: 0.875rem;
+	width: 100%;
+	padding-left: 1rem;
+	padding-right: 3.375rem;
+	padding-top: 0.375rem;
+	padding-bottom: 0.375rem;
+	border: 1px solid #CCCCCC;
+	border-radius: 0.5rem;
+	letter-spacing: 0.196px;
+	-webkit-appearance: none;
+	margin-bottom: 1rem;
+	outline: none;
 }
 select.input-box-data {
 	padding-right: 3.375rem;
 	color: #827C7C;
+	box-sizing:border-box;
+	width: 100%;
+}
+select.input-box-default {
+	color: #827C7C;
+	box-sizing:border-box;
+	width: 100%;
 }
 .icon-right {
 	position: absolute;
@@ -34,7 +62,7 @@ select.input-box-data {
 	width: 1rem;
 	left: 1.1875rem;
 	right: 1.25rem;
-	top: 0.9rem;
+	top: 1rem;
 }
 input[type="radio"] {
 	width: 1.5rem;

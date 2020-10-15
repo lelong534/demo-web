@@ -112,10 +112,83 @@ methods.forEach(method => {
         target.classList.remove('hidden')
     })
 })
+
 $(document).ready(function() {
     var height = $(".location-body__left .location-content").height();
     var title = $(".location-body__right .body-title").height();
     if ($(window).width() > 767) {
         $(".location-body__right .m-card .body-content").height(height-title-75);
     }
+
+    //service content
+    if ( $(window).width() > 767 ) {
+        $("#js-service-pack").removeClass('lightSlider');
+    } else {
+        $("#js-service-pack").addClass('lightSlider');
+    }
+
+    // cicular progress
+    $(".progress").each(function() {
+
+        var value = $(this).attr('data-value');
+        var left = $(this).find('.progress-left .progress-bar');
+        var right = $(this).find('.progress-right .progress-bar');
+
+        if (value > 0) {
+            if (value <= 50) {
+                right.css('transform', 'rotate(' + percentageToDegrees(value) + 'deg)')
+            } else {
+                right.css('transform', 'rotate(180deg)')
+                left.css('transform', 'rotate(' + percentageToDegrees(value - 50) + 'deg)')
+            }
+        }
+
+    })
+
+    function percentageToDegrees(percentage) {
+        return percentage / 100 * 360
+    }
+        
+    //upload avatar
+    function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            console.log(input.files[0])
+            reader.onload = function(e) {
+                $('#imagePreview').css('background-image', 'url('+e.target.result +')');
+                $('#imagePreview').hide();
+                $('#imagePreview').fadeIn(650);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+    $("#imageUpload").change(function() {
+        console.log("eee");
+        readURL(this);
+    })
+
+    //chart
+    var ctx = document.getElementById('myChart').getContext('2d');
+    var myChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: ['12/2019', '1/2020', '2/2020', '3/2020', '4/2020', '5/2020'],
+            datasets: [{
+                label: 'Tiền cước (nghìn đồng)',
+                data: [120, 190, 30, 50, 200, 300],
+                backgroundColor: '#C6D4E5',
+                hoverBackgroundColor: "#237BD3",
+                maxBarThickness: 20
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    })
 })

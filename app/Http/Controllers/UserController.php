@@ -1,5 +1,4 @@
 <?php
-
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
@@ -15,5 +14,20 @@ class UserController extends Controller
     }
     public function forgetPassword() {
     	return view('user.forget_password');
+    }
+    public function prepaidInfo() {
+        return view('user.prepaid_info');
+    }
+    public function postpaidInfo() {
+        return view('user.postpaid_info');
+    }
+    public function check() {
+        return view('user.check');
+    }
+    public function information() {
+        return view('user.information');
+    }
+    public function update() {
+        return view('user.update');
     }
 }

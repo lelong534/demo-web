@@ -7,6 +7,89 @@
 	margin: auto;
 	cursor: pointer;
 }
+.btn-border {
+	background-color: var(--blue);
+	padding: 0.5rem 3.625rem;
+	color: white;
+	width: fit-content;
+	display: block;
+	margin: auto;
+	cursor: pointer;
+	border-radius: 0.5rem;
+	margin-top: 1.5rem;
+}
+.btn-border-fit {
+	background-color: var(--blue);
+	padding: 0.5rem 0;
+	width: 7.5rem;
+	color: white;
+	text-align: center;
+	display: block;
+	margin: auto;
+	cursor: pointer;
+	border-radius: 0.5rem;
+	margin-top: 1.5rem;
+}
+.btn-border-long {
+	background-color: var(--blue);
+	padding: 0.5rem 1.75rem;
+	color: white;
+	text-align: center;
+	display: block;
+	margin: auto;
+	cursor: pointer;
+	border-radius: 0.5rem;
+	margin-top: 1.5rem;
+}
+.btn-relative-long {
+	background-color: var(--blue);
+	padding: 0.5rem 1.75rem;
+	color: white;
+	text-align: center;
+	display: block;
+	margin: auto;
+	cursor: pointer;
+	border-radius: 0.5rem;
+	margin-top: 1.5rem;
+}
+.btn-bg-white {
+	background-color: white;
+	border: 1px solid var(--blue);
+	border-radius: 1.5rem;
+	color: var(--blue);
+	padding: 0.5rem 0;
+	text-align: center;
+	width: 8.125rem;
+	font-size: 0.8125rem;
+	display: block;
+	margin: auto;
+}
+.btn-bg-white-fit {
+	background-color: white;
+	border: 1px solid var(--blue);
+	border-radius: 1.5rem;
+	color: var(--blue);
+	padding: 0.5rem 0;
+	width: 5.5rem;
+	text-align: center;
+	font-size: 0.8125rem;
+	display: block;
+	margin: auto;
+}
 .button:hover {
 	color: white;
+}
+@media screen and (min-width: 768px){  
+	.btn-border-fit {	
+		position: absolute;
+		bottom: 2rem;
+		left: 50%;
+	    transform: translate(-50%);
+	}
+	.btn-border-long {
+		position: absolute;
+		bottom: 2rem;
+		left: 50%;
+	    transform: translate(-50%);
+	}
 }

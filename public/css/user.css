@@ -1,0 +1,285 @@
+.m-card.user-info .avatar {
+	width: 4.25rem;
+	margin: 1rem auto;
+}
+.m-card.user-info {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem;
+	line-height: 1.3125rem
+}
+.m-card.user-info .btn-bg-white-fit {
+	margin-top: 1rem;
+}
+.account-balance-list-items {
+	display: flex;
+}
+.user-info-content .m-card {
+	margin-bottom: 0.625rem;
+}
+li.account-balance-item {
+	width: 33.333%;
+	border-right: 1px solid #B2BCC8;
+	padding: 0.5rem;
+    text-align: center;
+}
+li.account-balance-item:last-child {
+	border-right: none;
+}
+.account-balance-more {
+	margin-top: 0.5rem;
+	display: flex;
+}
+.using-pack-data-info {
+	display: flex;
+}
+.pack-items {
+    margin: auto;
+}
+.m-card.using-pack-data a {
+	margin-top: 1.5rem;
+}
+.m-card.using-pack-data .pack-items li {
+	margin-left: 0;
+}
+.other-mymobifone .m-card.customer {
+	max-height: none;
+}
+.other-mymobifone .m-card.customer .customer-content {
+	position: relative;
+	bottom: -0.25rem;
+}
+.other-mymobifone .m-card.customer .customer-img {
+    padding-bottom: 0.125rem;
+}
+.other-mymobifone .content-body{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: var(--card-column-gap);
+	grid-row-gap: var(--card-row-gap);
+	margin-top: 1.5rem;
+}
+.user-info-content .carousel-inner {
+	overflow: visible;
+}
+.user-info-content ol.carousel-indicators {
+	bottom: -1.5rem;
+}
+.user-info-content ol.carousel-indicators li.active {
+	background: #91A3B8;
+}
+.user-info-content ol.carousel-indicators li {
+	background: #D8D8D8;
+	width: 0.4rem;
+	height: 0.4rem;
+}
+.other-mymobifone .m-card.customer .customer-img img {
+	max-height: 4.6rem;
+}
+.other-mymobifone .using-pack__img {
+	padding: 0;
+}
+.user-info-content-right .m-card.no-pack {
+	position: relative;
+}
+.user-info-content-right .m-card.no-pack .des{ 
+	text-align: center;
+	padding-top: 4rem;
+}
+.user-info-content-right .m-card.no-pack img {
+	margin: auto;
+}
+.m-card.user-post-paid-info {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+.info-items {
+	display: flex;
+}
+.info-item-list {
+	align-items: center;
+    margin: auto 1rem;
+}
+.m-card.user-post-paid-info a{
+	margin-right: 0;
+}
+.info-left .m-card.user-post-paid-info h3.title {
+	margin-top: 1.5rem;
+	padding-top: 1.5rem;
+	border-top: 1px solid #E0E0E0;
+}
+.m-card.user-post-paid-info .price {
+	color: var(--blue);
+	font-weight: 500;
+	font-size: 1.5rem
+}
+.m-card.user-post-paid-info .time {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+    flex: 1;
+    padding-bottom: 0;
+}
+.info-right .user-post-paid-info ul {
+	display: flex;
+	flex-direction: column;
+}
+.info-right .user-post-paid-info a {
+	margin: auto;
+	margin-top: 1.5rem;
+}
+.info-right .user-post-paid-info ul li {
+	display: flex;
+	justify-content: space-between;
+}
+.user-post-paid-info-content .info-right {
+	margin-top: 0.625rem;
+}
+.m-card.check h3.title {
+	margin-bottom: 1.5rem;
+}
+.m-card.check .btn-border {
+	margin-top: 1rem;
+}
+li.card-item {
+	border-bottom: 1px solid #E0E0E0;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+li.card-item:last-child {
+	border-bottom: none;
+}
+li.card-item .btn-bg-white-fit{
+	margin-right: 0;
+}
+.m-card.check {
+	margin-top: 0.625rem;
+}
+@media screen and (min-width: 768px){ 
+	.user-info-content.user-info-list-items {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-column-gap: var(--card-column-gap);
+	}
+	.user-info-content.user-info-list-items .account-balance {
+		grid-column-start: 2;
+		grid-column-end: 4;
+		position: relative;
+	}
+	.user-info-content-left .pack-items {
+		display: flex;
+		flex-direction: column;
+	}
+	.account-balance-more {
+		display: flex;
+		position: absolute;
+		bottom: 1.5rem;
+		justify-content: center;
+		width: 100%;
+	}
+	.account-balance-more .btn-bg-white-fit {
+		margin: 0 1rem;
+	}
+	.user-info-content.using-pack {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-column-gap: var(--card-column-gap);
+	}
+	.using-pack-data-info {
+		flex-direction: column;
+	}
+	.pack-items .is-desktop {
+		display: none;
+	}
+	.pack-items .value {
+		color: var(--blue);
+	}
+	.pack-items .pack-item-price {
+		color: var(--blue);
+	}
+	.pack-items {
+		margin: 0;
+		margin-top: 1.375rem;
+	}
+	.pack-items .pack-item {
+		font-size: 14px;
+	}
+	.progress {
+		margin: auto;
+	}
+	.progress .is-desktop {
+		display: block;
+	}
+	.user-info-content .content-header h2 {
+		margin-right: 0 !important;
+	}
+	.using-pack-data .btn-border, .using-pack-charge-content .btn-border{
+		background-color: var(--blue);
+		position: relative;
+		top: 0;
+		right: 0;
+	    padding: 0.5rem 3.625rem;
+	    color: white;
+	    width: fit-content;
+	    display: block;
+	    margin: auto;
+	    cursor: pointer;
+	    border-radius: 0.5rem;
+	    margin-top: 1.5rem;
+	}
+	.using-pack-charge-content .pack-items li {
+		margin-left: 0;
+	}
+	.user-info-content.using-pack .m-card {
+		height: 27rem;
+	}
+	.other-mymobifone .content-body {
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+	}
+	.other-mymobifone .m-card.customer .customer-content {
+	    bottom: -1.25rem;
+	}
+	.user-info-content .m-card.using-pack.service-pack .using-pack__img {
+    	max-width: 16.625rem;
+	}
+	.user-post-paid-info-content {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-column-gap: var(--card-column-gap);
+	}
+	.user-post-paid-info-content .info-right {
+		margin-top: 0;
+	}
+	.m-card.check {
+	    margin-top: 1rem;
+	}
+	.update-infomation-body {
+		background-color: white;
+		padding-top: var(--card-padding-top);
+		padding-bottom: var(--card-padding-bottom);
+		padding-left: var(--card-padding-left);
+		padding-right: var(--card-padding-right);
+		background-color: var(--white);
+		border: 1px solid #E0E0E0;
+		box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.06);
+		border-radius: 0.5rem;
+	}
+	.update-infomation-body .inpupt-box{
+		margin-bottom: ;
+	}
+}
+@media screen and (min-width: 992px){  
+	.other-mymobifone .m-card.customer {
+	    padding-bottom: 2.5rem;
+	}
+	.user-info-content .m-card.using-pack.service-pack .using-pack__img {
+    	max-width: 20.625rem;
+	}
+	.m-card.check {
+	    margin-top: 2rem;
+	}
+}

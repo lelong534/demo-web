@@ -13,7 +13,6 @@
         <!-- Fonts -->
         <link href="{{ asset('css/base.css') }}" rel="stylesheet">
         <link href="{{ asset('css/customer.css') }}" rel="stylesheet">
-        <link href="{{ asset('css/jquery-ui/jquery-ui.min.css') }}" rel="stylesheet">
         <link href="{{ asset('css/bootstrap/bootstrap.min.css') }}" rel="stylesheet">
         <link href="{{ asset('css/introduction.css') }}" rel="stylesheet">
         <link href="{{ asset('css/bootstrap/bootstrap.min.css') }}" rel="stylesheet">
@@ -51,7 +50,6 @@
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
         <script src="{{ asset('js/bootstrap/bootstrap.min.js') }}"></script>
         <script src="{{ asset('js/home.js')}}"></script>
-        <script src="{{ asset('js/jquery-ui/jquery-ui.min.js')}}"></script>
         <script src="{{ asset('js/bootstrap/bootstrap.min.js') }}"></script>
     </body>
 </html>

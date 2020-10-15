@@ -13,4 +13,7 @@ class ServiceController extends Controller
     public function packOfData() {
     	return view('service.pack_of_data');
     }
+    public function packOfService() {
+    	return view('service.pack_of_service');
+    }
 }

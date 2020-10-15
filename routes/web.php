@@ -13,21 +13,32 @@
 
 Route::get('/', 'HomeController@index')->name("home");
 Route::get('/employ', 'EmployController@grid')->name("employ");
-Route::get('/detail/{id}', [
+Route::get('/employ/detail/{id}', [
 	'as' => 'detail',
 	'uses' => 'EmployController@getDetail'
 ]);
 // Route::post('/detail/{id}', 'EmployController@postCV');
 Route::get('/sendcv/{id}', 'EmployController@getSendcv')->name('sendcv');
 Route::post('/sendcv/{id}', 'EmployController@postCV')->name('sendcv');
-Route::get('/news', 'NewsController@index')->name('news');
-Route::get('/news/detail', 'NewsController@detail')->name('news_detail');
 Route::get('/pre-login', 'UserController@preLogin')->name('pre_login');
 Route::get('/login', 'UserController@login')->name('login');
 Route::get('/forget-password', 'UserController@forgetPassword')->name('forget_password');
-Route::get('/customer/reflect', 'CustomerController@reflect')->name('customer_reflect');
-Route::get('/customer/question', 'CustomerController@question')->name('customer_question');
-Route::get('/customer/location', 'CustomerController@location')->name('customer_location');
+Route::prefix('news')->group(function () {
+	Route::get('/', 'NewsController@index')->name('news');
+	Route::get('detail', 'NewsController@detail')->name('news_detail');
+});
+Route::prefix('user')->group(function () {
+	Route::get('prepaid-info', 'UserController@prepaidInfo')->name('prepaid_info');
+	Route::get('postpaid-info', 'UserController@postpaidInfo')->name('postpaid_info');
+	Route::get('check', 'UserController@check')->name('user_check');
+	Route::get('information', 'UserController@information')->name('user_information');
+	Route::get('update', 'UserController@update')->name('user_update');
+});
+Route::prefix('customer')->group(function() {
+	Route::get('reflect', 'CustomerController@reflect')->name('customer_reflect');
+	Route::get('question', 'CustomerController@question')->name('customer_question');
+	Route::get('location', 'CustomerController@location')->name('customer_location');
+});
 Route::prefix('introduction')->group(function () {
 	Route::get('/', 'HomeController@introduct')->name('introduction');
 	Route::get('history', 'HomeController@history')->name('introduction_history');
@@ -40,6 +51,7 @@ Route::prefix('introduction')->group(function () {
 	Route::get('supplier', 'HomeController@supplier')->name('introduction_supplier');
 });
 Route::prefix('service')->group(function () {
-	Route::get('/pack-of-data', 'ServiceController@packOfData')->name('packofdata');
-	Route::get('/pack-of-charge', 'ServiceController@packOfCharge')->name('packofcharge');
+	Route::get('/pack-of-data', 'ServiceController@packOfData')->name('pack_of_data');
+	Route::get('/pack-of-charge', 'ServiceController@packOfCharge')->name('pack_of_charge');
+	Route::get('/pack-of-service', 'ServiceController@packOfService')->name('pack_of_service');
 });
