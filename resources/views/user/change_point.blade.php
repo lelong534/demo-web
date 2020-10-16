@@ -38,11 +38,41 @@
 			<ul class="list-space">
 				<li>
 					<div class="des">Điểm tích lũy tháng</div>
-					<div class="value">4</div>
+					<div class="input">
+						<div class="input">
+							<span class="minus">-</span>
+	                        <input type="number" class="count" value="1">
+	                        <span class="plus">+</span>
+						</div>
+					</div>
 				</li>
 				<li>
 					<div class="des">Điểm tích lũy tháng</div>
 					<div class="value">1.248 điểm</div>
+				</li>
+				<li>
+					<div class="des">Số cước nhận được</div>
+					<div class="value">0</div>
+				</li>
+			</ul>
+			<a href="#" class="btn-border">Đổi điểm</a>
+		</div>
+
+		<div class="m-card">
+			<h3 class="title">Đổi gói combo</h3>
+			<div class="point">MDC99</div>
+			<p>Gọi liên mạng:<span><strong> 25 phút</strong></span></p>
+			<p>SMS trong nước:<span><strong> 80 SMS</strong></span></p>
+			<p class="text-blue">2000 điểm</p>
+			<div class="text-note">Lưu ý:</div>
+			<ul class="list-space">
+				<li>
+					<div class="des">Điểm tích lũy tháng</div>
+					<div class="input">
+						<span class="minus">-</span>
+                        <input type="number" class="count" value="1">
+                        <span class="plus">+</span>
+					</div>
 				</li>
 				<li>
 					<div class="des">Số cước nhận được</div>

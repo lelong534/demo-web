@@ -37,6 +37,7 @@ Route::prefix('user')->group(function () {
 	Route::get('connect', 'UserController@connect')->name('user_connect');
 	Route::get('gift/detail', 'UserController@giftDetail')->name('gift_detail');
 	Route::get('change-point', 'UserController@changePoint')->name('change_point');
+	Route::get('check-history', 'UserController@checkHistory')->name('check_history');
 });
 Route::prefix('customer')->group(function() {
 	Route::get('reflect', 'CustomerController@reflect')->name('customer_reflect');

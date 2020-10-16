@@ -135,6 +135,7 @@ li.card-item {
 	grid-template-columns: 1fr;
 	grid-column-gap: var(--card-column-gap);
 	grid-row-gap: var(--card-row-gap);
+	margin-top: 1.625rem;
 }
 .grid-four-column {
 	display: grid;
@@ -151,13 +152,16 @@ li.card-item {
 ul.list-space {
 	display: flex;
 	flex-direction: column;
-	position: relative;
 }
 ul.list-space .value {
-	position: absolute;
-	right: 0;
+	margin-left: auto;
 	color: var(--blue);
 	font-weight: 500;
+}
+ul.list-space .input {
+	margin-left: auto;
+	width: min-content;
+	display: flex;
 }
 ul.list-space li {
 	display: flex;

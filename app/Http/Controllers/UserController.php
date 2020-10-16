@@ -42,4 +42,7 @@ class UserController extends Controller
     public function changePoint() {
         return view('user.change_point');
     }
+    public function checkHistory() {
+        return view('user.check_history');
+    }
 }

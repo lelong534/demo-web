@@ -5,7 +5,6 @@
   background: none;
   position: relative;
 }
-
 .progress::after {
   content: "";
   width: 100%;
@@ -66,4 +65,11 @@
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.progress.progress-small {
+  width: 2.75rem;
+  height: 2.75rem;
+  background: none;
+  position: relative;
 }

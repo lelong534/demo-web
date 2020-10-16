@@ -261,6 +261,9 @@ ul.give-list-items li.give-item img.icon-small {
 .gift-header .gift-header__top-email .input-box select{
 	margin: 0;
 }
+.change-point .grid-two-column {
+	margin-top: 0.625rem;
+}
 .change-point .grid-two-column .text-note {
 	font-style: italic;
 }
@@ -268,12 +271,134 @@ ul.give-list-items li.give-item img.icon-small {
 	margin-top: 1.5rem;
 }
 .change-point .grid-two-column ul.list-space li {
-	padding: 1rem 0;
+	padding: 1.5rem 0;
 	border-top: 1px solid #D8D8D8;
 	margin-top: 0;
+	line-height: 1.875rem;
 }
 .change-point .grid-two-column ul.list-space li:last-child {
 	border-bottom: 1px solid #D8D8D8;
+}
+
+/*=== crement button ===*/
+.list-space .input .count {
+    color: #000;
+    font-weight: 500;
+    padding: 0 2px;
+    margin: 0 1.125rem;
+    min-width: 35px;
+    text-align: center;
+}
+.list-space .input .plus {
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: top;
+    color: white;
+    width: 30px;
+    height: 30px;
+    font: 30px/1 Arial,sans-serif;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #237BD3;
+}
+.list-space .input .minus {
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: top;
+    color: white;
+    width: 30px;
+    height: 30px;
+    font: 30px/1 Arial,sans-serif;
+    text-align: center;
+    border-radius: 50%;
+    background-clip: padding-box;
+    background-color: #237BD3;
+}
+.list-space .input .minus:hover{
+    background-color: #717fe0 !important;
+}
+.list-space .input .plus:hover{
+    background-color: #717fe0 !important;
+}
+.list-space .input input{  
+    border: 0;
+    width: 2%;
+}
+.list-space .input input::-webkit-outer-spin-button,
+.list-space .input input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.list-space .input input{
+    background-color:#D2D2D2;
+}
+ul.history-list-items > li .item-wrapper {
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid #D8D8D8;
+    cursor: pointer;
+}
+.call-history ul.history-list-items > li {
+	padding: 0.9rem 0;
+	display: flex;
+    justify-content: space-between;
+}
+ul.history-list-items > li:last-child .item-wrapper {
+	border-bottom: 0;
+}
+ul.history-list-items li .item-left {
+	display: flex;
+    align-items: center;
+}
+ul.history-list-items li .item-left img{
+	margin-right: 2rem;
+}
+ul.history-list-items li .item-left ul.list-space li {
+	margin: 0;
+	padding: 0;
+}
+ul.history-list-items li .item-right {
+	display: flex;
+}
+.call-history ul.history-list-items li .item-right {
+	display: flex;
+	flex-direction: column;
+}
+.call-history ul.history-list-items li .item-right .time {
+	padding-right: 0;
+}
+ul.history-list-items li .item-right img:first-child { 
+	margin-right: 2rem;
+}
+ul.history-list-items li .item-left .progress {
+	margin: 0;
+	margin-right: 1rem;
+}
+ul.history-list-items li .item-left ul.list-space li {
+	margin: 0.3rem 0;
+}
+.history-list-items.active {
+	display: block;
+}
+.history-list-items.hidden {
+	display: none;
+}
+ul.history-list-items li.item.active {
+    border-left: 5px solid #007bff;
+    transition-duration: 0.5s;
+}
+.charge-history .m-card {
+	padding-left: 0;
+    padding-right: 0;
+}
+.charge-history .m-card .title {
+	padding-left: var(--card-padding-left);
+}
+.charge-history .m-card .item-wrapper {
+	margin-left: var(--card-padding-left);
+    margin-right: var(--card-padding-right);
 }
 @media screen and (min-width: 768px){ 
 	ul.list-items {
@@ -448,6 +573,9 @@ ul.give-list-items li.give-item img.icon-small {
 		align-items: center;
     	justify-content: space-between;
 	}
+	.change-point .m-card p {
+		line-height: 1.8rem;
+	}
 	.change-point .m-card ul.list-items {
 		margin: 0;
 		padding: 0;
@@ -455,6 +583,22 @@ ul.give-list-items li.give-item img.icon-small {
 	}
 	.change-point .m-card .point.is-desktop {
 		display: block;
+	}
+	.change-point .grid-two-column {
+		margin-top: 1rem;
+	}
+	.change-point .grid-two-column ul.list-space li {
+		padding: 1.75rem 0;
+	}
+	.list-space .input .count {
+		margin: 0 1.5rem;
+	}
+	ul.history-list-items li .item-left .progress {
+		margin: 0;
+		margin-right: 2.25rem;
+	}
+	.grid-two-column > div .m-card {
+		height: 100%;
 	}
 }
 @media screen and (min-width: 992px){  
