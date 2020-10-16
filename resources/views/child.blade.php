@@ -48,13 +48,53 @@
                             @endisset
 
                             @isset($page_link_second_level)
+                                @if (isset($page_link_third_level))
                                 <span>
                                     <img 
                                         src="https://img.icons8.com/fluent-systems-filled/24/000000/more-than.png"
                                         class="icon"     
                                     />
                                 </span>&nbsp;&nbsp;&nbsp;
-                                <h2 class="text-primary">{{$page_link_second_level}}</h2>
+                                <h2>{{$page_link_second_level}}</h2>&nbsp;&nbsp;&nbsp;
+                                @else
+                                <span>
+                                    <img 
+                                        src="https://img.icons8.com/fluent-systems-filled/24/000000/more-than.png"
+                                        class="icon"     
+                                    />
+                                </span>&nbsp;&nbsp;&nbsp;
+                                <h2 class="text-primary">{{$page_link_second_level}}</h2>&nbsp;&nbsp;&nbsp;
+                                @endif
+                            @endisset
+
+                            @isset($page_link_third_level)
+                                @if(isset($page_link_fourth_level))
+                                <span>
+                                    <img 
+                                        src="https://img.icons8.com/fluent-systems-filled/24/000000/more-than.png"
+                                        class="icon"     
+                                    />
+                                </span>&nbsp;&nbsp;&nbsp;
+                                <h2>{{$page_link_third_level}}</h2>&nbsp;&nbsp;&nbsp;
+                                @else
+                                <span>
+                                    <img 
+                                        src="https://img.icons8.com/fluent-systems-filled/24/000000/more-than.png"
+                                        class="icon"     
+                                    />
+                                </span>&nbsp;&nbsp;&nbsp;
+                                <h2 class="text-primary">{{$page_link_third_level}}</h2>&nbsp;&nbsp;&nbsp;
+                                @endif
+                            @endisset
+
+                            @isset($page_link_fourth_level)
+                                <span>
+                                    <img 
+                                        src="https://img.icons8.com/fluent-systems-filled/24/000000/more-than.png"
+                                        class="icon"     
+                                    />
+                                </span>&nbsp;&nbsp;&nbsp;
+                                <h2 class="text-primary">{{$page_link_fourth_level}}</h2>
                             @endisset
                         </div>
                         @yield('content')                     

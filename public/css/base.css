@@ -85,6 +85,9 @@ p.text-bold {
 	margin: 0;
 	font-weight: 500;
 }
+p {
+	margin: 0 !important;
+}
 ul{
 	margin: 0;
 	padding: 0;
@@ -863,7 +866,7 @@ ul.introduction {
 		--card-column-gap: 1.5rem;
 	}
 	:root {
-		--card-padding-top: 2.1875rem;
+		--card-padding-top: 1.6125rem;
 		--card-padding-left: 1.5rem;
 		--card-padding-right: 1.5rem;
 		--card-padding-bottom: 2rem;

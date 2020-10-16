@@ -30,4 +30,16 @@ class UserController extends Controller
     public function update() {
         return view('user.update');
     }
+    public function accountHistory() {
+        return view('user.account_history');
+    }
+    public function connect() {
+        return view('user.connect');
+    }
+    public function giftDetail() {
+        return view('user.gift_detail');
+    }
+    public function changePoint() {
+        return view('user.change_point');
+    }
 }

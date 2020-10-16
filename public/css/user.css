@@ -94,11 +94,17 @@ li.account-balance-item:last-child {
 }
 .m-card.user-post-paid-info {
 	display: flex;
+	position: relative;
 	flex-direction: column;
 	height: 100%;
 }
 .info-items {
 	display: flex;
+}
+.point {
+	color: var(--blue);
+	font-weight: 500;
+	font-size: 1.25rem;
 }
 .info-item-list {
 	align-items: center;
@@ -159,7 +165,120 @@ li.card-item .btn-bg-white-fit{
 .m-card.check {
 	margin-top: 0.625rem;
 }
+ul.list-items {
+	border-top: 1px solid #D8D8D8;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+}
+ul.list-items li {
+	display: flex;
+	align-items: center;
+}
+ul.list-items li img {
+	margin-right: 1rem;
+}
+ul.menu-list-items {
+	display: flex;
+	justify-content: space-between;
+}
+ul.menu-list-items li {
+	display: flex;
+	flex-direction: column;
+	width: 12.5%;
+	align-items: center;
+}
+ul.menu-list-items li p{
+	text-align: center;
+}
+ul.menu-list-items li .menu-item__thumb {
+	width: 5rem;
+	height: 5rem;
+	border: 0.5px solid #E5E5E5;
+	background-color: white;
+	box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.111045);
+	border-radius: 1.5rem;
+}
+ul.menu-list-items li .menu-item__thumb img {
+	width: 2rem;
+    height: inherit;
+    margin: auto;
+}
+ul.menu-list-items li.active .menu-item__thumb {
+	background-color: var(--blue);
+}
+ul.give-list-items li img {
+	width: 7.5rem;
+	margin-right: 1.5rem;
+}
+ul.give-list-items li.give-item {
+	display: flex;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	border-top: 1px solid #D8D8D8;
+}
+ul.give-list-items li.give-item img.icon-small {
+	margin: auto;
+    margin-right: 0;
+    margin-left: auto;
+}
+.gift-header .m-card {
+	display: flex;
+	flex-direction: column;
+}
+.gift-header__top-left {
+	display: flex;
+	padding-bottom: 1rem;
+	border-bottom: 1px solid #D8D8D8;
+}
+.gift-header--no-available {
+	display: flex;
+	padding-top: 1rem;
+}
+.gift-header .m-card .gift-header__top-left img {
+	width: 5rem;
+	margin-right: 1rem;	
+}
+.gift-header--no-available img {
+	width: 4.25rem;
+	margin-right: 1rem;
+    margin-left: 0.75rem;
+}
+.gift-header__top-left ul .name {
+	font-weight: 500;
+}
+.gift-content .m-card {
+	margin-top: 0.625rem;
+}
+.gift-header .gift-header__top-email {
+	background: white;
+	padding-top: 1rem;
+	display: flex;
+	flex-direction: column;
+}
+.gift-header .gift-header__top-email a {
+	line-height: 1.75rem;
+}
+.gift-header .gift-header__top-email .input-box select{
+	margin: 0;
+}
+.change-point .grid-two-column .text-note {
+	font-style: italic;
+}
+.change-point .grid-two-column ul.list-space {
+	margin-top: 1.5rem;
+}
+.change-point .grid-two-column ul.list-space li {
+	padding: 1rem 0;
+	border-top: 1px solid #D8D8D8;
+	margin-top: 0;
+}
+.change-point .grid-two-column ul.list-space li:last-child {
+	border-bottom: 1px solid #D8D8D8;
+}
 @media screen and (min-width: 768px){ 
+	ul.list-items {
+		padding-left: 3rem;
+	}
 	.user-info-content.user-info-list-items {
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
@@ -271,6 +390,72 @@ li.card-item .btn-bg-white-fit{
 	.update-infomation-body .inpupt-box{
 		margin-bottom: ;
 	}
+	.other-mymobifone .m-card.customer {
+	    padding-bottom: 1.5rem;
+	}
+	.user-post-paid-info-content .m-card.user-post-paid-info a.btn-bg-white-fit {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+	.gift-header .m-card .gift-header__top-left img, .gift-header--no-available img {
+		width: 7.5rem;
+		margin-right: 1.5rem;	
+	}
+	.gift-header__top-left {
+		border-bottom: none;
+		padding-bottom: 0;
+	}
+	.gift-header .m-card .gift-header__top {
+		display: flex;
+		flex-direction: row;
+	}
+	.gift-header .m-card { 
+		border-radius: 1.5rem 1.5rem 0 0;
+	}
+	.gift-header .line {
+		border-bottom: 1px solid #E0E0E0;
+	}
+	.gift-content .m-card {
+		border-radius: 0 0 1.5rem 1.5rem;
+	    margin-top: -1px;
+	    border-top: 0;
+	}
+	.gift-header--no-available {
+		padding-top: 0;
+		margin-left: auto;
+    	max-width: 55%;
+	}
+	.gift-header--no-available p {
+		display: flex;
+    	align-items: center;
+    	font-style: italic;
+    	color: red;
+	}
+	.gift-header .gift-header__top-email {
+		flex-direction: row;
+		margin: auto;
+		margin-top: 1rem;
+	}
+	.gift-header .gift-header__top-email .input-box select {
+		width: 26rem;
+	}
+	.gift-header .gift-header__top-email a {
+		margin: 0;
+		margin-left: 2.875rem;
+	}
+	.change-point .m-card.top-content{
+		display: flex;
+		align-items: center;
+    	justify-content: space-between;
+	}
+	.change-point .m-card ul.list-items {
+		margin: 0;
+		padding: 0;
+		border-top: 0;
+	}
+	.change-point .m-card .point.is-desktop {
+		display: block;
+	}
 }
 @media screen and (min-width: 992px){  
 	.other-mymobifone .m-card.customer {
@@ -281,5 +466,10 @@ li.card-item .btn-bg-white-fit{
 	}
 	.m-card.check {
 	    margin-top: 2rem;
+	}
+	.user-post-paid-info-content .m-card.user-post-paid-info a.btn-bg-white-fit {
+		position: absolute;
+		right: 2.375rem;
+		top: 2.875rem;
 	}
 }

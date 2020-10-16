@@ -33,6 +33,10 @@ Route::prefix('user')->group(function () {
 	Route::get('check', 'UserController@check')->name('user_check');
 	Route::get('information', 'UserController@information')->name('user_information');
 	Route::get('update', 'UserController@update')->name('user_update');
+	Route::get('account-history', 'UserController@accountHistory')->name('account_history');
+	Route::get('connect', 'UserController@connect')->name('user_connect');
+	Route::get('gift/detail', 'UserController@giftDetail')->name('gift_detail');
+	Route::get('change-point', 'UserController@changePoint')->name('change_point');
 });
 Route::prefix('customer')->group(function() {
 	Route::get('reflect', 'CustomerController@reflect')->name('customer_reflect');

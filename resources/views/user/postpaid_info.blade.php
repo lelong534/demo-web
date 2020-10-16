@@ -48,7 +48,7 @@
 						<div class="value text-blue-bold">346.000 đ</div>
 					</li>
 					<li class="text-italic">Vui lòng thanh toán trước ngày 10/6/2020</li>
-					<a href="#" class="btn-border-long">Thanh toán</a>
+					<a href="#" class="btn-relative-long">Thanh toán</a>
 				</ul>
 			</div>
 		</div>
