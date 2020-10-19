@@ -12,17 +12,15 @@
 */
 
 Route::get('/', 'HomeController@index')->name("home");
-Route::get('/employ', 'EmployController@grid')->name("employ");
-Route::get('/employ/detail/{id}', [
-	'as' => 'detail',
-	'uses' => 'EmployController@getDetail'
-]);
-// Route::post('/detail/{id}', 'EmployController@postCV');
-Route::get('/sendcv/{id}', 'EmployController@getSendcv')->name('sendcv');
-Route::post('/sendcv/{id}', 'EmployController@postCV')->name('sendcv');
 Route::get('/pre-login', 'UserController@preLogin')->name('pre_login');
 Route::get('/login', 'UserController@login')->name('login');
 Route::get('/forget-password', 'UserController@forgetPassword')->name('forget_password');
+Route::prefix('employ')->group(function () {
+	Route::get('/', 'EmployController@grid')->name('employ');
+	Route::get('detail/{id}', 'EmployController@getDetail')->name('employ_detail');
+	Route::get('sendcv/{id}', 'EmployController@getSendcv')->name('employ_sendcv');
+	Route::post('sendcv/{id}', 'EmployController@postCV');
+});
 Route::prefix('news')->group(function () {
 	Route::get('/', 'NewsController@index')->name('news');
 	Route::get('detail', 'NewsController@detail')->name('news_detail');
@@ -59,4 +57,9 @@ Route::prefix('service')->group(function () {
 	Route::get('/pack-of-data', 'ServiceController@packOfData')->name('pack_of_data');
 	Route::get('/pack-of-charge', 'ServiceController@packOfCharge')->name('pack_of_charge');
 	Route::get('/pack-of-service', 'ServiceController@packOfService')->name('pack_of_service');
+});
+Route::prefix('utilities')->group(function () {
+	Route::get('/', 'UtilitiesController@index')->name('utilities_index');
+	Route::get('/payment-method', 'UtilitiesController@paymentMethod')->name('utilities_payment_method');
+	Route::get('/add-phone-number', 'UtilitiesController@addPhoneNumber')->name('utilities_add_phone_number');
 });

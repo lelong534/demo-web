@@ -26,7 +26,7 @@
 		    </div>
 
 		    <div class="login-content">
-		    	<div class="login-body login-body__method">
+		    	<div class="card-no-bg-mobile login-body__method">
 	    			<ul class="nav">
 	    				<li data-method-login-target="#quick-login" class="active">Đăng nhập nhanh</li>
 	    				<li data-method-login-target="#normal-login">Đăng nhập bằng mật khẩu</li>

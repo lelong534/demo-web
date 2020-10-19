@@ -715,30 +715,30 @@ ul.nav-list-mobile li {
 	letter-spacing: -0.337647px;
 	font-weight: var(--biger-font-weight);
 }
-.login-body .input-box, .login-body .button  {
+.card-no-bg-mobile .input-box, .card-no-bg-mobile .button  {
 	max-width: 33.625rem;
 	margin: 0 auto;
 }
-.login-body .button {
+.card-no-bg-mobile .button {
 	margin: auto;
 	margin-top: 3rem;
 	margin-bottom: 2.375rem;
 	text-transform: uppercase;
 	font-size: var(--smallest-font-size);
 }
-.login-body ul {
+.card-no-bg-mobile ul {
 	justify-content: center;
 	margin-bottom: 1.4375rem;
 }
-.login-body ul li:first-child {
+.card-no-bg-mobile ul li:first-child {
 	margin-right: 1.4375rem;
 }
-.login-body ul li {
+.card-no-bg-mobile ul li {
 	font-size: var(--smaller-font-size);
 	font-weight: 500;
 	cursor: pointer;
 }
-.login-body ul .active {
+.card-no-bg-mobile ul .active {
 	color: var(--blue);
 	line-height: 2rem;
 	border-bottom: 1px solid var(--blue);
@@ -791,7 +791,7 @@ ul.nav-list-mobile li {
     right: 0;
     border-bottom: 1px solid var(--blue);
 }
-.login-body .input-box{
+.card-no-bg-mobile .input-box{
 	margin-top: 0.75rem;
 }
 .hidden[data-method-login-content] {
@@ -852,6 +852,9 @@ ul.introduction {
 	}
 }
 @media screen and (min-width: 768px){
+	:root {
+		--smallest-font-size : 0.875rem;
+	}
 	body {
 		font-size: var(--normal-font-size) !important;
 	}
@@ -1089,7 +1092,7 @@ ul.introduction {
 		display: inline-flex;
 		align-items: center;
 	}
-	.login-body {
+	.card-no-bg-mobile {
 		padding-top: 2.25rem;
 		padding-bottom: 2.25rem;
 		background-color: white;
@@ -1097,15 +1100,15 @@ ul.introduction {
 		box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.06);
 		border-radius: 8px;
 	}
-	.login-body #normal-login {
+	.card-no-bg-mobile #normal-login {
 		padding-top: 2.25rem;
 		padding-bottom: 2.25rem;
 		background-color: white;
 		border: 1px solid #E0E0E0;
 		box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.06);
-		border-radius: 8px;
+		border-radius: 1.5rem;
 	}
-	.login-body.login-body__method {
+	.card-no-bg-mobile.login-body__method {
 		background: none;
 		border: none;
     	box-shadow: none;
@@ -1113,13 +1116,13 @@ ul.introduction {
 	.content-title.is-mobile {
 		display: none;
 	}
-	.login-body ul {
+	.card-no-bg-mobile ul {
 		margin-bottom: 2.0625rem;
 	}
-	.login-body ul li {
+	.card-no-bg-mobile ul li {
 		font-size : 1.125rem;
 	}
-	.login-body ul li:first-child {
+	.card-no-bg-mobile ul li:first-child {
 		margin-right: 4.1875rem;
 	}
 	#quick-login .m-card {
@@ -1397,6 +1400,9 @@ ul.introduction {
 	.other-news__content .news-item .news-image img {
 		margin-right: 1.5rem;
 		width: 21.5rem;
+	}
+	.card-no-bg-mobile {
+		border-radius: 1.125rem;
 	}
 }
 

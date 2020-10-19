@@ -26,7 +26,7 @@
 		    </div>
 
 		    <div class="login-content">
-		    	<div class="login-body">
+		    	<div class="card-no-bg-mobile">
 	    			<div class="input-box">
 			            <input type="text" name="phone" id="phone" class="input-box-data" placeholder="Nhập số điện thoại">	
 			            <span><img src="{{asset('source/icons/icon-phone_gray.svg')}}" class="input-box-icon"/></span>

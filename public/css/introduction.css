@@ -50,6 +50,7 @@ ul#partner-menu li.active {
 .introduction-body {
 	background-color: white;
 	margin-left: -0.5rem;
+	margin-right: -0.5rem;
 	margin-top: 1rem;
     padding: 1rem;
     border: 1px solid #E0E0E0;

@@ -42,7 +42,7 @@
                     </div>
                     <div class="search-job-box">
                         <select type="text" name="address" class="input-search-job">  
-                            <option value="">Nơi làm việc</option>      
+                            <option value="">Nơi làm việc</option>        
                             @foreach(['Hà Nội', 'Đà Nẵng', 'Hồ Chí Minh'] as $lc)
                                 @if(isset($address) && $lc == $address) 
                                     <option selected>{{$lc}}</option>
@@ -59,9 +59,8 @@
 
             <div class="employ-content">
                 <div class="content-body">
-                    @foreach($jobs as $job)     
                     <div class="m-card employ">
-                        <div class="card-job-title has-share">{{$job->name}}
+                        <div class="card-job-title has-share">Manager
                             <div class="card-job-title__button">
                                 <img class="icon-small" src="{{asset('source/icons/icon-share.svg')}}">
                                 <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A//123.31.17.73%3A8000/detail/1" target="popup">
@@ -71,27 +70,26 @@
                         <div class="card-job-body">
                             <div class="item">
                                 <img src="{{asset('source/icons/icon-location.svg')}}" alt="location" class="icon-small" />
-                                {{$job->address}}
+                                Hà Nội
                             </div>
                             <div class="item">
                                 <img src="{{asset('source/icons/icon-money.svg')}}" alt="money" class="icon-small" />
-                                Mức lương: {{$job->min_salary}} đ - {{$job->max_salary}} đ
+                                10.000.000 đ - 20.000.000 đ
                             </div>
                             <div class="item">
                                 <img src="{{asset('source/icons/icon-time.svg')}}" alt="time" class="icon-small" />
-                                Ngày hết hạn: {{$job->expired}}
+                                Ngày hết hạn: 20/10/2020
                             </div>
                             <div class="item">
                                 <div class="item__left">5 ngày trước</div>
                                 <div class="item__right" data-toggle="modal" data-target="#uploadCV">
-                                    <a href="{{route('detail',$job->id)}}" class="text-blue">Ứng tuyển</a>
+                                    <a href="#" class="text-blue">Ứng tuyển</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    @endforeach
 
-                    @include('pagination.default', ['paginator' => $jobs])
+                    @include('pagination.default', ['paginator' => null])
                 </div>
             </div>
         </div>
