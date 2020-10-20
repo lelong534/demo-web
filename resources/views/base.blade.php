@@ -19,7 +19,7 @@
         <link href="{{ asset('css/lightslider/lightslider.css') }}" rel="stylesheet">
         <link href="{{ asset('css/bootstrap/bootstrap.min.css') }}" rel="stylesheet">
         <link href="{{ asset('css/icon.css') }}" rel="stylesheet">
-        <link href="{{ asset('css/employ0.css') }}" rel="stylesheet">
+        <link href="{{ asset('css/employ.css') }}" rel="stylesheet">
         <link href="{{ asset('css/service.css') }}" rel="stylesheet">
         <link href="{{ asset('css/pagination.css') }}" rel="stylesheet">
     </head>
