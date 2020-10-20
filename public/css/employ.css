@@ -86,7 +86,7 @@ input[type='file']{
 /*form search job*/
 .form-search-job {	
 	position: relative;
-	top: -100px;
+	top: -230px;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;

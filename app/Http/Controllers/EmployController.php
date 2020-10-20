@@ -91,10 +91,10 @@ class EmployController extends Controller
 	public function grid() {
 		return view('employ.index');
 	}
-	public function getDetail($id) {
+	public function getDetail() {
 		return view('employ.employ_detail');
 	}
-	public function getSendcv($id) {
+	public function getSendcv() {
 		return view('employ.sendcv');
 	}
 }

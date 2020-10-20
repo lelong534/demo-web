@@ -130,6 +130,15 @@ li.card-item {
 .text-note {
 	color: #666666;
 }
+.text-note-right {
+    text-align: end;
+    font-style: italic;
+    font-size: var(--smallest-font-size);
+}
+.grid-input {
+	display: grid;
+	grid-template-columns: 1fr;
+}
 .grid-two-column {
 	display: grid;
 	grid-template-columns: 1fr;
@@ -877,6 +886,13 @@ ul.introduction {
 		--card-padding-left: 1.5rem;
 		--card-padding-right: 1.5rem;
 		--card-padding-bottom: 2rem;
+	}
+	.is-desktop {
+		display: block;
+	}
+	.grid-input {
+		grid-template-columns: 1fr 1fr;
+		grid-column-gap: var(--card-column-gap);
 	}
 	.grid-two-column {
 		grid-template-columns: 1fr 1fr;

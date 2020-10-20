@@ -17,9 +17,9 @@ Route::get('/login', 'UserController@login')->name('login');
 Route::get('/forget-password', 'UserController@forgetPassword')->name('forget_password');
 Route::prefix('employ')->group(function () {
 	Route::get('/', 'EmployController@grid')->name('employ');
-	Route::get('detail/{id}', 'EmployController@getDetail')->name('employ_detail');
-	Route::get('sendcv/{id}', 'EmployController@getSendcv')->name('employ_sendcv');
-	Route::post('sendcv/{id}', 'EmployController@postCV');
+	Route::get('detail', 'EmployController@getDetail')->name('employ_detail');
+	Route::get('sendcv', 'EmployController@getSendcv')->name('employ_sendcv');
+	Route::post('sendcv', 'EmployController@postCV');
 });
 Route::prefix('news')->group(function () {
 	Route::get('/', 'NewsController@index')->name('news');
