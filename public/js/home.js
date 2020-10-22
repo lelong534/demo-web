@@ -163,7 +163,6 @@ $(document).ready(function() {
         }
     }
     $("#imageUpload").change(function() {
-        console.log("eee");
         readURL(this);
     })
 
@@ -177,6 +176,14 @@ $(document).ready(function() {
         if ($('.count').val() == 0) {
             $('.count').val(1);
         }
+    })
+    // method pay
+    $('.face-value').on('click', function() {
+        var faceValues = document.querySelectorAll('.face-value');
+        faceValues.forEach(faceValue => {
+            faceValue.classList.remove('active');
+        })
+        $(this).addClass('active');
     })
 
     //chart

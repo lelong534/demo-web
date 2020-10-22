@@ -13,7 +13,10 @@ class UtilitiesController extends Controller
     public function paymentMethod() {
     	return view('utilities.payment_method');
     }
-    public function addPhoneNumber() {
-    	return view('utilities.add_phone_number');
+    public function addPhonePrepaid() {
+    	return view('utilities.add_phone_prepaid');
+    }
+    public function addPhonePostpaid() {
+        return view('utilities.add_phone_postpaid');
     }
 }

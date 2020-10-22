@@ -127,7 +127,7 @@
 					<div class="modal-body-item last">
 						<h3 class="title">Thư giới thiệu</h3>
 				        <div class="input-box">
-				            <textarea type="text" name="invitation" style="height: 112px; padding-top: 12px;" class="input-box-data" placeholder="Viết thư giới thiệu (không bắt buộc)" ></textarea>
+				            <textarea type="text" name="invitation" style="height: 112px; padding-top: 12px; line-height: 1.5rem;" class="input-box-data" placeholder="Viết thư giới thiệu (không bắt buộc)" ></textarea>
 				            <span><img src="{{asset('source/icons/icon-letter_gray.svg')}}" class="input-box-icon"/></span>
 				        </div>
 				        <div class="text-note-right">Tối đa 3000 kí tự</div>

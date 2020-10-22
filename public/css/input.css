@@ -15,8 +15,8 @@
 	border-radius: 0.5rem;
 	letter-spacing: 0.196px;
 	-webkit-appearance: none;
-	margin-bottom: 1rem;
 	outline:none;
+	margin-bottom: 0.625rem;
 }
 .input-box-default:focus {
 	border: 1px solid #CCCCCC !important;
@@ -41,6 +41,7 @@
 select.input-box-data {
 	padding-right: 3.375rem;
 	color: #827C7C;
+	background-color: transparent;
 	box-sizing:border-box;
 	width: 100%;
 }
@@ -94,5 +95,8 @@ input[type="radio"] {
 		left: 1.1875rem;
 		right: 1.25rem;
 		top: 0.9rem;
+	}
+	.input-box-data {
+		margin-bottom: 1rem;
 	}
 }
