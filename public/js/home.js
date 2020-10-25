@@ -148,7 +148,40 @@ $(document).ready(function() {
     function percentageToDegrees(percentage) {
         return percentage / 100 * 360
     }
-        
+    // login OTP
+    $('.digit-group').find('input').each(function() {
+        $(this).attr('maxlength', 1);
+
+        $(this).on('focus', function() {
+            $(this).css("background", "none");
+        })
+
+        $(this).on('keyup', function(e) {
+            var parent = $($(this).parent());
+            
+            if(e.keyCode === 8 || e.keyCode === 37) {
+                var prev = parent.find('input#' + $(this).data('previous'));
+                if(e.keyCode === 8) {
+                    $(this).css("background", "url('./source/image/i_digit_number.svg')");
+                }
+                
+                if(prev.length) {
+                    $(prev).select();
+                }
+            } else if((e.keyCode >= 48 && e.keyCode <= 57) || (e.keyCode >= 65 && e.keyCode <= 90) || (e.keyCode >= 96 && e.keyCode <= 105) || e.keyCode === 39) {
+                var next = parent.find('input#' + $(this).data('next'));
+                $(this).css("background", "none");
+                if(next.length) {
+                    $(next).select();
+                } else {
+                    if(parent.data('autosubmit')) {
+                        parent.submit();
+                    }
+                }
+            }
+        });
+    });
+
     //upload avatar
     function readURL(input) {
         if (input.files && input.files[0]) {
@@ -177,6 +210,20 @@ $(document).ready(function() {
             $('.count').val(1);
         }
     })
+    // slide range
+
+    $( "#slider-range" ).slider({
+      range: true,
+      min: 0,
+      max: 500,
+      values: [ 75, 300 ],
+      slide: function( event, ui ) {
+        $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+      }
+    });
+    $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
+      " - $" + $( "#slider-range" ).slider( "values", 1 ) );
+    
     // method pay
     $('.face-value').on('click', function() {
         var faceValues = document.querySelectorAll('.face-value');

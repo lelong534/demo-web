@@ -71,10 +71,10 @@
                     Quay lại
                 </div>
                 <li class="title">Tin tức</li>
-                <li><a href="#">Khuyến mại cho bạn</a></li>
-                <li><a href="#">Chương trình khuyến mại</a></li>
-                <li><a href="#">Tin tức sự kiện</a></li>
-                <li><a href="#">Thông cáo báo chí</a></li>
+                <li><a href="{route('news')}">Khuyến mại cho bạn</a></li>
+                <li><a href="{route('news')}">Chương trình khuyến mại</a></li>
+                <li><a href="{route('news')}">Tin tức sự kiện</a></li>
+                <li><a href="{route('news')}">Thông cáo báo chí</a></li>
             </ul>
             <li class="nav-item">
                 Tuyển dụng
@@ -96,9 +96,9 @@
                         Tài khoản
                     </div>
                     <ul>
-                        <li><a href="#">Thông tin tài khoản</a></li>
-                        <li><a href="#">Thông tin cá nhân</a></li>
-                        <li><a href="#">Cập nhật thông tin cá nhân</a></li>
+                        <li><a href="{{route('prepaid_info')}}">Thông tin tài khoản</a></li>
+                        <li><a href="{{route('user_information')}}">Thông tin cá nhân</a></li>
+                        <li><a href="{{route('user_update')}}">Cập nhật thông tin cá nhân</a></li>
                     </ul>
                 </div>
                 <div class="m-dropdown-item">
@@ -107,9 +107,9 @@
                         Kết nối
                     </div>
                     <ul>
-                        <li><a href="#">Thông tin hội viên</a></li>
-                        <li><a href="#">Đổi điểm</a></li>
-                        <li><a href="#">Danh sách ưu đãi</a></li>
+                        <li><a href="{{route('user_information')}}">Thông tin hội viên</a></li>
+                        <li><a href="{{route('change_point')}}">Đổi điểm</a></li>
+                        <li><a href="{{route('change_point')}}">Danh sách ưu đãi</a></li>
                     </ul>
                 </div>
                 <div class="m-dropdown-item">
@@ -118,10 +118,10 @@
                         Tiện ích
                     </div>
                     <ul>
-                        <li><a href="#">Nạp tiền</a></li>
-                        <li><a href="#">Chuyển tiền</a></li>
-                        <li><a href="#">Thanh toán ngân hàng</a></li>
-                        <li><a href="#">Autopay</a></li>
+                        <li><a href="{{route('utilities_index')}}">Nạp tiền</a></li>
+                        <li><a href="{{route('utilities_index')}}">Chuyển tiền</a></li>
+                        <li><a href="{{route('utilities_index')}}">Thanh toán ngân hàng</a></li>
+                        <li><a href="{{route('utilities_index')}}">Autopay</a></li>
                     </ul>
                 </div>
                 <div class="m-dropdown-item">
@@ -130,8 +130,8 @@
                         Cước
                     </div>
                     <ul>
-                        <li><a href="#">Tra cước</a></li>
-                        <li><a href="#">Lịch sử nạp tiền/thanh toán</a></li>
+                        <li><a href="{{route('user_check')}}">Tra cước</a></li>
+                        <li><a href="{{route('user_check')}}">Lịch sử nạp tiền/thanh toán</a></li>
                     </ul>
                 </div>
             </ul>
@@ -225,10 +225,10 @@
                             Tiện ích
                         </div>
                         <ul>
-                            <li><a href="#">Nạp tiền</a></li>
-                            <li><a href="#">Chuyển tiền</a></li>
-                            <li><a href="#">Thanh toán ngân hàng</a></li>
-                            <li><a href="#">Autopay</a></li>
+                            <li><a href="{{route('utilities_index')}}">Nạp tiền</a></li>
+                            <li><a href="{{route('utilities_index')}}">Chuyển tiền</a></li>
+                            <li><a href="{{route('utilities_index')}}">Thanh toán ngân hàng</a></li>
+                            <li><a href="{{route('utilities_index')}}">Autopay</a></li>
                         </ul>
                     </div>
                     <div class="m-dropdown-item">

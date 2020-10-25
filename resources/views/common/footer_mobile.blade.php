@@ -3,12 +3,12 @@
     <div class="footer-row is-desktop">
         <div class="footer-column-first">
             <div class="column-item-first">Giới thiệu</div>
-            <div class="column-item"><a href="#">Giới thiệu Mobifone</a></div>
-            <div class="column-item"><a href="#">Hợp tác Mobifone</a></div>
-            <div class="column-item"><a href="#">Tuyển dụng</a></div>
-            <div class="column-item"><a href="#">Điểm cung cấp dịch vụ viễn thông</a></div>
-            <div class="column-item"><a href="#">Site map</a></div>
-            <div class="column-item"><a href="#">Bảo mật thông tin</a></div>
+            <div class="column-item"><a href="{{route('introduction')}}">Giới thiệu Mobifone</a></div>
+            <div class="column-item"><a href="{{route('introduction_cooperate')}}">Hợp tác Mobifone</a></div>
+            <div class="column-item"><a href="{{route('employ')}}">Tuyển dụng</a></div>
+            <div class="column-item"><a href="{{route('introduction_supplier')}}">Điểm cung cấp dịch vụ viễn thông</a></div>
+            <div class="column-item"><a href="{{route('customer_location')}}">Site map</a></div>
+            <div class="column-item"><a href="{{route('introduction')}}">Bảo mật thông tin</a></div>
             <div class="social-media">
                 <img src="{{asset('source/icons/facebook.svg')}}" class="icon" alt="icons facebook" />
                 <img src="{{asset('source/icons/youtube-square.svg')}}" class="icon" alt="youtube square" />
@@ -17,36 +17,36 @@
         </div>
         <div class="footer-column">
             <div class="column-item-first">Dịch vụ di động</div>
-            <div class="column-item"><a href="#">Gói cước</a></div>
-            <div class="column-item"><a href="#">Gói data</a></div>
-            <div class="column-item"><a href="#">Dịch vụ</a></div>
+            <div class="column-item"><a href="{{route('pack_of_charge')}}">Gói cước</a></div>
+            <div class="column-item"><a href="{{route('pack_of_data')}}">Gói data</a></div>
+            <div class="column-item"><a href="{{route('pack_of_service')}}">Dịch vụ</a></div>
 
             <div class="column-item-first">Tin tức</div>
-            <div class="column-item"><a href="#">Chương trình khuyến mãi</a></div>
-            <div class="column-item"><a href="#">Tin tức sự kiện</a></div>
-            <div class="column-item"><a href="#">Thông cáo báo chí</a></div>
-            <div class="column-item"><a href="#">Tuyển dụng</a></div>
+            <div class="column-item"><a href="{{route('news')}}">Chương trình khuyến mãi</a></div>
+            <div class="column-item"><a href="{{route('news')}}">Tin tức sự kiện</a></div>
+            <div class="column-item"><a href="{{route('news')}}">Thông cáo báo chí</a></div>
+            <div class="column-item"><a href="{{route('news')}}">Tuyển dụng</a></div>
         </div>
         <div class="footer-column">
             <div class="column-item-first">Hỗ trợ khách hàng</div>
-            <div class="column-item"><a href="#">Gửi phản ánh</a></div>
-            <div class="column-item"><a href="#">Câu hỏi thường gặp</a></div>
-            <div class="column-item"><a href="#">Tìm kiếm cửa hàng</a></div>
-            <div class="column-item"><a href="#">Chọn số Mobifone</a></div>
-            <div class="column-item"><a href="#">Chuyển mạng giữ số</a></div>
+            <div class="column-item"><a href="{{route('customer_reflect')}}">Gửi phản ánh</a></div>
+            <div class="column-item"><a href="{{route('customer_question')}}">Câu hỏi thường gặp</a></div>
+            <div class="column-item"><a href="{{route('customer_location')}}">Tìm kiếm cửa hàng</a></div>
+            <div class="column-item"><a href="{{route('customer_question')}}">Chọn số Mobifone</a></div>
+            <div class="column-item"><a href="{{route('customer_question')}}">Chuyển mạng giữ số</a></div>
             <div class="column-item-first">Tài khoản</div>
-            <div class="column-item"><a href="#">Thông tin tài khoản</a></div>
-            <div class="column-item"><a href="#">Tra cước</a></div>
+            <div class="column-item"><a href="{{route('user_information')}}">Thông tin tài khoản</a></div>
+            <div class="column-item"><a href="{{route('user_check')}}">Tra cước</a></div>
         </div>
         <div class="footer-column">
             <div class="column-item-first">Tiện ích</div>
-            <div class="column-item"><a href="#">Nạp tiền</a></div>
-            <div class="column-item"><a href="#">Chuyển tiền</a></div>
-            <div class="column-item"><a href="#">Thanh toán ngân hàng</a></div>
+            <div class="column-item"><a href="{{route('utilities_index')}}">Nạp tiền</a></div>
+            <div class="column-item"><a href="{{route('utilities_index')}}">Chuyển tiền</a></div>
+            <div class="column-item"><a href="{{route('utilities_index')}}">Thanh toán ngân hàng</a></div>
             <div class="column-item-first">Kết nối dài lâu</div>
-            <div class="column-item"><a href="#">Thông tin hội viên</a></div>
-            <div class="column-item"><a href="#">Danh sách ưu đãi</a></div>
-            <div class="column-item"><a href="#">Đổi điểm</a></div>
+            <div class="column-item"><a href="{{route('utilities_index')}}">Thông tin hội viên</a></div>
+            <div class="column-item"><a href="{{route('utilities_index')}}">Danh sách ưu đãi</a></div>
+            <div class="column-item"><a href="{{route('utilities_index')}}">Đổi điểm</a></div>
         </div>
     </div>
     <div class="footer-row-mobile is-mobile">

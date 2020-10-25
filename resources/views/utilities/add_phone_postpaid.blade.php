@@ -14,6 +14,18 @@
 			<div class="input-box">
                 <input type="text" class="input-box-data" placeholder="Số điện thoại">	
                 <span><img src="{{asset('source/image/i_sdt.svg')}}" alt="" class="input-box-icon"></span>
+                <div class="text-note-right">Thuê bao trả sau</div>
+            </div>
+            <div class="input-box list-date-pay-box">
+                <h3 class="title">Chọn ngày thanh toán</h3>
+                <ul class="list-date-pay">
+                    <li class="face-value">5</li>
+                    <li class="face-value">6</li>
+                    <li class="face-value active">15</li>
+                    <li class="face-value">16</li>
+                    <li class="face-value">25</li>
+                    <li class="face-value">26</li>
+                </ul>
             </div>
             <div class="input-box list-bank-acc-box">
             	<h3 class="title">Phương thức thanh toán</h3>
@@ -30,7 +42,7 @@
             		</li>
             		<li class="bank-acc-item">
             			<div class="m-card__top">
-							<img src="{{asset('source/image/i_jscb.svg')}}" class="m-card__top-thumb">
+							<img src="{{asset('source/image/i_visa.svg')}}" class="m-card__top-thumb">
 							<div class="m-card__top-content">
 								<h3 class="title">Vietnam Prosperity JSCB</h3>
 								<p>*2426</p>

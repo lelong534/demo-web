@@ -60,7 +60,6 @@ Route::prefix('service')->group(function () {
 });
 Route::prefix('utilities')->group(function () {
 	Route::get('/', 'UtilitiesController@index')->name('utilities_index');
-	Route::get('/payment-method', 'UtilitiesController@paymentMethod')->name('utilities_payment_method');
 	Route::get('/add-phone-prepaid', 'UtilitiesController@addPhonePrepaid')->name('utilities_add_phone_prepaid');
 	Route::get('/add-phone-postpaid', 'UtilitiesController@addPhonePostpaid')->name('utilities_add_phone_postpaid');
 });

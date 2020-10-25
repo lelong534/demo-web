@@ -57,6 +57,42 @@
             <h2 class="title">Tự tạo gói cước</h2>
         </div>              
         <div class="m-card">
+            <ul class="list-face-value">
+                <li class="face-value">10.000 đ</li>
+                <li class="face-value">20.000 đ</li>
+                <li class="face-value active">50.000 đ</li>
+                <li class="face-value">100.000 đ</li>
+            </ul>
+            <ul class="list-pack-detail">
+                <li class="pack-detail-item">
+                    <p>Thoại nội mạng</p>
+                    <p class="value">50 phút</p>
+                </li>
+                <li class="pack-detail-item">
+                    <p>Thoại ngoại mạng</p>
+                    <p class="value">150 phút</p>
+                </li>
+                <li class="pack-detail-item">
+                    <p>Data</p>
+                    <p class="value">275 MB</p>
+                </li>
+            </ul>
+            <div class="pack-range-value">
+                <ul class="list-dots">
+                    <li class="dot"></li>
+                    <li class="dot"></li>
+                    <li class="dot"></li>
+                    <li class="dot"></li>
+                    <li class="dot"></li>
+                    <li class="dot"></li>
+                    <li class="dot"></li>
+                    <li class="dot"></li>
+                    <li class="dot"></li>
+                    <li class="dot"></li>
+                </ul>
+                <div id="slider-range"></div>
+            </div>
+            <a href="#" class="btn-border create-pack">Tạo gói</a>
         </div>
     </div>
 

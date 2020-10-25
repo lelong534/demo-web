@@ -41,7 +41,7 @@
             		</li>
             		<li class="bank-acc-item">
             			<div class="m-card__top">
-							<img src="{{asset('source/image/i_jscb.svg')}}" class="m-card__top-thumb">
+							<img src="{{asset('source/image/i_visa.svg')}}" class="m-card__top-thumb">
 							<div class="m-card__top-content">
 								<h3 class="title">Vietnam Prosperity JSCB</h3>
 								<p>*2426</p>
