@@ -60,6 +60,17 @@ navListLi.forEach(n => n.addEventListener('click', () => {
 	linkAction();
 }));
 
+/*======= show-dropdown =======*/ 
+const dropdownTarget = document.getElementById('dropdown-target');
+const dropdownContent = document.getElementById('dropdown-content');
+
+if ( dropdownContent && dropdownTarget) {   
+    dropdownTarget.addEventListener('click', () => {
+        dropdownContent.classList.toggle('active');
+    })
+}
+/*======= end show-dropdown =======*/ 
+
 window.addEventListener('mouseup', function(e) {
     const navMenu = document.getElementById('nav-menu'); 
     const background = document.getElementById('bg-nav-menu')

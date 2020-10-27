@@ -31,13 +31,13 @@
             <a href="{{route('pre_login')}}">Đăng nhập</a>
         </div>
         <ul class="nav-list-mobile">
-            <li class="nav-item">
+            <li class="nav-item" id="item-first">
                 Dịch vụ di động
-                <img src="{{asset('source/icon_mobile/arrow_right_gray.png')}}" class="nav-item-toggle" id="item-first" alt="arrow">
+                <img src="{{asset('source/icon_mobile/arrow_right_gray.png')}}" class="nav-item-toggle" alt="arrow">
             </li>            
             <ul class="nav-item-menu" id="item-menu-first">
-                <div class="back">
-                    <img src="{{asset('source/icon_mobile/arrow_left.png')}}" alt="arrow" id="icon-back-first">
+                <div class="back" id="icon-back-first">
+                    <img src="{{asset('source/icon_mobile/arrow_left.png')}}" alt="arrow">
                     Quay lại
                 </div>
                 <li class="title">Dịch vụ di động</li>
@@ -45,29 +45,29 @@
                 <li><a href="{{route('pack_of_data')}}">Gói data</a></li>
                 <li><a href="{{route('pack_of_service')}}">Dịch vụ</a></li>
             </ul>
-            <li class="nav-item">
+            <li class="nav-item" id="item-second">
                 Hỗ trợ khách hàng
-                <img src="{{asset('source/icon_mobile/arrow_right_gray.png')}}" alt="arrow" id="item-second">
+                <img src="{{asset('source/icon_mobile/arrow_right_gray.png')}}" alt="arrow">
             </li>
             <ul class="nav-item-menu" id="item-menu-second">
-                <div class="back">
-                    <img src="{{asset('source/icon_mobile/arrow_left.png')}}" alt="arrow" id="icon-back-second">
+                <div class="back" id="icon-back-second">
+                    <img src="{{asset('source/icon_mobile/arrow_left.png')}}" alt="arrow">
                     Quay lại
                 </div>
                 <li class="title">Hỗ trợ khách hàng</li>
-                <li><a href="{route('customer_reflect')}">Gửi phản ánh</a></li>
+                <li><a href="{{route('customer_reflect')}}">Gửi phản ánh</a></li>
                 <li><a href="#">Chat online</a></li>
-                <li><a href="{route('customer_question')}">Câu hỏi thường gặp</a></li>
+                <li><a href="{{route('customer_question')}}">Câu hỏi thường gặp</a></li>
                 <li><a href="#">Chọn số Mobifone</a></li>
                 <li><a href="#">Chuyển mạng giữ số</a></li>
             </ul>
-            <li class="nav-item">
+            <li class="nav-item" id="item-third">
                 Tin tức
-                <img src="{{asset('source/icon_mobile/arrow_right_gray.png')}}" alt="arrow" id="item-third">
+                <img src="{{asset('source/icon_mobile/arrow_right_gray.png')}}" alt="arrow">
             </li>
             <ul class="nav-item-menu" id="item-menu-third">
-                <div class="back">
-                    <img src="{{asset('source/icon_mobile/arrow_left.png')}}" alt="arrow" id="icon-back-third">
+                <div class="back" id="icon-back-third">
+                    <img src="{{asset('source/icon_mobile/arrow_left.png')}}" alt="arrow">
                     Quay lại
                 </div>
                 <li class="title">Tin tức</li>
@@ -80,13 +80,13 @@
                 Tuyển dụng
                 <img src="{{asset('source/icon_mobile/arrow_right_gray.png')}}" alt="arrow">
             </li>
-            <li class="nav-item has-border">
+            <li class="nav-item has-border" id="item-fourth">
                 My Mobifone
-                <img src="{{asset('source/icon_mobile/arrow_right_gray.png')}}" alt="arrow" id="item-fourth">
+                <img src="{{asset('source/icon_mobile/arrow_right_gray.png')}}" alt="arrow">
             </li>
             <ul class="nav-item-menu" id="item-menu-fourth">
-                <div class="back">
-                    <img src="{{asset('source/icon_mobile/arrow_left.png')}}" alt="arrow" id="icon-back-fourth">
+                <div class="back" id="icon-back-fourth">
+                    <img src="{{asset('source/icon_mobile/arrow_left.png')}}" alt="arrow">
                     Quay lại
                 </div>
                 <li class="title">My Mobifone</li>

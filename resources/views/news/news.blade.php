@@ -20,9 +20,19 @@
 		    	<li><a href="#"></a>Tin tức sự kiện</li>
 		    	<li><a href="#"></a>Thông cáo báo chí</li>
 		    </ul>
-		    <div class="content-title is-mobile">
-		        Tin tức sự kiện
-		    </div>
+		    <div class="events-menu is-mobile">
+			    <div class="content-title is-mobile">
+			        Tin tức sự kiện
+			    </div>
+			    <a href="#" class="is-mobile" id="dropdown-target">Tin tức
+			    	<img src="{{asset('source/image/i_arrow_down.svg')}}" class="icon-small">
+			    </a>
+			    <ul class="m-dropdown" id="dropdown-content">
+	                <li><a href="{{route('pack_of_charge')}}">Gói cước</a></li>
+	                <li><a href="{{route('pack_of_data')}}">Gói data</a></li>
+	                <li><a href="{{route('pack_of_service')}}">Dịch vụ</a></li>
+	            </ul>
+	        </div>
 
 		    <!-- TIN CHÍNH -->
 		    <div class="events-content news-page">

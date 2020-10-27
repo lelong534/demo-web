@@ -98,13 +98,12 @@
 		        </ul>
 		    </div>
 	        <div class="input-box pay-method">
-	        	<h3 class="title">Phương thức thanh toán</h3>
+	        	<h3 class="title" style="margin-bottom: 1rem;">Phương thức thanh toán</h3>
 	        	<div class="input-box">
 	                <select type="text" name="category" class="input-box-default">
 	                    <option disabled selected>Chọn phương thức thanh toán</option>
-	                    <option>A</option>
-	                    <option>B</option>
-	                    <option>C</option>
+	                    <option>Thanh toán tiền mặt</option>
+	                    <option>Thanh toán bằng tài khoản ngân hàng</option>
 	                </select>
 	                <span><img src="{{asset('source/image/caret-arrow-up.svg')}}" class="icon-right"/></span>
 	            </div>

@@ -399,6 +399,20 @@ ul.list-space li img {
 	margin-bottom: 0;
 	padding: 0.625rem 0 0 1rem;
 }
+.events-menu.is-mobile {
+	display: flex;
+	position: relative;
+	justify-content: space-between;
+}
+.events-menu.is-mobile a.is-mobile {
+	display: flex;
+	align-items: center;
+	line-height: 1rem;
+    color: var(--blue);
+}
+.events-menu.is-mobile a.is-mobile img{
+	margin-left: 0.5rem; 
+}
 .m-card.events .m-card-body {
 	padding: 0 0 0 1rem;
 	line-height: 1.3125rem;
@@ -520,7 +534,7 @@ h1.title {
 	grid-row-gap: 0.75rem;
 }
 .m-card.customer .customer-img {
-	padding: 1rem;
+	padding: 1rem 0;
 	padding-bottom: 3.125rem;
 }
 .m-card.customer .customer-img img {		
@@ -619,6 +633,9 @@ ol.carousel-indicators li.active {
 /*=== dropdown menu desktop ===*/
 ul.nav-list-mobile li {
 	position: relative;
+}
+.nav-list li .nav-item:hover {
+	color: var(--blue) !important;
 }
 .m-dropdown {
 	display: none;
@@ -729,6 +746,20 @@ ul.nav-list-mobile li {
 	letter-spacing: -0.337647px;
 	font-weight: var(--biger-font-weight);
 }
+.events-menu.is-mobile .content-title.is-mobile {
+	margin-bottom: 0;
+}
+.events-menu.is-mobile #dropdown-content.active {
+	display: block;
+	top: 1.75rem;
+    right: 0;
+    border: 0;
+    width: 13rem;
+}
+.events-menu.is-mobile #dropdown-content:after{
+	left: 75%;
+	border-width: 0.8rem;
+}
 .card-no-bg-mobile .input-box, .card-no-bg-mobile .button  {
 	max-width: 33.625rem;
 	margin: 0 auto;
@@ -812,7 +843,8 @@ ul.nav-list-mobile li {
 .other-news .title {
 	font-style: normal;
 	font-weight: 500;
-	line-height: 2.375rem;
+	line-height: 1.375rem;
+    padding: 0.5rem 0;
 }
 .inner .content-title {
 	margin-bottom: 1rem;
@@ -1169,6 +1201,9 @@ ul.introduction {
 		display: flex;
 		justify-content: center;
 	}
+	.events-menu.is-mobile a.is-mobile {
+		display: none;
+	}
 	.events-menu li {
 		margin: 2.125rem 1.3125rem 1.9375rem 1.3125rem;
 		font-size: 1.5rem;
@@ -1208,6 +1243,9 @@ ul.introduction {
 		padding: 0.5rem 0.75rem;
 		border-radius: 1.5rem;
 		margin-right: 1.5rem;
+	}
+	.events-menu.is-mobile .content-title.is-mobile {
+		margin-bottom: 1rem;
 	}
 	.service-content.news-detail-page h2 {
 		font-size: 1.5rem

@@ -198,6 +198,7 @@ ul.menu-list-items li .menu-item__thumb {
 	background-color: white;
 	box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.111045);
 	border-radius: 1rem;
+	cursor: pointer;
 }
 ul.menu-list-items li .menu-item__thumb img {
 	width: 1.25rem;
@@ -454,7 +455,41 @@ ul.history-list-items li.item.active {
 	text-decoration: underline;
 	color: var(--blue);
 }
-
+.connect-content .body-content .give-list-items {
+	background-color: var(--white);
+	border: 1px solid #E0E0E0;
+	box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.06);
+	border-radius: 0.5rem;
+	padding-top: var(--card-padding-top);
+	padding-bottom: var(--card-padding-bottom);
+	padding-left: var(--card-padding-left);
+	padding-right: var(--card-padding-right);
+}
+.connect-content .body-content .give-list-items li:first-child {
+	border-top: none;
+	padding-top: 0;
+}
+.connect-content .body-content .menu-list-items {
+	display: flex;
+	overflow-x: auto;
+	margin-bottom: 0;
+}
+.connect-content .body-content .menu-list-items li{
+	width: auto;
+	cursor: pointer;
+}
+.connect-content .body-content .menu-item__thumb {
+	margin: 0 1rem;
+}
+.connect-content .body-content .menu-list-items::-webkit-scrollbar {
+	width: 0;
+}
+.connect-content {
+	margin-top: 1rem;
+}
+.give-list-items.hidden {
+	display: none;
+}
 @media screen and (min-width: 768px){ 
 	ul.list-items {
 		padding-left: 3rem;
@@ -664,6 +699,39 @@ ul.history-list-items li.item.active {
 	    height: inherit;
 	    margin: auto;
 	}
+	.connect-content .body-content {
+		background-color: var(--white);
+		border: 1px solid #E0E0E0;
+		box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.06);
+		border-radius: 0.5rem;
+		padding-top: var(--card-padding-top);
+		padding-bottom: var(--card-padding-bottom);
+		padding-left: var(--card-padding-left);
+		padding-right: var(--card-padding-right);
+	}
+	.connect-content .body-content .give-list-items {
+		border: none;
+		box-shadow: none;
+		padding: 0;
+	}
+	.connect-content .body-content .menu-list-items {
+		margin-bottom: 1rem;
+	}
+	.connect-content .body-content .menu-list-items li{
+		width: 12.5%;
+	}
+	.connect-content .body-content .menu-list-items li p {
+		margin: 0 1rem;
+		padding: 0.75rem;
+	}
+	.connect-content .body-content .give-list-items li:first-child {
+		border-top: none;
+		padding-top: 0;
+	}
+	.connect-content .body-content .give-list-items > li:first-child {
+		border-top: 1px solid #E0E0E0;
+		padding-top: 1rem;
+	}
 }
 @media screen and (min-width: 992px){  
 	.other-mymobifone .m-card.customer {
@@ -679,5 +747,8 @@ ul.history-list-items li.item.active {
 		position: absolute;
 		right: 2.375rem;
 		top: 2.875rem;
+	}
+	.connect-content .body-content { 
+		border-radius: 1.125rem;
 	}
 }

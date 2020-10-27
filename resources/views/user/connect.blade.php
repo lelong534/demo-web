@@ -118,51 +118,51 @@
     	<div class="content-header">
             <h2 class="title">Danh sách ưu đãi</h2>
         </div>
-        <div class="m-card">
+        <div class="body-content">
        		<ul class="menu-list-items">
-	    		<li class="menu-item active">
+	    		<li class="menu-item active" data-tab-target="#hotel">
 	    			<div class="menu-item__thumb">
 	    				<img src="{{asset('source/image/i_hotel.svg')}}" alt="">
 	    			</div>
 	    			<p>Du lịch - Khách sạn</p>
 	    		</li>
-	    		<li class="menu-item">
+	    		<li class="menu-item" data-tab-target="#health">
 	    			<div class="menu-item__thumb">
 	    				<img src="{{asset('source/image/i_heart.svg')}}" alt="">
 	    			</div>
 	    			<p>Sức khỏe - Thẳm mỹ</p>
 	    		</li>
-	    		<li class="menu-item">
+	    		<li class="menu-item" data-tab-target="#airway">
 	    			<div class="menu-item__thumb">
 	    				<img src="{{asset('source/image/i_airplane.svg')}}" alt="">
 	    			</div>
 	    			<p>Hàng không vận chuyển</p>
 	    		</li>
-	    		<li class="menu-item">
+	    		<li class="menu-item" data-tab-target="#entertainment">
 	    			<div class="menu-item__thumb">
 	    				<img src="{{asset('source/image/i_smile.svg')}}" alt="">
 	    			</div>
 	    			<p>Vui chơi - Giải trí</p>
 	    		</li>
-	    		<li class="menu-item">
+	    		<li class="menu-item" data-tab-target="#restaurant">
 	    			<div class="menu-item__thumb">
 	    				<img src="{{asset('source/image/i_ring_bell.svg')}}" alt="">
 	    			</div>
 	    			<p>Nhà hàng</p>
 	    		</li>
-	    		<li class="menu-item">
+	    		<li class="menu-item" data-tab-target="#sport">
 	    			<div class="menu-item__thumb">
 	    				<img src="{{asset('source/image/i_cup.svg')}}" alt="">
 	    			</div>
 	    			<p>Thể thao</p>
 	    		</li>
-	    		<li class="menu-item">
+	    		<li class="menu-item" data-tab-target="#education">
 	    			<div class="menu-item__thumb">
 	    				<img src="{{asset('source/image/i_book.svg')}}" alt="">
 	    			</div>
 	    			<p>Giáo dục</p>
 	    		</li>
-	    		<li class="menu-item">
+	    		<li class="menu-item" data-tab-target="#goods">
 	    			<div class="menu-item__thumb">
 	    				<img src="{{asset('source/image/i_tshirt.svg')}}" alt="">
 	    			</div>
@@ -170,7 +170,7 @@
 	    		</li>
 	    	</ul>
 
-	    	<ul class="give-list-items">
+	    	<ul class="give-list-items" id="hotel" data-tab-content>
 	    		<li class="give-item">
 	    			<img src="{{asset('source/image/vin_logo.svg')}}" alt="">
 	    			<ul class="list-space">
@@ -197,6 +197,76 @@
 	    		</li>
 	    		<li class="give-item">
 	    			<img src="{{asset('source/image/sun_group_logo.svg')}}" alt="">
+	    			<ul class="list-space">
+	    				<li>Vin Group</li>
+	    				<li>Tặng 5 ngày du lịch Nha Trang trị giá 8.000.000 đ</li>
+	    			</ul>
+	    			<img src="{{asset('source/image/i_arrow_right.svg')}}" class="icon-small">
+	    		</li>
+	    	</ul>
+	    	<ul class="give-list-items hidden" id="health" data-tab-content>
+	    		<li class="give-item">
+	    			<img src="{{asset('source/image/vin_logo.svg')}}" alt="">
+	    			<ul class="list-space">
+	    				<li>Vin Group</li>
+	    				<li>Tặng 5 ngày du lịch Nha Trang trị giá 8.000.000 đ</li>
+	    			</ul>
+	    			<img src="{{asset('source/image/i_arrow_right.svg')}}" class="icon-small">
+	    		</li>
+	    	</ul>
+	    	<ul class="give-list-items hidden" id="airway" data-tab-content>
+	    		<li class="give-item">
+	    			<img src="{{asset('source/image/vin_logo.svg')}}" alt="">
+	    			<ul class="list-space">
+	    				<li>Vin Group</li>
+	    				<li>Tặng 5 ngày du lịch Nha Trang trị giá 8.000.000 đ</li>
+	    			</ul>
+	    			<img src="{{asset('source/image/i_arrow_right.svg')}}" class="icon-small">
+	    		</li>
+	    	</ul>
+	    	<ul class="give-list-items hidden" id="entertainment" data-tab-content>
+	    		<li class="give-item">
+	    			<img src="{{asset('source/image/vin_logo.svg')}}" alt="">
+	    			<ul class="list-space">
+	    				<li>Vin Group</li>
+	    				<li>Tặng 5 ngày du lịch Nha Trang trị giá 8.000.000 đ</li>
+	    			</ul>
+	    			<img src="{{asset('source/image/i_arrow_right.svg')}}" class="icon-small">
+	    		</li>
+	    	</ul>
+	    	<ul class="give-list-items hidden" id="restaurant" data-tab-content>
+	    		<li class="give-item">
+	    			<img src="{{asset('source/image/vin_logo.svg')}}" alt="">
+	    			<ul class="list-space">
+	    				<li>Vin Group</li>
+	    				<li>Tặng 5 ngày du lịch Nha Trang trị giá 8.000.000 đ</li>
+	    			</ul>
+	    			<img src="{{asset('source/image/i_arrow_right.svg')}}" class="icon-small">
+	    		</li>
+	    	</ul>
+	    	<ul class="give-list-items hidden" id="sport" data-tab-content>
+	    		<li class="give-item">
+	    			<img src="{{asset('source/image/vin_logo.svg')}}" alt="">
+	    			<ul class="list-space">
+	    				<li>Vin Group</li>
+	    				<li>Tặng 5 ngày du lịch Nha Trang trị giá 8.000.000 đ</li>
+	    			</ul>
+	    			<img src="{{asset('source/image/i_arrow_right.svg')}}" class="icon-small">
+	    		</li>
+	    	</ul>
+	    	<ul class="give-list-items hidden" id="education" data-tab-content>
+	    		<li class="give-item">
+	    			<img src="{{asset('source/image/vin_logo.svg')}}" alt="">
+	    			<ul class="list-space">
+	    				<li>Vin Group</li>
+	    				<li>Tặng 5 ngày du lịch Nha Trang trị giá 8.000.000 đ</li>
+	    			</ul>
+	    			<img src="{{asset('source/image/i_arrow_right.svg')}}" class="icon-small">
+	    		</li>
+	    	</ul>
+	    	<ul class="give-list-items hidden" id="goods" data-tab-content>
+	    		<li class="give-item">
+	    			<img src="{{asset('source/image/vin_logo.svg')}}" alt="">
 	    			<ul class="list-space">
 	    				<li>Vin Group</li>
 	    				<li>Tặng 5 ngày du lịch Nha Trang trị giá 8.000.000 đ</li>
