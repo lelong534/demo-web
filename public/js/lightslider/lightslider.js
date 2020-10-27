@@ -519,8 +519,10 @@
                     }
                     ob.eq(sc).addClass('active');
                     ob.eq(sc).addClass('currentSlide');
+                    if(settings.item == 3) {
+                        ob.eq(sc+2).addClass('currentSlide');
+                    }
                     ob.eq(sc+1).addClass('currentSlide');
-                    ob.eq(sc+2).addClass('currentSlide');
                 } else {
                     ob.removeClass('active');
                     ob.eq(ob.length - 1).addClass('active');

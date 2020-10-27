@@ -13,48 +13,141 @@
             <h2 class="title">Gói Data đang sử dụng<h2>
             <a href="#" class="all is-desktop">Xem tất cả<span> ></span></a>
         </div>
-        <div class="m-card using-pack">
-            <div class="pack-title">Gói cước C90N</div>
-            <div class="pack-charge">150.000 đ</div>
-            <ul class="pack-items">
-                <li>
-                    <img src="{{asset('source/icon_mobile/i_phonecall.svg')}}" class="icon-small">
-                    <div class="des">Gọi nội mạng</div>
-                    <span class="is-desktop">: </span>
-                    <div class="value">1000 phút</div>
-                </li>
-                <li>
-                    <img src="{{asset('source/icon_mobile/i_phonecall.svg')}}" class="icon-small">
-                    <div class="des">Gọi liên mạng</div>
-                    <span class="is-desktop">: </span>
-                    <div class="value">50 phút</div>
-                </li>
-                <li>
-                    <img src="{{asset('source/icon_mobile/i_signals.svg')}}" class="icon-small">
-                    <div class="des">Data khuyến mại</div>
-                    <span class="is-desktop">: </span>
-                    <div class="value">50 MB</div>
-                </li>
-                <li >
-                    <img src="{{asset('source/icon_mobile/i_phonesms.svg')}}" class="icon-small">
-                    <div class="des">SMS nội mạng</div>
-                    <span class="is-desktop">: </span>
-                    <div class="value">0 SMS</div>
-                </li>
-                <li >
-                    <img src="{{asset('source/icon_mobile/i_phonesms.svg')}}" class="icon-small">
-                    <div class="des">SMS liên mạng</div>
-                    <span class="is-desktop">: </span>
-                    <div class="value">0 SMS</div>
-                </li>
-            </ul>
-            <a class="btn-border">Hủy</a>
+        <div class="slider2">
+            <div class="m-card">
+                <div>
+                    <div class="progress" data-value='80'>
+                        <span class="progress-left">
+                            <span class="progress-bar border-primary"></span>
+                        </span>
+                        <span class="progress-right">
+                            <span class="progress-bar border-primary"></span>
+                        </span>
+                        <div class="progress-value w-100 h-100 rounded-circle d-flex flex-column align-items-center justify-content-center">
+                            <img src="{{asset('source/icon_mobile/i_signals.svg')}}" class="icon-small is-desktop">
+                            <div class="h5">80 GB/</div>
+                            <div>100 GB</div>
+                        </div>
+                    </div>
+                    <ul class="pack-items">
+                        <div class="pack-title">Gói 6HD200</div>
+                        <li class="pack-item">
+                            <div class="pack-item-des">Lưu lượng:</div>
+                            <div class="pack-item-value">1000 MB</div>
+                        </li>
+                        <li class="pack-item">
+                            <div class="pack-item-des">HSD:</div>
+                            <div class="pack-item-value">6 tháng</div>
+                        </li>
+                        <li class="pack-item">
+                            <div class="pack-item-price">99.000 đ</div>
+                        </li>
+                    </ul>
+                </div>
+                <a href="#" class="btn-border">Hủy</a>
+            </div>
+            <div class="m-card">
+                <div>
+                    <div class="progress" data-value='8'>
+                        <span class="progress-left">
+                            <span class="progress-bar border-danger"></span>
+                        </span>
+                        <span class="progress-right">
+                            <span class="progress-bar border-danger"></span>
+                        </span>
+                        <div class="progress-value w-100 h-100 rounded-circle d-flex flex-column align-items-center justify-content-center">
+                            <img src="{{asset('source/icon_mobile/i_signals.svg')}}" class="icon-small is-desktop">
+                            <div class="h5">8 GB/</div>
+                            <div>100 GB</div>
+                        </div>
+                    </div>
+                    <ul class="pack-items">
+                        <div class="pack-title">Gói dài kì 6HD200</div>
+                        <li class="pack-item">
+                            <div class="pack-item-des">Lưu lượng:</div>
+                            <div class="pack-item-value">1000 MB</div>
+                        </li>
+                        <li class="pack-item">
+                            <div class="pack-item-des">HSD:</div>
+                            <div class="pack-item-value">6 tháng</div>
+                        </li>
+                        <li class="pack-item">
+                            <div class="pack-item-price">99.000 đ</div>
+                        </li>
+                    </ul>
+                </div>
+                <a href="#" class="btn-border">Hủy</a>
+            </div>
+            <div class="m-card">
+                <div>
+                    <div class="progress" data-value='80'>
+                        <span class="progress-left">
+                            <span class="progress-bar border-primary"></span>
+                        </span>
+                        <span class="progress-right">
+                            <span class="progress-bar border-primary"></span>
+                        </span>
+                        <div class="progress-value w-100 h-100 rounded-circle d-flex flex-column align-items-center justify-content-center">
+                            <img src="{{asset('source/icon_mobile/i_signals.svg')}}" class="icon-small is-desktop">
+                            <div class="h5">80 GB/</div>
+                            <div>100 GB</div>
+                        </div>
+                    </div>
+                    <ul class="pack-items">
+                        <div class="pack-title">Gói dài kì 6HD200</div>
+                        <li class="pack-item">
+                            <div class="pack-item-des">Lưu lượng:</div>
+                            <div class="pack-item-value">1000 MB</div>
+                        </li>
+                        <li class="pack-item">
+                            <div class="pack-item-des">HSD:</div>
+                            <div class="pack-item-value">6 tháng</div>
+                        </li>
+                        <li class="pack-item">
+                            <div class="pack-item-price">99.000 đ</div>
+                        </li>
+                    </ul>
+                </div>
+                <a href="#" class="btn-border">Hủy</a>
+            </div>
+            <div class="m-card">
+                <div>
+                    <div class="progress" data-value='80'>
+                        <span class="progress-left">
+                            <span class="progress-bar border-primary"></span>
+                        </span>
+                        <span class="progress-right">
+                            <span class="progress-bar border-primary"></span>
+                        </span>
+                        <div class="progress-value w-100 h-100 rounded-circle d-flex flex-column align-items-center justify-content-center">
+                            <img src="{{asset('source/icon_mobile/i_signals.svg')}}" class="icon-small is-desktop">
+                            <div class="h5">80 GB/</div>
+                            <div>100 GB</div>
+                        </div>
+                    </div>
+                    <ul class="pack-items">
+                        <div class="pack-title">Gói dài kì 6HD200</div>
+                        <li class="pack-item">
+                            <div class="pack-item-des">Lưu lượng:</div>
+                            <div class="pack-item-value">1000 MB</div>
+                        </li>
+                        <li class="pack-item">
+                            <div class="pack-item-des">HSD:</div>
+                            <div class="pack-item-value">6 tháng</div>
+                        </li>
+                        <li class="pack-item">
+                            <div class="pack-item-price">99.000 đ</div>
+                        </li>
+                    </ul>
+                </div>
+                <a href="#" class="btn-border">Hủy</a>
+            </div>
         </div>
     </div>
 
     <div class="package-content">
         <div class="content-header">
-            <h2 class="title">Gói combo trong nước</h2>
+            <h2 class="title">Gói data ngày</h2>
             <a href="#" class="all is-desktop">Xem tất cả<span> ></span></a>
         </div>
         <div class="mb cs-hidden lightSlider"> 
@@ -128,7 +221,7 @@
 
     <div class="package-content">
         <div class="content-header">
-            <h2 class="title">Gói combo trong nước</h2>
+            <h2 class="title">Gói data tháng</h2>
             <a href="#" class="all is-desktop">Xem tất cả<span> ></span></a>
         </div>
         <div class="mb cs-hidden lightSlider"> 
@@ -202,7 +295,7 @@
 
     <div class="package-content">
         <div class="content-header">
-            <h2 class="title">Gói combo trong nước</h2>
+            <h2 class="title">Gói data dài kỳ</h2>
             <a href="#" class="all is-desktop">Xem tất cả<span> ></span></a>
         </div>
         <div class="mb cs-hidden lightSlider"> 

@@ -56,12 +56,16 @@
         <div class="content-header">
             <h2 class="title">Tự tạo gói cước</h2>
         </div>              
-        <div class="m-card">
+        <div class="m-card create-pack-card">
             <ul class="list-face-value">
-                <li class="face-value">10.000 đ</li>
-                <li class="face-value">20.000 đ</li>
-                <li class="face-value active">50.000 đ</li>
-                <li class="face-value">100.000 đ</li>
+                <img src="{{asset('source/image/arrow-left.svg')}}" class="icon is-mobile" id="turn-left">
+                <div class="list-face-value-wrap">
+                    <li class="face-value">10.000 đ</li>
+                    <li class="face-value">20.000 đ</li>
+                    <li class="face-value active">50.000 đ</li>
+                    <li class="face-value">100.000 đ</li>
+                </div>
+                <img src="{{asset('source/image/arrow-right.svg')}}" class="icon is-mobile" id="turn-right">
             </ul>
             <ul class="list-pack-detail">
                 <li class="pack-detail-item">

@@ -11,13 +11,13 @@
     <div class="using-pack-content">
         <div class="content-header">
             <h2 class="title">Dịch vụ đang sử dụng<h2>
-            <a href="#" class="all is-desktop">Xem tất cả<span> ></span></a>
+            <a href="#" class="all is-desktop">Xem tất cả<span> &gt</span></a>
         </div>
         <div class="m-card using-pack service-pack">
             <img src="{{asset('source/image/mca.png')}}" class="using-pack__img">
             <div class="using-pack__right">
                 <div class="using-pack__name">
-                    <img src="{{asset('source/image/mca_thumb.png')}}" class="pack-thumb">
+                    <img src="{{asset('source/image/mMusic.svg')}}" class="pack-thumb">
                     <p class="name">Gói MCA</p>
                 </div>
                 <div class="using-pack__des">
@@ -35,7 +35,7 @@
             <div class="m-card">
                 <div class="m-card-header">
                     <div class="using-pack__name">
-                        <img src="{{asset('source/image/mca_thumb.png')}}" class="pack-thumb">
+                        <img src="{{asset('source/image/mMusic.svg')}}" class="pack-thumb">
                         <p class="name">Gói MCA</p>
                     </div>
                     <a href="#">Chi tiết ></a>
@@ -54,7 +54,7 @@
             <div class="m-card">
                 <div class="m-card-header">
                     <div class="using-pack__name">
-                        <img src="{{asset('source/image/mca_thumb.png')}}" class="pack-thumb">
+                        <img src="{{asset('source/image/mMusic.svg')}}" class="pack-thumb">
                         <p class="name">Gói MCA</p>
                     </div>
                     <a href="#">Chi tiết ></a>
@@ -73,7 +73,7 @@
             <div class="m-card">
                 <div class="m-card-header">
                     <div class="using-pack__name">
-                        <img src="{{asset('source/image/mca_thumb.png')}}" class="pack-thumb">
+                        <img src="{{asset('source/image/mMusic.svg')}}" class="pack-thumb">
                         <p class="name">Gói MCA</p>
                     </div>
                     <a href="#">Chi tiết ></a>
@@ -92,7 +92,7 @@
             <div class="m-card">
                 <div class="m-card-header">
                     <div class="using-pack__name">
-                        <img src="{{asset('source/image/mca_thumb.png')}}" class="pack-thumb">
+                        <img src="{{asset('source/image/mMusic.svg')}}" class="pack-thumb">
                         <p class="name">Gói MCA</p>
                     </div>
                     <a href="#">Chi tiết ></a>
@@ -111,7 +111,7 @@
             <div class="m-card">
                 <div class="m-card-header">
                     <div class="using-pack__name">
-                        <img src="{{asset('source/image/mca_thumb.png')}}" class="pack-thumb">
+                        <img src="{{asset('source/image/mMusic.svg')}}" class="pack-thumb">
                         <p class="name">Gói MCA</p>
                     </div>
                     <a href="#">Chi tiết ></a>
@@ -130,7 +130,7 @@
             <div class="m-card">
                 <div class="m-card-header">
                     <div class="using-pack__name">
-                        <img src="{{asset('source/image/mca_thumb.png')}}" class="pack-thumb">
+                        <img src="{{asset('source/image/mMusic.svg')}}" class="pack-thumb">
                         <p class="name">Gói MCA</p>
                     </div>
                     <a href="#">Chi tiết ></a>
@@ -149,7 +149,7 @@
             <div class="m-card">
                 <div class="m-card-header">
                     <div class="using-pack__name">
-                        <img src="{{asset('source/image/mca_thumb.png')}}" class="pack-thumb">
+                        <img src="{{asset('source/image/mMusic.svg')}}" class="pack-thumb">
                         <p class="name">Gói MCA</p>
                     </div>
                     <a href="#">Chi tiết ></a>
@@ -168,7 +168,7 @@
             <div class="m-card">
                 <div class="m-card-header">
                     <div class="using-pack__name">
-                        <img src="{{asset('source/image/mca_thumb.png')}}" class="pack-thumb">
+                        <img src="{{asset('source/image/mMusic.svg')}}" class="pack-thumb">
                         <p class="name">Gói MCA</p>
                     </div>
                     <a href="#">Chi tiết ></a>
@@ -187,7 +187,7 @@
             <div class="m-card">
                 <div class="m-card-header">
                     <div class="using-pack__name">
-                        <img src="{{asset('source/image/mca_thumb.png')}}" class="pack-thumb">
+                        <img src="{{asset('source/image/mMusic.svg')}}" class="pack-thumb">
                         <p class="name">Gói MCA</p>
                     </div>
                     <a href="#">Chi tiết ></a>

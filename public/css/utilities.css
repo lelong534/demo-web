@@ -175,7 +175,6 @@ ul.list-date-pay li.face-value {
 		flex-direction: row;
 	}
 	li.face-value.active {
-		font-size: 1.25rem;	
 		line-height: 1.5rem;	
 	}
 	.input-box.pay-method {
