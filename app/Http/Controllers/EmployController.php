@@ -97,5 +97,14 @@ class EmployController extends Controller
 	public function getSendcv() {
 		return view('employ.sendcv');
 	}
+	public function template1() {
+		return view('employ.template1');
+	}
+	public function template2() {
+		return view('employ.template2');
+	}
+	public function template3() {
+		return view('employ.template3');
+	}
 }
 ?>

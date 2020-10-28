@@ -208,6 +208,12 @@ ul.menu-list-items li .menu-item__thumb img {
 ul.menu-list-items li.active .menu-item__thumb {
 	background-color: var(--blue);
 }
+ul.menu-list-items li.active .menu-item__thumb img {
+	display: none;
+}
+ul.menu-list-items li.active .menu-item__thumb img.active {
+	display: block;
+}
 ul.give-list-items li img {
 	width: 7.5rem;
 	margin-right: 1.5rem;
@@ -488,7 +494,23 @@ ul.history-list-items li.item.active {
 	margin-top: 1rem;
 }
 .give-list-items.hidden {
-	display: none;
+	cursor: pointer;
+}
+.x-symbol, .x-symbol-pay {
+	position: absolute;
+	top: -0.5rem;
+	right: -0.5rem;
+	background-color: var(--blue);
+	border-radius: 50%;
+	cursor:pointer;
+}
+#modalPayment h2.title {
+	text-align: center;
+}
+#modalPayment .modal-body{
+	padding-left: var(--card-padding-left);
+	padding-right: var(--card-padding-right);
+	padding-top: var(--card-padding-top);
 }
 @media screen and (min-width: 768px){ 
 	ul.list-items {

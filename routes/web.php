@@ -20,6 +20,9 @@ Route::prefix('employ')->group(function () {
 	Route::get('detail', 'EmployController@getDetail')->name('employ_detail');
 	Route::get('sendcv', 'EmployController@getSendcv')->name('employ_sendcv');
 	Route::post('sendcv', 'EmployController@postCV');
+	Route::get('template1', 'EmployController@template1');
+	Route::get('template2', 'EmployController@template2');
+	Route::get('template3', 'EmployController@template3');
 });
 Route::prefix('news')->group(function () {
 	Route::get('/', 'NewsController@index')->name('news');

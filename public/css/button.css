@@ -88,7 +88,7 @@
 	display: block;
 	margin: auto;
 }
-.button:hover, .btn-border-fit:hover, .btn-relative-fit:hover, .btn-border-long:hover, .btn-relative-long:hover {
+.button:hover, .btn-border:hover, .btn-border-fit:hover, .btn-relative-fit:hover, .btn-border-long:hover, .btn-relative-long:hover {
 	color: white !important;
 }
 @media screen and (min-width: 768px){  

@@ -21,19 +21,96 @@
 		  <div class="modal-dialog modal-dialog-centered" role="document">
 		    <div class="modal-content">
 				<div class="modal-body">
-					<h3 class="title">Nhập mã xác nhận</h3>
-					<p>Mã xác nhận 6 chữ số chúng tôi đã gửi đến số điện thoại: 090 450 5030</p>
-					<form method="get" class="digit-group" data-group-name="digits" data-autosubmit="false" autocomplete="off">
-						<input type="text" id="digit-1" name="digit-1" data-next="digit-2" />
-						<input type="text" id="digit-2" name="digit-2" data-next="digit-3" data-previous="digit-1" />
-						<input type="text" id="digit-3" name="digit-3" data-next="digit-4" data-previous="digit-2" />
-						<input type="text" id="digit-4" name="digit-4" data-next="digit-5" data-previous="digit-3" />
-						<input type="text" id="digit-5" name="digit-5" data-next="digit-6" data-previous="digit-4" />
-						<input type="text" id="digit-6" name="digit-6" data-previous="digit-5" />
-					</form>
-					<div class="text-note-right">Gửi lại mã OTP</div>
-					<a class="btn-border" href="{{route('login')}}">Đăng nhập</a>
-					<p>Mã OTP hết hạn sau 30s</p>
+					<h2 class="title is-desktop">Chọn phương thức thanh toán</h2>
+					<h3 class="title">Thẻ đã lưu</h3>
+					<div class="payment-method-content">
+						<ul class="list-bank-acc">
+							<li class="bank-acc-item">
+								<div class="m-card__top">
+									<img src="{{asset('source/image/i_jscb.svg')}}" class="m-card__top-thumb">
+									<div class="m-card__top-content">
+										<h3 class="title">Vietnam Prosperity JSCB</h3>
+										<p>*2426</p>
+									</div>
+								</div>
+							</li>
+							<li class="bank-acc-item">
+								<div class="m-card__top">
+									<img src="{{asset('source/image/i_visa.svg')}}" class="m-card__top-thumb">
+									<div class="m-card__top-content">
+										<h3 class="title">Vietnam Prosperity JSCB</h3>
+										<p>*2426</p>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<br/>
+					<h3 class="title">Thẻ thanh toán quốc tế</h3>
+					<div class="payment-method-content" style="padding-bottom: 0.25rem;">
+						<ul class="list-global-card">
+							<li class="global-card-item">
+								<div class="global-card-item-thumb">
+									<img src="{{asset('source/image/i_visai.svg')}}">
+								</div>
+							</li>
+							<li class="global-card-item">
+								<div class="global-card-item-thumb">
+								<img src="{{asset('source/image/i_jcb.svg')}}">
+							</li>
+							<li class="global-card-item">
+								<div class="global-card-item-thumb">
+									<img src="{{asset('source/image/i_master_card.svg')}}">
+								</div>
+							</li>
+							<li class="global-card-item">
+								<div class="global-card-item-thumb">
+									<img src="{{asset('source/image/i_usa_express.svg')}}">
+								</div>
+							</li>
+							<li class="global-card-item">
+								<div class="global-card-item-thumb">
+									<img src="{{asset('source/image/i_visai.svg')}}">
+								</div>
+							</li>
+							<li class="global-card-item">
+								<div class="global-card-item-thumb">
+									<img src="{{asset('source/image/i_jcb.svg')}}">
+								</div>
+							</li>
+							<li class="global-card-item">
+								<div class="global-card-item-thumb">
+									<img src="{{asset('source/image/i_usa_express.svg')}}">
+								</div>
+							</li>
+						</ul>
+					</div>
+					<br/>
+					<h3 class="title">Quét mã QR</h3>
+					<div class="payment-method-content">
+						<img src="{{asset('source/image/btn_qrcode.svg')}}" class="qrcode">
+					</div>
+					<br/>
+					<h3 class="title">Thanh toán ngân hàng</h3>
+					<div class="payment-method-content">
+						<div class="grid-five-column">
+							<img src="{{asset('source/image/pvbank.svg')}}">
+							<img src="{{asset('source/image/scb.svg')}}">
+							<img src="{{asset('source/image/tpbank.svg')}}">
+							<img src="{{asset('source/image/vib.svg')}}">
+							<img src="{{asset('source/image/viettinbank.svg')}}">
+							<img src="{{asset('source/image/vpbank.svg')}}">
+							<img src="{{asset('source/image/pvbank.svg')}}">
+							<img src="{{asset('source/image/scb.svg')}}">
+							<img src="{{asset('source/image/tpbank.svg')}}">
+							<img src="{{asset('source/image/vib.svg')}}">
+							<img src="{{asset('source/image/viettinbank.svg')}}">
+							<img src="{{asset('source/image/vpbank.svg')}}">
+						</div>
+					</div>
+			    </div>
+			    <div class="x-symbol icon">
+			    	<img src="{{asset('source/image/x.svg')}}">
 			    </div>
 			</div>
 		  </div>

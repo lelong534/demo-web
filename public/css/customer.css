@@ -125,6 +125,15 @@
 .question-content .question-body.hidden {
 	display: none;
 }
+.question-content .nav li .nav-item__thumb img.active {
+	display: none;
+}
+.question-content .nav li.active .nav-item__thumb img {
+	display: none;
+}
+.question-content .nav li.active .nav-item__thumb img.active {
+	display: block;
+}
 @media screen and (min-width: 768px){
 	.reflect-content {
 		background: #FFFFFF;

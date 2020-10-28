@@ -30,25 +30,29 @@
 		    	<ul class="nav">
 		    		<li class="active"  data-tab-target="#goi-cuoc">
 		    			<div class="nav-item__thumb">
-		    				<img src="{{asset('source/icon_mobile/icon-qs-type1-blue.png')}}">
+		    				<img src="{{asset('source/image/i_charge.svg')}}">
+		    				<img src="{{asset('source/image/i_charge_active.svg')}}" class="active">
 		    			</div>
 		    			<p>Gói cước</p>
 		    		</li>
 		    		<li data-tab-target="#dich-vu">
 		    			<div class="nav-item__thumb">
-		    				<img src="{{asset('source/icon_mobile/icon-qs-type2-blue.png')}}">
+		    				<img src="{{asset('source/image/i_service.svg')}}">
+		    				<img src="{{asset('source/image/i_service_active.svg')}}" class="active">
 		    			</div>
 		    			<p>Dịch vụ</p>
 		    		</li>
 		    		<li data-tab-target="#thanh-toan-cuoc">
 		    			<div class="nav-item__thumb">
-		    				<img src="{{asset('source/icon_mobile/icon-qs-type3-blue.png')}}">
+		    				<img src="{{asset('source/image/i_paycharge.svg')}}">
+		    				<img src="{{asset('source/image/i_paycharge_active.svg')}}" class="active">
 		    			</div>
 		    			<p>Thanh toán cước</p>
 		    		</li>
 		    		<li data-tab-target="#nap-tien">
 		    			<div class="nav-item__thumb">
-		    				<img src="{{asset('source/icon_mobile/icon-qs-type4-blue.png')}}">
+		    				<img src="{{asset('source/image/i_naptien.svg')}}">
+		    				<img src="{{asset('source/image/i_naptien_active.svg')}}" class="active">
 		    			</div>
 		    			<p>Nạp tiền</p>
 		    		</li>

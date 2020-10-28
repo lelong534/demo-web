@@ -23,6 +23,7 @@
         <link href="{{ asset('css/service.css') }}" rel="stylesheet">
         <link href="{{ asset('css/circle-progress.css') }}" rel="stylesheet">
         <link href="{{ asset('css/user.css') }}" rel="stylesheet">
+        <link href="{{ asset('css/employ.css') }}" rel="stylesheet">
         <link href="{{ asset('css/utilities.css') }}" rel="stylesheet">
         <link href="{{ asset('css/pagination.css') }}" rel="stylesheet">
         <link href="{{ asset('css/avatar_upload.css') }}" rel="stylesheet">

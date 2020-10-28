@@ -159,6 +159,16 @@ $(document).ready(function() {
     function percentageToDegrees(percentage) {
         return percentage / 100 * 360
     }
+
+    //hide modal 
+
+    $('.x-symbol').on('click', function() {
+        $('#modalOTP').modal('hide');
+    })
+    $('.x-symbol-pay').on('click', function() {
+        $('#modalPayment').modal('hide');
+    })
+
     // login OTP
     $('.digit-group').find('input').each(function() {
         $(this).attr('maxlength', 1);

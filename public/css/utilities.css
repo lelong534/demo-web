@@ -105,9 +105,6 @@ li.face-value.active {
 .menu-item__thumb.active {
 	background-color: var(--blue) !important;
 }
-.menu-item__thumb.active {
-	background-color: 
-}
 .utilities .list-bank-acc-box {
 	background-color: var(--white);
 	border: 1px solid #E0E0E0;
@@ -153,6 +150,50 @@ ul.list-date-pay {
 ul.list-date-pay li.face-value {
 	width: 2.5rem;
 	height: 2.5rem;
+}
+.payment-method-content .list-bank-acc li.bank-acc-item:first-child .m-card__top {
+	padding-top: 0;
+}
+.utilities .list-global-card {
+	display: flex;
+	overflow-x: auto;
+	margin-bottom: 0;
+}
+.utilities .list-global-card li{
+	width: auto;
+	cursor: pointer;
+	margin-right: 1rem;
+}
+.utilities .list-global-card::-webkit-scrollbar {
+	width: 0;
+}
+.utilities .list-global-card li .global-card-item-thumb{
+	width: 3.625rem;
+	height: 3.625rem;
+	border: 1px solid #C7C3C4;
+	box-sizing: border-box;
+	border-radius: 4px;
+}
+.utilities .list-global-card li .global-card-item-thumb img {
+	height: 100%;
+}
+.utilities .qrcode {
+	width: 5rem;
+	height: 5rem;
+	margin: auto;
+}
+.utilities .payment-method-content .grid-five-column{
+	grid-template-columns: 1fr 1fr;
+}
+.utilities .payment-method-content {
+	background-color: var(--white);
+	border: 1px solid #E0E0E0;
+	box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.06);
+	border-radius: 0.5rem;
+	padding-top: var(--card-padding-top);
+	padding-bottom: var(--card-padding-bottom);
+	padding-left: var(--card-padding-left);
+	padding-right: var(--card-padding-right);
 }
 @media screen and (min-width: 768px){ 
 	.body-content.utilities .menu-list-items {
@@ -251,6 +292,36 @@ ul.list-date-pay li.face-value {
 	.utilities .list-bank-acc-box ul.list-date-pay li.face-value {
 		width: 3rem;
     	height: 3rem;
+	}
+	.utilities .payment-method-content {
+		border: none;
+		box-shadow: none;
+		padding: 0;
+		background-color: transparent;
+	}
+	.utilities .payment-method-content .grid-five-column{
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+		grid-row-gap: 1rem;
+		grid-row-gap: 1rem;
+	}
+	.body-content.utilities.payment-method {
+		border: 1px solid #E0E0E0;
+		background: white;
+		border-radius: 0.5rem;
+		padding: 1.5rem 5rem;
+	}
+	.body-content.utilities.payment-method h2.title {
+		text-align: center;
+	}
+	.utilities .payment-method-content {
+		padding-bottom: 1.5rem !important;
+		border-bottom: 1px solid #E0E0E0;
+	}
+	.utilities .payment-method-content:first-child {
+		padding-bottom: 1rem !important;
+	}
+	.utilities .payment-method-content:last-child {
+		border-bottom: none;
 	}
 }
 @media screen and (min-width: 992px){ 

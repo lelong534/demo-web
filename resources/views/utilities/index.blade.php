@@ -12,24 +12,28 @@
 		<li class="menu-item active" data-tab-target="#pay">
 			<div class="menu-item__thumb">
 				<img src="{{asset('source/image/i_naptien.svg')}}" alt="">
+				<img src="{{asset('source/image/i_naptien_active.svg')}}" class="active" alt="">
 			</div>
 			<p>Nạp tiền</p>
 		</li>
 		<li class="menu-item" data-tab-target="#bank_payment">
 			<div class="menu-item__thumb">
 				<img src="{{asset('source/image/i_bankpayment.svg')}}" alt="">
+				<img src="{{asset('source/image/i_bankpayment_active.svg')}}" class="active" alt="">
 			</div>
 			<p>Thanh toán ngân hàng</p>
 		</li>
 		<li class="menu-item" data-tab-target="#autopay">
 			<div class="menu-item__thumb">
 				<img src="{{asset('source/image/i_autopay.svg')}}" alt="">
+				<img src="{{asset('source/image/i_autopay_active.svg')}}" class="active" alt="">
 			</div>
 			<p>Autopay</p>
 		</li>
 		<li class="menu-item">
 			<div class="menu-item__thumb">
 				<img src="{{asset('source/image/i_chuyentien.svg')}}" alt="">
+				<img src="{{asset('source/image/i_chuyentien_active.svg')}}" class="active" alt="">
 			</div>
 			<p>Chuyển tiền</p>
 		</li>
@@ -117,9 +121,107 @@
 			    </div>
 			</div>
             <div class="submit-box">
-	            <a href="#" class="btn-relative-fit">Tiếp tục</a>
+	            <a href="#" class="btn-relative-fit" data-toggle="modal" data-target="#modalPayment">Tiếp tục</a>
 	        </div>
 		</form>
+	</div>
+	<div class="modal fade" id="modalPayment" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+	    <div class="modal-content">
+			<div class="modal-body">
+				<h2 class="title is-desktop">Chọn phương thức thanh toán</h2>
+				<h3 class="title">Thẻ đã lưu</h3>
+				<div class="payment-method-content">
+					<ul class="list-bank-acc">
+						<li class="bank-acc-item">
+							<div class="m-card__top">
+								<img src="{{asset('source/image/i_jscb.svg')}}" class="m-card__top-thumb">
+								<div class="m-card__top-content">
+									<h3 class="title">Vietnam Prosperity JSCB</h3>
+									<p>*2426</p>
+								</div>
+							</div>
+						</li>
+						<li class="bank-acc-item">
+							<div class="m-card__top">
+								<img src="{{asset('source/image/i_visa.svg')}}" class="m-card__top-thumb">
+								<div class="m-card__top-content">
+									<h3 class="title">Vietnam Prosperity JSCB</h3>
+									<p>*2426</p>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<br/>
+				<h3 class="title">Thẻ thanh toán quốc tế</h3>
+				<div class="payment-method-content" style="padding-bottom: 0.25rem;">
+					<ul class="list-global-card">
+						<li class="global-card-item">
+							<div class="global-card-item-thumb">
+								<img src="{{asset('source/image/i_visai.svg')}}">
+							</div>
+						</li>
+						<li class="global-card-item">
+							<div class="global-card-item-thumb">
+							<img src="{{asset('source/image/i_jcb.svg')}}">
+						</li>
+						<li class="global-card-item">
+							<div class="global-card-item-thumb">
+								<img src="{{asset('source/image/i_master_card.svg')}}">
+							</div>
+						</li>
+						<li class="global-card-item">
+							<div class="global-card-item-thumb">
+								<img src="{{asset('source/image/i_usa_express.svg')}}">
+							</div>
+						</li>
+						<li class="global-card-item">
+							<div class="global-card-item-thumb">
+								<img src="{{asset('source/image/i_visai.svg')}}">
+							</div>
+						</li>
+						<li class="global-card-item">
+							<div class="global-card-item-thumb">
+								<img src="{{asset('source/image/i_jcb.svg')}}">
+							</div>
+						</li>
+						<li class="global-card-item">
+							<div class="global-card-item-thumb">
+								<img src="{{asset('source/image/i_usa_express.svg')}}">
+							</div>
+						</li>
+					</ul>
+				</div>
+				<br/>
+				<h3 class="title">Quét mã QR</h3>
+				<div class="payment-method-content">
+					<img src="{{asset('source/image/btn_qrcode.svg')}}" class="qrcode">
+				</div>
+				<br/>
+				<h3 class="title">Thanh toán ngân hàng</h3>
+				<div class="payment-method-content">
+					<div class="grid-five-column">
+						<img src="{{asset('source/image/pvbank.svg')}}">
+						<img src="{{asset('source/image/scb.svg')}}">
+						<img src="{{asset('source/image/tpbank.svg')}}">
+						<img src="{{asset('source/image/vib.svg')}}">
+						<img src="{{asset('source/image/viettinbank.svg')}}">
+						<img src="{{asset('source/image/vpbank.svg')}}">
+						<img src="{{asset('source/image/pvbank.svg')}}">
+						<img src="{{asset('source/image/scb.svg')}}">
+						<img src="{{asset('source/image/tpbank.svg')}}">
+						<img src="{{asset('source/image/vib.svg')}}">
+						<img src="{{asset('source/image/viettinbank.svg')}}">
+						<img src="{{asset('source/image/vpbank.svg')}}">
+					</div>
+				</div>
+		    </div>
+		    <div class="x-symbol-pay icon">
+		    	<img src="{{asset('source/image/x.svg')}}">
+		    </div>
+		</div>
+	  </div>
 	</div>
 	<div class="utilities hidden" id="autopay" data-tab-content>
 		<h2 class="title">Tự tạo gói cước</h2>
