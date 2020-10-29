@@ -16,7 +16,7 @@
 				<div class="gift-header__top-left">
 					<img src="{{asset('source/image/vin_logo.svg')}}" alt="">
 					<ul>
-						<li class="name">Vin Group</li>
+						<li class="name"><a href="#">Vin Group</a></li>
 						<li>187 Văn Cao, Tây Hồ, Hà Nội</li>
 					</ul>
 				</div>

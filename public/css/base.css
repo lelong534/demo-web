@@ -95,9 +95,13 @@ ul{
 }
 a{
  	text-decoration: none !important;
+ 	color: #000000 !important;
 }
 a:hover {
-	color: inherit !important;
+	color: #000000 !important;
+}
+.footer a {
+	color: #ffffff !important;
 }
 img{
 	width: 100%;
@@ -1060,7 +1064,8 @@ ul.introduction {
 		font-size: 1rem;
 	}
 	.content-header h2, .content-header p {
-		line-height: 1.75rem;
+		line-height: 1rem;
+		padding-bottom: 0.25rem;
 		margin-right: 4rem !important;
 	}
 	.content-header p.active {
@@ -1076,6 +1081,7 @@ ul.introduction {
 		margin-top: 2.8rem;
 		margin-bottom: 1rem;
 		position: relative;
+		align-items: center;
 	}
 	.service-content .content-body, .mobile-service-content .content-body {
 		display: grid;

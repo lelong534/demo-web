@@ -135,8 +135,8 @@
                     </ul>
                 </div>
             </ul>
-            <li class="nav-item has-border">Cá nhân</li>
-            <li class="nav-item has-border">Ngôn ngữ</li>
+            <li class="nav-item has-border"><a href="#">Cá nhân</a></li>
+            <li class="nav-item has-border"><a href="#">Ngôn ngữ</a></li>
         </ul>
     </div>
 
@@ -178,7 +178,7 @@
         </div>
         <ul class="nav-list">   
             <li class="nav-list-li">
-                <a href="#" class="nav-item">Dịch vụ di động</a>
+                <div class="nav-item">Dịch vụ di động</div>
                 <ul class="m-dropdown mobile-service-dropdown">
                     <li><a href="{{route('pack_of_charge')}}">Gói cước</a></li>
                     <li><a href="{{route('pack_of_data')}}">Gói data</a></li>
@@ -186,7 +186,7 @@
                 </ul>
             </li>
             <li class="nav-list-li">
-                <a href="#" class="nav-item">Hỗ trợ khách hàng</a>
+                <div class="nav-item">Hỗ trợ khách hàng</div>
                 <ul class="m-dropdown customer-support-dropdown">
                     <li><a href="{{route('customer_reflect')}}">Gửi phản ánh</a></li>
                     <li><a href="{{route('customer_question')}}">Chat online</a></li>
@@ -196,7 +196,7 @@
                 </ul>
             </li>
             <li class="nav-list-li">
-                <a href="#" class="nav-item">Tin tức</a>
+                <div class="nav-item">Tin tức</div>
                 <ul class="m-dropdown news-dropdown">
                     <li><a href="{{route('news')}}">Khuyến mại cho bạn</a></li>
                     <li><a href="{{route('news')}}">Chương trình khuyến mại</a></li>
@@ -204,9 +204,9 @@
                     <li><a href="{{route('news')}}">Thông cáo báo chí</a></li>
                 </ul>
             </li>
-            <li><a href="#" class="nav-item">Tuyển dụng</a></li>
+            <li><div class="nav-item">Tuyển dụng</div></li>
             <li class="nav-list-li">
-                <a href="#" class="nav-item">My Mobifone</a>
+                <div class="nav-item">My Mobifone</div>
                 <div class="m-dropdown mobifone-dropdown">
                     <div class="m-dropdown-item">
                         <div class="m-dropdown-title">

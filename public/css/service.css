@@ -233,7 +233,7 @@ ul.list-dots li.dot {
 		background-color: white;
 		border: 1px solid var(--blue);
 		border-radius: 1.5rem;
-		color: var(--blue);
+		color: var(--blue) !important;
 		padding: 0.5rem 0;
 		width: 8.125rem;
 		text-align: center;

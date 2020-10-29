@@ -36,7 +36,7 @@
 	<div class="grid-two-column">
         <div class="m-card employ">
             <div class="card-job-title has-share">
-                <h3 class="title">Manager</h3>
+                <h3 class="title"><a href="#">Manager</a></h3>
                 <div class="card-job-title__button">
                     <img class="icon-small" src="{{asset('source/icons/icon-share.svg')}}">
                     <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A//123.31.17.73%3A8000/detail/1" target="popup" class="is-desktop">
@@ -67,7 +67,7 @@
 
         <div class="m-card employ">
             <div class="card-job-title has-share">
-                <h3 class="title">Manager</h3>
+                <h3 class="title"><a href="#">Manager</a></h3>
                 <div class="card-job-title__button">
                     <img class="icon-small" src="{{asset('source/icons/icon-share.svg')}}">
                     <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A//123.31.17.73%3A8000/detail/1" target="popup" class="is-desktop">
@@ -98,7 +98,7 @@
 
         <div class="m-card employ">
             <div class="card-job-title has-share">
-                <h3 class="title">Manager</h3>
+                <h3 class="title"><a href="#">Manager</a></h3>
                 <div class="card-job-title__button">
                     <img class="icon-small" src="{{asset('source/icons/icon-share.svg')}}">
                     <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A//123.31.17.73%3A8000/detail/1" target="popup" class="is-desktop">
@@ -128,7 +128,7 @@
         </div>
         <div class="m-card employ">
             <div class="card-job-title has-share">
-                <h3 class="title">Manager</h3>
+                <h3 class="title"><a href="#">Manager</a></h3>
                 <div class="card-job-title__button">
                     <img class="icon-small" src="{{asset('source/icons/icon-share.svg')}}">
                     <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A//123.31.17.73%3A8000/detail/1" target="popup" class="is-desktop">
@@ -158,7 +158,7 @@
         </div>
         <div class="m-card employ">
             <div class="card-job-title has-share">
-                <h3 class="title">Manager</h3>
+                <h3 class="title"><a href="#">Manager</a></h3>
                 <div class="card-job-title__button">
                     <img class="icon-small" src="{{asset('source/icons/icon-share.svg')}}">
                     <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A//123.31.17.73%3A8000/detail/1" target="popup" class="is-desktop">
@@ -188,7 +188,7 @@
         </div>
         <div class="m-card employ">
             <div class="card-job-title has-share">
-                <h3 class="title">Manager</h3>
+                <h3 class="title"><a href="#">Manager</a></h3>
                 <div class="card-job-title__button">
                     <img class="icon-small" src="{{asset('source/icons/icon-share.svg')}}">
                     <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A//123.31.17.73%3A8000/detail/1" target="popup" class="is-desktop">

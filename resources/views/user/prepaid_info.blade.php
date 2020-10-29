@@ -47,7 +47,7 @@
 		        <div class="carousel-inner">
 		            <div class="carousel-item active">
 		            	<div class="m-card using-pack using-pack-data">
-							<div class="pack-title is-mobile">Gói dài kì 6HD200</div>
+							<div class="pack-title is-mobile"><a href="#">Gói dài kì 6HD200</a></div>
 							<div class="using-pack-data-info">
 								<div class="progress" data-value='80'>
 						          	<span class="progress-left">
@@ -63,7 +63,7 @@
 						          	</div>
 						        </div>
 						        <ul class="pack-items">
-						          	<div class="pack-title is-desktop">Gói dài kì 6HD200</div>
+						          	<div class="pack-title is-desktop"><a href="#">Gói dài kì 6HD200</a></div>
 						        	<li class="pack-item">
 						        		<div class="pack-item-des">Lưu lượng:</div>
 						        		<div class="pack-item-value">1000 MB</div>
@@ -82,7 +82,7 @@
 		            </div>
 		            <div class="carousel-item">
 						<div class="m-card using-pack using-pack-data">
-							<div class="pack-title is-mobile">Gói dài kì 6HD200</div>
+							<div class="pack-title is-mobile"><a href="#">Gói dài kì 6HD200</a></div>
 							<div class="using-pack-data-info">
 								<div class="progress" data-value='80'>
 						          	<span class="progress-left">
@@ -98,7 +98,7 @@
 						          	</div>
 						        </div>
 						        <ul class="pack-items">
-						          	<div class="pack-title is-desktop">Gói dài kì 6HD200</div>
+						          	<div class="pack-title is-desktop"><a href="#">Gói dài kì 6HD200</a></div>
 						        	<li class="pack-item">
 						        		<div class="pack-item-des">Lưu lượng:</div>
 						        		<div class="pack-item-value">1000 MB</div>
@@ -128,7 +128,7 @@
 					<h2 class="title">Gói cước đang sử dụng</h2>
 				</div>
 				<div class="m-card using-pack">
-					<div class="pack-title">Gói cước C90N</div>
+					<div class="pack-title"><a href="#">Gói cước C90N</a></div>
 					<div class="pack-charge">150.000 đ</div>
 					<ul class="list-space">
 		    			<li>
@@ -181,7 +181,7 @@
             <img src="{{asset('source/image/mca.png')}}" class="using-pack__img">
             <div class="using-pack__right">
                 <div class="using-pack__name">
-                    <h3 class="title">Gói MCA</h3>
+                    <h3 class="title"><a href="#">Gói MCA</a></h3>
                 </div>
                 <div class="using-pack__des">
                     MCA giúp bạn biết được các cuộc gọi đến trong thời gian điện thoại bị tắt do hết pin, ngoài vùng phủ sóng, đi máy bay. Dịch vụ Báo cuộc gọi nhỡ MCA MobiFone là dịch vụ tiện ích được đa số khách hàng MobiFone sử dụng...

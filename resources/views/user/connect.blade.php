@@ -76,7 +76,7 @@
                 <div class="content-image">
                     <img src="{{asset('source/icon_mobile/tiktok.png')}}">
                 </div>
-                <h1 class="title">Gói Data ngày D5</h1>
+                <h1 class="title"><a href="#">Gói Data ngày D5</a></h1>
                 <div class="m-card-body">
                     Với gói cước D5 bạn sẽ có 1 GB tốc độ cao/ngày và trong suốt 30 ngày, bạn sẽ không còn nỗi lo thiếu data để làm việc, giải trí…
                 </div>
@@ -85,7 +85,7 @@
                 <div class="content-image">
                     <img src="{{asset('source/icon_mobile/data_d5.png')}}">
                 </div>
-                <h1 class="title">Gói Data ngày D5</h1>
+                <h1 class="title"><a href="#">Gói Data ngày D5</a></h1>
                 <div class="m-card-body">
                     Với gói cước D5 bạn sẽ có 1 GB tốc độ cao/ngày và trong suốt 30 ngày, bạn sẽ không còn nỗi lo thiếu data để làm việc, giải trí…
                 </div>
@@ -94,7 +94,7 @@
                 <div class="content-image">
                     <img src="{{asset('source/icon_mobile/iflix.png')}}">
                 </div>
-                <h1 class="title">Gói Data ngày D5</h1>
+                <h1 class="title"><a href="#">Gói Data ngày D5</a></h1>
                 <div class="m-card-body">
                     Với gói cước D5 bạn sẽ có 1 GB tốc độ cao/ngày và trong suốt 30 ngày, bạn sẽ không còn nỗi lo thiếu data để làm việc, giải trí…
                 </div>
@@ -103,7 +103,7 @@
                 <div class="content-image">
                     <img src="{{asset('source/icon_mobile/tiktok.png')}}">
                 </div>
-                <h1 class="title">Gói Data ngày D5</h1>
+                <h1 class="title"><a href="#">Gói Data ngày D5</a></h1>
                 <div class="m-card-body">
                     Với gói cước D5 bạn sẽ có 1 GB tốc độ cao/ngày và trong suốt 30 ngày, bạn sẽ không còn nỗi lo thiếu data để làm việc, giải trí…
                 </div>
@@ -174,7 +174,7 @@
 	    		<li class="give-item">
 	    			<img src="{{asset('source/image/vin_logo.svg')}}" alt="">
 	    			<ul class="list-space">
-	    				<li>Vin Group</li>
+	    				<li><a href="#">Vin Group</a></li>
 	    				<li>Tặng 5 ngày du lịch Nha Trang trị giá 8.000.000 đ</li>
 	    			</ul>
 	    			<img src="{{asset('source/image/i_arrow_right.svg')}}" class="icon-small">
@@ -182,7 +182,7 @@
 	    		<li class="give-item">
 	    			<img src="{{asset('source/image/cgv_logo.svg')}}" alt="">
 	    			<ul class="list-space">
-	    				<li>Vin Group</li>
+	    				<li><a href="#">Vin Group</a></li>
 	    				<li>Tặng 5 ngày du lịch Nha Trang trị giá 8.000.000 đ</li>
 	    			</ul>
 	    			<img src="{{asset('source/image/i_arrow_right.svg')}}" class="icon-small">
@@ -190,7 +190,7 @@
 	    		<li class="give-item">
 	    			<img src="{{asset('source/image/orange_travel.svg')}}" alt="">
 	    			<ul class="list-space">
-	    				<li>Vin Group</li>
+	    				<li><a href="#">Vin Group</a></li>
 	    				<li>Tặng 5 ngày du lịch Nha Trang trị giá 8.000.000 đ</li>
 	    			</ul>
 	    			<img src="{{asset('source/image/i_arrow_right.svg')}}" class="icon-small">
@@ -198,7 +198,7 @@
 	    		<li class="give-item">
 	    			<img src="{{asset('source/image/sun_group_logo.svg')}}" alt="">
 	    			<ul class="list-space">
-	    				<li>Vin Group</li>
+	    				<li><a href="#">Vin Group</a></li>
 	    				<li>Tặng 5 ngày du lịch Nha Trang trị giá 8.000.000 đ</li>
 	    			</ul>
 	    			<img src="{{asset('source/image/i_arrow_right.svg')}}" class="icon-small">
@@ -208,7 +208,7 @@
 	    		<li class="give-item">
 	    			<img src="{{asset('source/image/vin_logo.svg')}}" alt="">
 	    			<ul class="list-space">
-	    				<li>Vin Group</li>
+	    				<li><a href="#">Vin Group</a></li>
 	    				<li>Tặng 5 ngày du lịch Nha Trang trị giá 8.000.000 đ</li>
 	    			</ul>
 	    			<img src="{{asset('source/image/i_arrow_right.svg')}}" class="icon-small">
@@ -218,7 +218,7 @@
 	    		<li class="give-item">
 	    			<img src="{{asset('source/image/vin_logo.svg')}}" alt="">
 	    			<ul class="list-space">
-	    				<li>Vin Group</li>
+	    				<li><a href="#">Vin Group</a></li>
 	    				<li>Tặng 5 ngày du lịch Nha Trang trị giá 8.000.000 đ</li>
 	    			</ul>
 	    			<img src="{{asset('source/image/i_arrow_right.svg')}}" class="icon-small">
@@ -228,7 +228,7 @@
 	    		<li class="give-item">
 	    			<img src="{{asset('source/image/vin_logo.svg')}}" alt="">
 	    			<ul class="list-space">
-	    				<li>Vin Group</li>
+	    				<li><a href="#">Vin Group</a></li>
 	    				<li>Tặng 5 ngày du lịch Nha Trang trị giá 8.000.000 đ</li>
 	    			</ul>
 	    			<img src="{{asset('source/image/i_arrow_right.svg')}}" class="icon-small">
@@ -238,7 +238,7 @@
 	    		<li class="give-item">
 	    			<img src="{{asset('source/image/vin_logo.svg')}}" alt="">
 	    			<ul class="list-space">
-	    				<li>Vin Group</li>
+	    				<li><a href="#">Vin Group</a></li>
 	    				<li>Tặng 5 ngày du lịch Nha Trang trị giá 8.000.000 đ</li>
 	    			</ul>
 	    			<img src="{{asset('source/image/i_arrow_right.svg')}}" class="icon-small">
@@ -248,7 +248,7 @@
 	    		<li class="give-item">
 	    			<img src="{{asset('source/image/vin_logo.svg')}}" alt="">
 	    			<ul class="list-space">
-	    				<li>Vin Group</li>
+	    				<li><a href="#">Vin Group</a></li>
 	    				<li>Tặng 5 ngày du lịch Nha Trang trị giá 8.000.000 đ</li>
 	    			</ul>
 	    			<img src="{{asset('source/image/i_arrow_right.svg')}}" class="icon-small">
@@ -258,7 +258,7 @@
 	    		<li class="give-item">
 	    			<img src="{{asset('source/image/vin_logo.svg')}}" alt="">
 	    			<ul class="list-space">
-	    				<li>Vin Group</li>
+	    				<li><a href="#">Vin Group</a></li>
 	    				<li>Tặng 5 ngày du lịch Nha Trang trị giá 8.000.000 đ</li>
 	    			</ul>
 	    			<img src="{{asset('source/image/i_arrow_right.svg')}}" class="icon-small">
@@ -268,7 +268,7 @@
 	    		<li class="give-item">
 	    			<img src="{{asset('source/image/vin_logo.svg')}}" alt="">
 	    			<ul class="list-space">
-	    				<li>Vin Group</li>
+	    				<li><a href="#">Vin Group</a></li>
 	    				<li>Tặng 5 ngày du lịch Nha Trang trị giá 8.000.000 đ</li>
 	    			</ul>
 	    			<img src="{{asset('source/image/i_arrow_right.svg')}}" class="icon-small">

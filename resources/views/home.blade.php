@@ -13,7 +13,7 @@
             <!-- MOBILE SERVICE CONTENT -->
             <div class="mobile-service-content">
                 <div class="content-header">
-                    <div class="title"><h2>Dịch vụ di động</h2></div>
+                    <h2 class="title">Dịch vụ di động</h2>
                     <p href="#" data-tab-target="#charge" class="active is-desktop">Gói cước</p>
                     <p href="#" data-tab-target= "#data" class="is-desktop">Gói data</p>
                     <a href="#" class="all is-desktop">Xem tất cả<span> ></span></a>
@@ -22,7 +22,7 @@
                 <div class="m-tab active" id="charge" data-tab-content>
                     <div class="mb cs-hidden lightSlider"> 
                         <div class="m-card mobile-service">
-                            <h1 class="title">Gói Data ngày</h1>
+                            <h1 class="title"><a href="#">Gói Data ngày</a></h1>
                             <ul class="m-card-body">
                                 <li class="m-card-item">Thoại nội mạng: <strong>1000 phút</strong>
                                 </li>
@@ -86,7 +86,7 @@
                 <div class="m-tab hidden" id="data" data-tab-content>
                     <div class="mb cs-hidden lightSlider"> 
                         <div class="m-card mobile-service">
-                            <h1 class="title">Gói Data ngày D5</h1>
+                            <h1 class="title"><a href="#">Gói Data ngày D5</a></h1>
                             <ul class="m-card-body">
                                 <li class="m-card-item">Thoại nội mạng: <strong>1000 phút</strong>
                                 </li>
@@ -101,7 +101,7 @@
                             </div>
                         </div>
                         <div class="m-card mobile-service">
-                            <h1 class="title">Gói Data ngày D5</h1>
+                            <h1 class="title"><a href="#">Gói Data ngày D5</a></h1>
                             <ul class="m-card-body">
                                 <li class="m-card-item">Thoại nội mạng: <strong>1000 phút</strong>
                                 </li>
@@ -116,7 +116,7 @@
                             </div>
                         </div>
                         <div class="m-card mobile-service">
-                            <h1 class="title">Gói Data ngày D5</h1>
+                            <h1 class="title"><a href="#">Gói Data ngày D5</a></h1>
                             <ul class="m-card-body">
                                 <li class="m-card-item">Thoại nội mạng: <strong>1000 phút</strong>
                                 </li>
@@ -131,7 +131,7 @@
                             </div>
                         </div>
                         <div class="m-card mobile-service">
-                            <h1 class="title">Gói Data ngày D5</h1>
+                            <h1 class="title"><a href="#">Gói Data ngày D5</a></h1>
                             <ul class="m-card-body">
                                 <li class="m-card-item">Thoại nội mạng: <strong>1000 phút</strong>
                                 </li>
@@ -164,7 +164,7 @@
                         <div class="content-image">
                             <img src="{{asset('source/icon_mobile/tiktok.png')}}">
                         </div>
-                        <h1 class="title">Gói Data ngày D5</h1>
+                        <h1 class="title"><a href="#">Gói Data ngày D5</a></h1>
                         <div class="m-card-body">
                             Với gói cước D5 bạn sẽ có 1 GB tốc độ cao/ngày và trong suốt 30 ngày, bạn sẽ không còn nỗi lo thiếu data để làm việc, giải trí…
                         </div>
@@ -173,7 +173,7 @@
                         <div class="content-image">
                             <img src="{{asset('source/icon_mobile/data_d5.png')}}">
                         </div>
-                        <h1 class="title">Gói Data ngày D5</h1>
+                        <h1 class="title"><a href="#">Gói Data ngày D5</a></h1>
                         <div class="m-card-body">
                             Với gói cước D5 bạn sẽ có 1 GB tốc độ cao/ngày và trong suốt 30 ngày, bạn sẽ không còn nỗi lo thiếu data để làm việc, giải trí…
                         </div>
@@ -182,7 +182,7 @@
                         <div class="content-image">
                             <img src="{{asset('source/icon_mobile/iflix.png')}}">
                         </div>
-                        <h1 class="title">Gói Data ngày D5</h1>
+                        <h1 class="title"><a href="#">Gói Data ngày D5</a></h1>
                         <div class="m-card-body">
                             Với gói cước D5 bạn sẽ có 1 GB tốc độ cao/ngày và trong suốt 30 ngày, bạn sẽ không còn nỗi lo thiếu data để làm việc, giải trí…
                         </div>
@@ -191,7 +191,7 @@
                         <div class="content-image">
                             <img src="{{asset('source/icon_mobile/tiktok.png')}}">
                         </div>
-                        <h1 class="title">Gói Data ngày D5</h1>
+                        <h1 class="title"><a href="#">Gói Data ngày D5</a></h1>
                         <div class="m-card-body">
                             Với gói cước D5 bạn sẽ có 1 GB tốc độ cao/ngày và trong suốt 30 ngày, bạn sẽ không còn nỗi lo thiếu data để làm việc, giải trí…
                         </div>
@@ -206,7 +206,7 @@
             <div class="events-content">
                 <div class="content-header">
                     <h2 class="title">Tin tức sự kiện</h2>
-                    <p class="is-desktop">Tin sự kiện</p>
+                    <p class="active is-desktop">Tin sự kiện</p>
                     <p class="is-desktop">Tin khuyến mãi</p>
                     <a href="#" class="all is-desktop">Xem tất cả<span> ></span></a>
                 </div>

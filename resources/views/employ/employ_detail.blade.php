@@ -31,7 +31,7 @@
 			                    </div>
 			                    <div class="card-job-top-right">
 				                    <div class="card-job-title">
-		                                <h3 class="title">Manager</h3>
+		                                <h3 class="title"><a href="#">Manager</a></h3>
 		                            </div>
 				                    <ul class="card-job-body">
 		                                <li class="item">

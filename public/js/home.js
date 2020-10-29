@@ -1,3 +1,4 @@
+$(document).ready(function() {
 /*===== MENU SHOW =====*/ 
 const showMenu = (toggleId, navId) =>{
     const toggle = document.getElementById(toggleId),
@@ -124,7 +125,6 @@ methods.forEach(method => {
     })
 })
 
-$(document).ready(function() {
     var height = $(".location-body__left .location-content").height();
     var title = $(".location-body__right .body-title").height();
     if ($(window).width() > 767) {
@@ -255,27 +255,30 @@ $(document).ready(function() {
     })
 
     //chart
-    var ctx = document.getElementById('myChart').getContext('2d');
-    var myChart = new Chart(ctx, {
-        type: 'bar',
-        data: {
-            labels: ['12/2019', '1/2020', '2/2020', '3/2020', '4/2020', '5/2020'],
-            datasets: [{
-                label: 'Tiền cước (nghìn đồng)',
-                data: [120, 190, 30, 50, 200, 300],
-                backgroundColor: '#C6D4E5',
-                hoverBackgroundColor: "#237BD3",
-                maxBarThickness: 20
-            }]
-        },
-        options: {
-            scales: {
-                yAxes: [{
-                    ticks: {
-                        beginAtZero: true
-                    }
+    var ctx = document.getElementById('myChart')
+    if(ctx) {
+        ctx = ctx.getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['12/2019', '1/2020', '2/2020', '3/2020', '4/2020', '5/2020'],
+                datasets: [{
+                    label: 'Tiền cước (nghìn đồng)',
+                    data: [120, 190, 30, 50, 200, 300],
+                    backgroundColor: '#C6D4E5',
+                    hoverBackgroundColor: "#237BD3",
+                    maxBarThickness: 20
                 }]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }]
+                }
             }
-        }
-    })
+        })
+    }
 })

@@ -60,7 +60,7 @@
 
 		<div class="m-card">
 			<h3 class="title">Đổi gói combo</h3>
-			<div class="point">MDC99</div>
+			<div class="point"><a href="#">MDC99</a></div>
 			<p>Gọi liên mạng:<span><strong> 25 phút</strong></span></p>
 			<p>SMS trong nước:<span><strong> 80 SMS</strong></span></p>
 			<p class="text-blue">2000 điểm</p>
