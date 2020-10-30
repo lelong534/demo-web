@@ -53,6 +53,17 @@ $(document).ready(function() {
         ]
 	}); 
 
+	var lightSlider4 = $(".lightSlider4").lightSlider({
+        item:3,
+        slideMargin:12
+	}); 
+	$('#turn-right').on('click', function() {
+        lightSlider4.goToNextSlide();
+    })
+    $('#turn-left').on('click', function() {
+        lightSlider4.goToPrevSlide();
+    })
+
 	$('.gallery').lightSlider({
         gallery:true,
         item:1,

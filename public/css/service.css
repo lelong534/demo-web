@@ -108,15 +108,12 @@ ul.list-face-value .list-face-value-wrap{
 	justify-content: space-between;
 }
 ul.list-face-value li.face-value {
-    width: 30%;
-    height: 3.125rem;
-    line-height: 2rem;
+	width: 30%;
+    height: 2.625rem;
+    line-height: 1.625rem;
 }
 ul.list-face-value li.face-value:last-child {
 	margin-right: 0 !important;
-}
-ul.list-face-value li.face-value.active {
-	line-height: 2rem;
 }
 ul.list-pack-detail {
 	max-width: 33.375rem;
@@ -129,6 +126,9 @@ ul.list-pack-detail {
 ul.list-pack-detail li.pack-detail-item {
 	border-right: 1px solid #D8D8D8;
 	width: 33.33333%;
+	display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 }
 ul.list-pack-detail li.pack-detail-item .value {
 	color: var(--blue);
@@ -154,11 +154,38 @@ ul.list-dots li.dot {
 	border-radius: 50%;
 	background-color: #B2BCC8;
 }
+.list-face-value-wrap {
+	display: flex;
+	align-items: center;
+}
+.list-face-value-wrap li.face-value {
+}
+.list-face-value-wrap img{
+	z-index: 2;
+} 
+.list-face-value-wrap > div {
+	width: 87%;
+	margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+ul.list-face-value {
+	width: 100%;
+}
+li.face-value.lslide {
+	opacity: 0
+}
+li.face-value.lslide.currentSlide {
+	opacity: 1
+}
+.m-card.create-pack-card {
+	position: relative
+}
 #slider-range span {
 	background: url(../source/image/i_slide_move.svg);
-    background-position: center;
     background-size: cover;
-    width: 2rem;
+    background-position: -4px;
+    background-repeat: no-repeat;
+    width: 1rem;
     height: 2rem;
     border: 0;
     top: -0.6rem;
@@ -193,6 +220,26 @@ ul.list-dots li.dot {
 	position: absolute;
     top: var(--card-padding-top);
     left: var(--card-padding-left);
+}
+.ui-state-default:first-of-type, .ui-widget-content .ui-state-default:first-of-type {
+    background: #02B875;
+}
+.ui-state-default:last-of-type, .ui-widget-content .ui-state-default:last-of-type {
+    background: #0EA3F9;
+}
+.ui-slider .ui-slider-range {
+    background: #02B875;
+}
+.slider-range-left {
+    float: left;
+    background-color: #A675D5;
+    height: 100%;
+    width: 33.33%;
+}
+#slider-range {
+    background-color: #02B875;
+    background-image: none;
+    border: 0;
 }
 @media screen and (min-width: 768px){
 	.using-pack-content .content-header {
@@ -364,6 +411,17 @@ ul.list-dots li.dot {
 	    padding-left: 3rem;
 	    padding-right: 3rem;
 	    font-size: var(--smallest-font-size);
+	}
+	#slider-range span {
+	    background-position: -6px;
+	    width: 2rem;
+	}
+	.list-face-value-wrap > div {
+		width: 100%;
+	}
+	ul.list-face-value li.face-value {
+	    height: 3.125rem;
+	    line-height: 2rem;
 	}
 }
 @media screen and (min-width: 992px){

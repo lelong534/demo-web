@@ -1,4 +1,3 @@
-$(document).ready(function() {
 /*===== MENU SHOW =====*/ 
 const showMenu = (toggleId, navId) =>{
     const toggle = document.getElementById(toggleId),
@@ -125,160 +124,194 @@ methods.forEach(method => {
     })
 })
 
-    var height = $(".location-body__left .location-content").height();
-    var title = $(".location-body__right .body-title").height();
-    if ($(window).width() > 767) {
-        $(".location-body__right .m-card .body-content").height(height-title-75);
-    }
+var height = $(".location-body__left .location-content").height();
+var title = $(".location-body__right .body-title").height();
+if ($(window).width() > 767) {
+    $(".location-body__right .m-card .body-content").height(height-title-75);
+}
 
-    //service content
-    if ( $(window).width() > 767 ) {
-        $("#js-service-pack").removeClass('lightSlider');
-    } else {
-        $("#js-service-pack").addClass('lightSlider');
-    }
+//service content
+if ( $(window).width() > 767 ) {
+    $("#js-service-pack").removeClass('lightSlider');
+    $("#js-create-pack").removeClass('lightSlider4');
+} else {
+    $("#js-service-pack").addClass('lightSlider');
+    $("#js-create-pack").addClass('lightSlider4');
+}
 
-    // cicular progress
-    $(".progress").each(function() {
+// cicular progress
+$(".progress").each(function() {
 
-        var value = $(this).attr('data-value');
-        var left = $(this).find('.progress-left .progress-bar');
-        var right = $(this).find('.progress-right .progress-bar');
+    var value = $(this).attr('data-value');
+    var left = $(this).find('.progress-left .progress-bar');
+    var right = $(this).find('.progress-right .progress-bar');
 
-        if (value > 0) {
-            if (value <= 50) {
-                right.css('transform', 'rotate(' + percentageToDegrees(value) + 'deg)')
-            } else {
-                right.css('transform', 'rotate(180deg)')
-                left.css('transform', 'rotate(' + percentageToDegrees(value - 50) + 'deg)')
-            }
+    if (value > 0) {
+        if (value <= 50) {
+            right.css('transform', 'rotate(' + percentageToDegrees(value) + 'deg)')
+        } else {
+            right.css('transform', 'rotate(180deg)')
+            left.css('transform', 'rotate(' + percentageToDegrees(value - 50) + 'deg)')
         }
-
-    })
-
-    function percentageToDegrees(percentage) {
-        return percentage / 100 * 360
     }
 
-    //hide modal 
+})
 
-    $('.x-symbol').on('click', function() {
-        $('#modalOTP').modal('hide');
+function percentageToDegrees(percentage) {
+    return percentage / 100 * 360
+}
+
+//hide modal 
+
+$('.x-symbol').on('click', function() {
+    $('#modalOTP').modal('hide');
+})
+$('.x-symbol-pay').on('click', function() {
+    $('#modalPayment').modal('hide');
+})
+
+// login OTP
+$('.digit-group').find('input').each(function() {
+    $(this).attr('maxlength', 1);
+
+    $(this).on('focus', function() {
+        $(this).css("background", "none");
     })
-    $('.x-symbol-pay').on('click', function() {
-        $('#modalPayment').modal('hide');
-    })
 
-    // login OTP
-    $('.digit-group').find('input').each(function() {
-        $(this).attr('maxlength', 1);
-
-        $(this).on('focus', function() {
-            $(this).css("background", "none");
-        })
-
-        $(this).on('keyup', function(e) {
-            var parent = $($(this).parent());
+    $(this).on('keyup', function(e) {
+        var parent = $($(this).parent());
+        
+        if(e.keyCode === 8 || e.keyCode === 37) {
+            var prev = parent.find('input#' + $(this).data('previous'));
+            if(e.keyCode === 8) {
+                $(this).css("background", "url('./source/image/i_digit_number.svg')");
+            }
             
-            if(e.keyCode === 8 || e.keyCode === 37) {
-                var prev = parent.find('input#' + $(this).data('previous'));
-                if(e.keyCode === 8) {
-                    $(this).css("background", "url('./source/image/i_digit_number.svg')");
-                }
-                
-                if(prev.length) {
-                    $(prev).select();
-                }
-            } else if((e.keyCode >= 48 && e.keyCode <= 57) || (e.keyCode >= 65 && e.keyCode <= 90) || (e.keyCode >= 96 && e.keyCode <= 105) || e.keyCode === 39) {
-                var next = parent.find('input#' + $(this).data('next'));
-                $(this).css("background", "none");
-                if(next.length) {
-                    $(next).select();
-                } else {
-                    if(parent.data('autosubmit')) {
-                        parent.submit();
-                    }
+            if(prev.length) {
+                $(prev).select();
+            }
+        } else if((e.keyCode >= 48 && e.keyCode <= 57) || (e.keyCode >= 65 && e.keyCode <= 90) || (e.keyCode >= 96 && e.keyCode <= 105) || e.keyCode === 39) {
+            var next = parent.find('input#' + $(this).data('next'));
+            $(this).css("background", "none");
+            if(next.length) {
+                $(next).select();
+            } else {
+                if(parent.data('autosubmit')) {
+                    parent.submit();
                 }
             }
-        });
-    });
-
-    //upload avatar
-    function readURL(input) {
-        if (input.files && input.files[0]) {
-            var reader = new FileReader();
-            console.log(input.files[0])
-            reader.onload = function(e) {
-                $('#imagePreview').css('background-image', 'url('+e.target.result +')');
-                $('#imagePreview').hide();
-                $('#imagePreview').fadeIn(650);
-            }
-            reader.readAsDataURL(input.files[0]);
         }
+    });
+});
+
+//upload avatar
+function readURL(input) {
+    if (input.files && input.files[0]) {
+        var reader = new FileReader();
+        console.log(input.files[0])
+        reader.onload = function(e) {
+            $('#imagePreview').css('background-image', 'url('+e.target.result +')');
+            $('#imagePreview').hide();
+            $('#imagePreview').fadeIn(650);
+        }
+        reader.readAsDataURL(input.files[0]);
     }
-    $("#imageUpload").change(function() {
-        readURL(this);
-    })
+}
+$("#imageUpload").change(function() {
+    readURL(this);
+})
 
-    // increment input
-    // $('.count').prop('disabled', true);
-    $(document).on('click','.plus',function(){
-        $('.count').val(parseInt($('.count').val()) + 1 );
-    });
-    $(document).on('click','.minus',function(){
-        $('.count').val(parseInt($('.count').val()) - 1 );
-        if ($('.count').val() == 0) {
-            $('.count').val(1);
-        }
-    })
-    // slide range
-
-    $( "#slider-range" ).slider({
-      range: true,
-      min: 0,
-      max: 500,
-      values: [ 75, 300 ],
-      slide: function( event, ui ) {
-        $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
-      }
-    });
-    $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
-      " - $" + $( "#slider-range" ).slider( "values", 1 ) );
-    
-    // method pay
-    $('.face-value').on('click', function() {
-        var faceValues = document.querySelectorAll('.face-value');
-        faceValues.forEach(faceValue => {
-            faceValue.classList.remove('active');
-        })
-        $(this).addClass('active');
-    })
-
-    //chart
-    var ctx = document.getElementById('myChart')
-    if(ctx) {
-        ctx = ctx.getContext('2d');
-        var myChart = new Chart(ctx, {
-            type: 'bar',
-            data: {
-                labels: ['12/2019', '1/2020', '2/2020', '3/2020', '4/2020', '5/2020'],
-                datasets: [{
-                    label: 'Tiền cước (nghìn đồng)',
-                    data: [120, 190, 30, 50, 200, 300],
-                    backgroundColor: '#C6D4E5',
-                    hoverBackgroundColor: "#237BD3",
-                    maxBarThickness: 20
-                }]
-            },
-            options: {
-                scales: {
-                    yAxes: [{
-                        ticks: {
-                            beginAtZero: true
-                        }
-                    }]
-                }
-            }
-        })
+// increment input
+// $('.count').prop('disabled', true);
+$(document).on('click','.plus',function(){
+    $('.count').val(parseInt($('.count').val()) + 1 );
+});
+$(document).on('click','.minus',function(){
+    $('.count').val(parseInt($('.count').val()) - 1 );
+    if ($('.count').val() == 0) {
+        $('.count').val(1);
     }
 })
+// slide range
+
+$( "#slider-range" ).slider({
+  range: true,
+  min: 0,
+  max: 500,
+  values: [ 75, 300 ],
+  slide: function( event, ui ) {
+    $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+  }
+});
+$( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
+  " - $" + $( "#slider-range" ).slider( "values", 1 ) );
+
+// method pay
+$('.face-value').on('click', function() {
+    var faceValues = document.querySelectorAll('.face-value');
+    faceValues.forEach(faceValue => {
+        faceValue.classList.remove('active');
+    })
+    $(this).addClass('active');
+})
+
+//==== start input slide ranger ====//
+var startingValues = [33, 66];
+
+$("#slider-range")
+    .slider({
+    min: 0,
+    max: 100,
+    range: true,
+    values: startingValues,
+    slide: function (event, ui) {
+        onSlide(ui)
+    },
+    create: function (event, ui) {
+        onSlide({
+            values: startingValues
+        });
+    }
+})
+.slider("pips", {
+    rest: "label",
+    step: 25,
+    suffix: "%"
+})
+    .slider("float", {
+    suffix: "%"
+});
+
+function onSlide(ui) {
+    var totalWidth = $("#slider-range").width();
+    $(".slider-range-left").width((ui.values[0]) / 100 * totalWidth);
+}
+//==== end slider range ====//
+
+//chart
+var ctx = document.getElementById('myChart')
+if(ctx) {
+    ctx = ctx.getContext('2d');
+    var myChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: ['12/2019', '1/2020', '2/2020', '3/2020', '4/2020', '5/2020'],
+            datasets: [{
+                label: 'Tiền cước (nghìn đồng)',
+                data: [120, 190, 30, 50, 200, 300],
+                backgroundColor: '#C6D4E5',
+                hoverBackgroundColor: "#237BD3",
+                maxBarThickness: 20
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    })
+}
