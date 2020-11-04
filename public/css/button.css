@@ -1,17 +1,19 @@
 .button {
 	background-color: var(--blue);
-	padding: 0.5rem 3.625rem;
+	padding: 0.5rem;
 	color: white !important;
-	width: fit-content;
+	width: 10rem;
+	text-align: center;
 	display: block;
 	margin: auto;
 	cursor: pointer;
 }
 .btn-border {
 	background-color: var(--blue);
-	padding: 0.5rem 3.625rem;
+	padding: 0.5rem;
 	color: white !important;
-	width: fit-content;
+	width: 10rem;
+	text-align: center;
 	display: block;
 	margin: auto;
 	cursor: pointer;

@@ -1,5 +1,4 @@
 <!-- HEADER -->
-<div class="bg-nav-menu" id="bg-nav-menu"></div>
 <header>
     <div class="header is-mobile">
         <div class="inner">
@@ -20,6 +19,7 @@
         </div>
     </div>
 
+    <div class="bg-nav-menu" id="bg-nav-menu"></div>
     <div class="nav-menu" id="nav-menu">
         <div class="headerImage">
             <a href="{{route('home')}}">
@@ -71,10 +71,10 @@
                     Quay lại
                 </div>
                 <li class="title">Tin tức</li>
-                <li><a href="{route('news')}">Khuyến mại cho bạn</a></li>
-                <li><a href="{route('news')}">Chương trình khuyến mại</a></li>
-                <li><a href="{route('news')}">Tin tức sự kiện</a></li>
-                <li><a href="{route('news')}">Thông cáo báo chí</a></li>
+                <li><a href="{{route('news')}}">Khuyến mại cho bạn</a></li>
+                <li><a href="{{route('news')}}">Chương trình khuyến mại</a></li>
+                <li><a href="{{route('news')}}">Tin tức sự kiện</a></li>
+                <li><a href="{{route('news')}}">Thông cáo báo chí</a></li>
             </ul>
             <li class="nav-item">
                 Tuyển dụng

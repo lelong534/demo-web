@@ -63,7 +63,7 @@
 			        </div>
 			        <h3>Nội dung</h3>
 			        <div class="input-box">
-			            <textarea type="text" name="invitation" style="height: 112px; padding-top: 0.4rem;" class="input-box-data" placeholder="Viết thư giới thiệu (không bắt buộc)" ></textarea>
+			            <textarea type="text" name="invitation" style="height: 112px; padding-top: 0.8rem;" class="input-box-data" placeholder="Viết thư giới thiệu (không bắt buộc)" ></textarea>
 			            <span><img src="{{asset('source/icons/icon-letter_gray.svg')}}" class="input-box-icon"/></span>
 			        </div>
 			        <p class="note">Tối đa 500 kí tự</p>

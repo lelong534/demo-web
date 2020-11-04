@@ -610,6 +610,9 @@ ul.history-list-items li.item.active {
 	.user-post-paid-info-content .info-right {
 		margin-top: 0;
 	}
+	.user-post-paid-info-content .info-right canvas {
+		max-width: 100% !important;
+	}
 	.m-card.check {
 	    margin-top: 1rem;
 	}

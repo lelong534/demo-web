@@ -217,7 +217,7 @@
                         </div>
                         <div class="title">Tin tức</div>
                         <div class="m-card-body">
-                            MobiFone đạt top 6 thương hiệu giá trị nhất Việt Nam
+                            <a href="#">MobiFone đạt top 6 thương hiệu giá trị nhất Việt Nam</a>
                         </div>
                         <div class="time">
                             Thứ hai, 01/09/2020
@@ -229,7 +229,7 @@
                         </div>
                         <div class="event-nd-content">
                             <p class="content">
-                            MobiFone số hóa quy trình hợp tác kinh doanh dịch vụ Giá trị gia tăng…
+                                <a href="#">MobiFone số hóa quy trình hợp tác kinh doanh dịch vụ Giá trị gia tăng…</a>
                             </p>
                             <p class="time">
                                 Thứ hai, 01/09/2020
@@ -242,7 +242,7 @@
                         </div>
                         <div class="event-nd-content">
                             <p class="content">
-                            Mạng 4G của MobiFone có tốc độ upload cao nhất
+                                <a href="#">Mạng 4G của MobiFone có tốc độ upload cao nhất</a>
                             </p>
                             <p class="time">
                                 Thứ hai, 01/09/2020
@@ -255,7 +255,7 @@
                         </div>
                         <div class="event-nd-content">
                             <p class="content">
-                            MobiFone tặng khách hàng 5GB miễn phí khi cài đặt ứng dụng 
+                                <a href="#">MobiFone tặng khách hàng 5GB miễn phí khi cài đặt ứng dụng</a>
                             </p>
                             <p class="time">
                                 Thứ hai, 01/09/2020

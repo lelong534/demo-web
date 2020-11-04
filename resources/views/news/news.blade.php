@@ -43,7 +43,7 @@
 	                    </div>
 	                    <p class="title">Khuyến mãi</p>
 	                    <div class="m-card-body">
-	                        MobiFone tặng 100k mua sắm Tiki cho hội viên kết nối dài lâu.
+	                        <a href="#">MobiFone tặng 100k mua sắm Tiki cho hội viên kết nối dài lâu.</a>
 	                    </div>
 	                </div>
 	                <div class="m-card event-nd">
@@ -53,7 +53,7 @@
 	                    <div class="event-nd-content">
 	                    	<p class="title">Khuyến mãi</p>
 	                        <p class="content">
-	                        	MobiFone tặng 5GB miễn phí khi cài ứng dụng Bluezone
+	                        	<a href="#">MobiFone tặng 5GB miễn phí khi cài ứng dụng Bluezone</a>
 	                        </p>
 	                    </div>
 	                </div>
@@ -64,7 +64,7 @@
 	                    <div class="event-nd-content">
 	                    	<p class="title">Khuyến mãi</p>
 	                        <p class="content">
-	                        	MobiFone tặng 120 GB co học sinh, sinh viên vùng dịch đến hết năm 2020
+	                        	<a href="#">MobiFone tặng 120 GB co học sinh, sinh viên vùng dịch đến hết năm 2020</a>
 	                        </p>
 	                    </div>
 	                </div>
@@ -75,7 +75,7 @@
 	                    <div class="event-nd-content">
 	                    	<p class="title">Khuyến mãi</p>
 	                        <p class="content">
-	                        	Ưu đãi “chồng” ưu đãi chào tháng 9 cùng MobiFone
+	                        	<a href="#">Ưu đãi “chồng” ưu đãi chào tháng 9 cùng MobiFone</a>
 	                        </p>
 	                    </div>
 	                </div>

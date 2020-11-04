@@ -19,11 +19,11 @@
 	font-style: italic;
 	font-size: var(--smallest-font-size);
 	text-decoration: underline;
-	text-align: end;
+	text-align: right;
 }
 .input-box .capcha {
 	height: 2.875rem;
-    width: fit-content;
+    width: 5rem;
     margin-left: 0.75rem;
 }
 .card-no-bg-mobile.utilities .submit-box {
@@ -45,7 +45,7 @@ li.face-value.active {
 	background: #FFFFFF;
 	border: 1.5px solid #237BD3;
 	border-radius: 3px;
-	line-height: 1rem;
+	line-height: 1.25rem;
 }
 .utitlities .pay-method {
 	display: flex;
@@ -201,7 +201,7 @@ ul.list-date-pay li.face-value {
 	}
 	.input-box .capcha {
 		height: 2.875rem;
-	    width: fit-content;
+	    width: 7.5rem;
 	    margin-left: 1.5rem;
 	}
 	.card-no-bg-mobile.utilities .submit-box {

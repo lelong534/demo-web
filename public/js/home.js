@@ -7,8 +7,9 @@ const showMenu = (toggleId, navId) =>{
     if(toggle && nav){
         toggle.addEventListener('click', ()=>{
             // nav.classList.toggle('show')
-            nav.style.left = '0';
+            // nav.style.left = '0';
             background.style.left = '0';
+            nav.classList.add('nav-open');
         })
     }
 }
@@ -73,19 +74,47 @@ if ( dropdownContent && dropdownTarget) {
 
 window.addEventListener('mouseup', function(e) {
     const navMenu = document.getElementById('nav-menu'); 
-    const background = document.getElementById('bg-nav-menu')
-    if(e.target != navMenu &&
-        e.target.parentNode != navMenu &&
-        e.target.parentNode.parentNode != navMenu &&
-        e.target.parentNode.parentNode.parentNode != navMenu &&
-        e.target.parentNode.parentNode.parentNode.parentNode != navMenu
-    ) {
-        if (navMenu.style.left == '0px') {
-            navMenu.style.left = '-100%';
-            background.style.left = '-100%';
-        }
+    const background = document.getElementById('bg-nav-menu');
+    // if (tmp === "dung") {
+    //     navMenu.style.left = '-100%';
+    //     background.style.left = '-100%';
+    //     console.log("halo");
+    // } else console.log("hola");
+    // if (tmp && navMenu.style.left == '0px') {
+    // }
+    var tmp = true;
+    if (e.target == navMenu) {
+        tmp = false; 
+    } else if(e.target.parentNode && e.target.parentNode == navMenu) {
+        tmp = false;
+    } else if(e.target.parentNode.parentNode && e.target.parentNode.parentNode == navMenu) {
+        tmp = false;
+    } else if(e.target.parentNode.parentNode.parentNode && e.target.parentNode.parentNode.parentNode == navMenu) {
+        tmp = false;
     }
+    // if (tmp) {
+    //     if (navMenu.style.left == '0px') {
+    //         navMenu.style.left = '-100%';
+    //         background.style.left = '-100%';
+    //     }
+    // }
+    // if( navMenu &&
+    //     e.target != navMenu &&
+    //     e.target.parentNode != navMenu &&
+    //     e.target.parentNode.parentNode != navMenu &&
+    //     e.target.parentNode.parentNode.parentNode != navMenu &&
+    //     e.target.parentNode.parentNode.parentNode.parentNode != navMenu
+    // ) {
+    //     if (navMenu.style.left == '0px') {
+    //         navMenu.style.left = '-100%';
+    //         background.style.left = '-100%';
+    //     }
+    // }
 }) 
+$('#bg-nav-menu').on('click', function() {
+    $('#nav-menu').removeClass('nav-open');
+    $(this).css('left', '-100%');
+})
 /*======= switch tabs ========*/ 
 const tabs = document.querySelectorAll('[data-tab-target]')
 const tabContents = document.querySelectorAll('[data-tab-content]')
@@ -272,14 +301,6 @@ $("#slider-range")
             values: startingValues
         });
     }
-})
-.slider("pips", {
-    rest: "label",
-    step: 25,
-    suffix: "%"
-})
-    .slider("float", {
-    suffix: "%"
 });
 
 function onSlide(ui) {
@@ -289,29 +310,31 @@ function onSlide(ui) {
 //==== end slider range ====//
 
 //chart
-var ctx = document.getElementById('myChart')
-if(ctx) {
-    ctx = ctx.getContext('2d');
-    var myChart = new Chart(ctx, {
-        type: 'bar',
-        data: {
-            labels: ['12/2019', '1/2020', '2/2020', '3/2020', '4/2020', '5/2020'],
-            datasets: [{
-                label: 'Tiền cước (nghìn đồng)',
-                data: [120, 190, 30, 50, 200, 300],
-                backgroundColor: '#C6D4E5',
-                hoverBackgroundColor: "#237BD3",
-                maxBarThickness: 20
-            }]
-        },
-        options: {
-            scales: {
-                yAxes: [{
-                    ticks: {
-                        beginAtZero: true
-                    }
+$(document).ready(function() {
+    var ctx = document.getElementById('myChart')
+    if(ctx) {
+        ctx = ctx.getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['12/2019', '1/2020', '2/2020', '3/2020', '4/2020', '5/2020'],
+                datasets: [{
+                    label: 'Tiền cước (nghìn đồng)',
+                    data: [120, 190, 30, 50, 200, 300],
+                    backgroundColor: '#C6D4E5',
+                    hoverBackgroundColor: "#237BD3",
+                    maxBarThickness: 20
                 }]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }]
+                }
             }
-        }
-    })
-}
+        })
+    }
+})
