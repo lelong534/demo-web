@@ -206,11 +206,64 @@
             <div class="events-content">
                 <div class="content-header">
                     <h2 class="title">Tin tức sự kiện</h2>
-                    <p class="active is-desktop">Tin sự kiện</p>
-                    <p class="is-desktop">Tin khuyến mãi</p>
+                    <p class="active is-desktop" data-news-target="#event-news">Tin sự kiện</p>
+                    <p class="is-desktop" data-news-target="#discount-news">Tin khuyến mãi</p>
                     <a href="#" class="all is-desktop">Xem tất cả<span> ></span></a>
                 </div>
-                <div class="content-body">
+                <div class="content-body" data-news-content id="event-news">
+                    <div class="m-card events"> 
+                        <div class="content-image">
+                            <img src="{{asset('source/icon_mobile/event.png')}}">
+                        </div>
+                        <div class="title">Tin tức</div>
+                        <div class="m-card-body">
+                            <a href="#">MobiFone đạt top 6 thương hiệu giá trị nhất Việt Nam</a>
+                        </div>
+                        <div class="time">
+                            Thứ hai, 01/09/2020
+                        </div>
+                    </div>
+                    <div class="m-card event-nd">
+                        <div class="event-image">
+                            <img src="{{asset('source/icon_mobile/news-first.png')}}">
+                        </div>
+                        <div class="event-nd-content">
+                            <p class="content">
+                                <a href="#">MobiFone số hóa quy trình hợp tác kinh doanh dịch vụ Giá trị gia tăng…</a>
+                            </p>
+                            <p class="time">
+                                Thứ hai, 01/09/2020
+                            </p>
+                        </div>
+                    </div>
+                    <div class="m-card event-nd">
+                        <div class="event-image">
+                            <img src="{{asset('source/icon_mobile/news-second.png')}}">
+                        </div>
+                        <div class="event-nd-content">
+                            <p class="content">
+                                <a href="#">Mạng 4G của MobiFone có tốc độ upload cao nhất</a>
+                            </p>
+                            <p class="time">
+                                Thứ hai, 01/09/2020
+                            </p>
+                        </div>
+                    </div>
+                    <div class="m-card event-nd">
+                        <div class="event-image">
+                            <img src="{{asset('source/icon_mobile/news-third.png')}}">
+                        </div>
+                        <div class="event-nd-content">
+                            <p class="content">
+                                <a href="#">MobiFone tặng khách hàng 5GB miễn phí khi cài đặt ứng dụng</a>
+                            </p>
+                            <p class="time">
+                                Thứ hai, 01/09/2020
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-body hidden" data-news-content id="discount-news">
                     <div class="m-card events"> 
                         <div class="content-image">
                             <img src="{{asset('source/icon_mobile/event.png')}}">

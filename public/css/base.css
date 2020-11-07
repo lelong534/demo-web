@@ -19,7 +19,7 @@
 
 /*===== VARIABLE CSS =====*/
 :root {
-	--header-height: 2.875rem;
+	--header-height: 4rem;
 }
 
 /*===== FONT =====*/
@@ -115,6 +115,7 @@ li.card-item {
 .inner {
 	max-width: 73.125rem;
 	width: 100%;
+	height: 100%;
 	margin: auto;
 }
 .item-title {
@@ -653,7 +654,7 @@ ul.nav-list-mobile li {
 	padding: 1rem 1.5rem;
 	position: absolute;
 	background-color: white;
-	top: 4.8rem;
+	top: 3.875rem;
     z-index: 999;
     width: 15rem;
     border: 1px solid #E0E0E0;
@@ -671,7 +672,7 @@ ul.nav-list-mobile li {
 }
 .m-dropdown:after {
 	bottom: 100%;
-	left: 22%;
+	left: 25%;
 	border: solid transparent;
 	content: " ";
 	height: 0;
@@ -679,7 +680,7 @@ ul.nav-list-mobile li {
 	position: absolute;
 	pointer-events: none;
 	border-bottom-color: white;
-	border-width: 1rem;
+	border-width: 0.5rem;
 }
 .m-dropdown.news-dropdown:after {
 	left: 7%;
@@ -854,6 +855,9 @@ ul.nav-list-mobile li {
 .hidden[data-method-login-content] {
 	display: none;
 }
+.events-content .content-body.hidden {
+	display: none;
+}
 /*=== news page ===*/
 .other-news .title {
 	font-style: normal;
@@ -1014,7 +1018,7 @@ ul.introduction {
 	}
 	.header.is-desktop .inner {
 		display: flex;
-		padding: 0 0.5rem;
+		padding: 0 1rem;
 	}
 	.header-items form{
 		display: none;
@@ -1292,6 +1296,9 @@ ul.introduction {
 	.m-dropdown-item li a {
 		font-size: 1rem;
 	}
+	.header.is-mobile .m-dropdown-item li a {
+		font-size: var(--smaller-font-size);
+	}
 }
 @media screen and (min-width: 992px){
 	:root {
@@ -1321,6 +1328,13 @@ ul.introduction {
 		margin-top: 2.25rem;
 		font-size: 1.5rem;
 		line-height: 1.75rem;
+	}
+	.m-dropdown {
+		top: 4.7rem;
+	}
+	.m-dropdown:after {
+		left: 22%;
+		border-width: 1rem;
 	}
 	.header.is-desktop .inner {
 		height: 6.5rem;

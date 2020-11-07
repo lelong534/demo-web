@@ -15,6 +15,11 @@ const showMenu = (toggleId, navId) =>{
 }
 showMenu('nav-toggle','nav-menu');
 showMenu('nav-toggle-tablet','nav-menu');
+
+$('#bg-nav-menu').on('click', function() {
+    $('#nav-menu').removeClass('nav-open');
+    $(this).css('left', '-100%');
+})
 /*===== Menu mobile ======*/ 
 const showItemMenu = (toggleId, navId) =>{
     const toggle = document.getElementById(toggleId),
@@ -72,49 +77,6 @@ if ( dropdownContent && dropdownTarget) {
 }
 /*======= end show-dropdown =======*/ 
 
-window.addEventListener('mouseup', function(e) {
-    const navMenu = document.getElementById('nav-menu'); 
-    const background = document.getElementById('bg-nav-menu');
-    // if (tmp === "dung") {
-    //     navMenu.style.left = '-100%';
-    //     background.style.left = '-100%';
-    //     console.log("halo");
-    // } else console.log("hola");
-    // if (tmp && navMenu.style.left == '0px') {
-    // }
-    var tmp = true;
-    if (e.target == navMenu) {
-        tmp = false; 
-    } else if(e.target.parentNode && e.target.parentNode == navMenu) {
-        tmp = false;
-    } else if(e.target.parentNode.parentNode && e.target.parentNode.parentNode == navMenu) {
-        tmp = false;
-    } else if(e.target.parentNode.parentNode.parentNode && e.target.parentNode.parentNode.parentNode == navMenu) {
-        tmp = false;
-    }
-    // if (tmp) {
-    //     if (navMenu.style.left == '0px') {
-    //         navMenu.style.left = '-100%';
-    //         background.style.left = '-100%';
-    //     }
-    // }
-    // if( navMenu &&
-    //     e.target != navMenu &&
-    //     e.target.parentNode != navMenu &&
-    //     e.target.parentNode.parentNode != navMenu &&
-    //     e.target.parentNode.parentNode.parentNode != navMenu &&
-    //     e.target.parentNode.parentNode.parentNode.parentNode != navMenu
-    // ) {
-    //     if (navMenu.style.left == '0px') {
-    //         navMenu.style.left = '-100%';
-    //         background.style.left = '-100%';
-    //     }
-    // }
-}) 
-$('#bg-nav-menu').on('click', function() {
-    $('#nav-menu').removeClass('nav-open');
-    $(this).css('left', '-100%');
-})
 /*======= switch tabs ========*/ 
 const tabs = document.querySelectorAll('[data-tab-target]')
 const tabContents = document.querySelectorAll('[data-tab-content]')
@@ -132,6 +94,25 @@ tabs.forEach(tab => {
         })
         target.classList.remove('active')
         target.classList.remove('hidden')
+    })
+})
+/*======= switch tabs ========*/ 
+const newstabs = document.querySelectorAll('[data-news-target]')
+const newstabContents = document.querySelectorAll('[data-news-content]')
+
+newstabs.forEach(news => {
+    news.addEventListener('click', () => {
+        newstabs.forEach(tab => {
+            tab.classList.remove('active')
+        })
+        news.classList.add('active')
+        const newsTarget = document.querySelector(news.dataset.newsTarget)
+        newstabContents.forEach(tabContent => {
+            tabContent.classList.remove('active')
+            tabContent.classList.add('hidden')
+        })
+        newsTarget.classList.remove('active')
+        newsTarget.classList.remove('hidden')
     })
 })
 
