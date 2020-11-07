@@ -155,7 +155,7 @@
 				</div>
 				<br/>
 				<h3 class="title">Thẻ thanh toán quốc tế</h3>
-				<div class="payment-method-content" style="padding-bottom: 0.25rem;">
+				<div class="payment-method-content">
 					<ul class="list-global-card">
 						<li class="global-card-item">
 							<div class="global-card-item-thumb">
