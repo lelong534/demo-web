@@ -186,6 +186,14 @@ $('.digit-group').find('input').each(function() {
 
     $(this).on('focus', function() {
         $(this).css("background", "none");
+        $(this).css("border", "1px solid #237BD3");
+        $(this).css("border-radius", "0.3125rem");
+    })
+
+    $(this).on('mouseup', function() {
+        $(this).css("background", "none");
+        $(this).css("border", "1px solid #237BD3");
+        $(this).css("border-radius", "0.3125rem");
     })
 
     $(this).on('keyup', function(e) {
@@ -195,6 +203,8 @@ $('.digit-group').find('input').each(function() {
             var prev = parent.find('input#' + $(this).data('previous'));
             if(e.keyCode === 8) {
                 $(this).css("background", "url('./source/image/i_digit_number.svg')");
+                $(this).css("background-size", "contain");
+                $(this).css("border", "none");
             }
             
             if(prev.length) {
@@ -203,6 +213,8 @@ $('.digit-group').find('input').each(function() {
         } else if((e.keyCode >= 48 && e.keyCode <= 57) || (e.keyCode >= 65 && e.keyCode <= 90) || (e.keyCode >= 96 && e.keyCode <= 105) || e.keyCode === 39) {
             var next = parent.find('input#' + $(this).data('next'));
             $(this).css("background", "none");
+            $(this).css("border", "1px solid #237BD3");
+            $(this).css("border-radius", "0.3125rem");
             if(next.length) {
                 $(next).select();
             } else {

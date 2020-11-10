@@ -421,6 +421,7 @@ ul.history-list-items li.item.active {
 	font-size: 1.5rem;
 	margin: 0 2px;
 	margin-right: 1rem;
+	background-size: contain;
 }
 .digit-group input:active, .digit-group input:focus {
 	border: 1px solid var(--blue);
@@ -757,6 +758,10 @@ ul.history-list-items li.item.active {
 		border-top: 1px solid #E0E0E0;
 		padding-top: 1rem;
 	}
+	.digit-group input {
+		width: 3rem;
+		height: 3rem;
+	}
 }
 @media screen and (min-width: 992px){  
 	.other-mymobifone .m-card.customer {
@@ -775,5 +780,9 @@ ul.history-list-items li.item.active {
 	}
 	.connect-content .body-content { 
 		border-radius: 1.125rem;
+	}
+	.digit-group input {
+		width: 3.125rem;
+		height: 3.125rem;
 	}
 }

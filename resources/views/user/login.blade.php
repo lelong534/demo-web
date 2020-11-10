@@ -40,10 +40,12 @@
 	    						<p>Hoặc đăng nhập qua</p>
 	    					</div>
 	    					<div class="social-media">
-	    						<div class="social-media__box">
-	    							<img src="{{asset('source/icon_mobile/i_fb_2@1x.svg')}}" alt="..">
-	    							<div class="name">Facebook</div>
-	    						</div>
+	    						<a href="{{ url('/auth/redirect/facebook') }}">
+		    						<div class="social-media__box">
+		    							<img src="{{asset('source/icon_mobile/i_fb_2@1x.svg')}}" alt="..">
+		    							<div class="name">Facebook</div>
+		    						</div>
+		    					</a>
 	    						<div class="social-media__box">
 	    							<img src="{{asset('source/icon_mobile/i_apple_2@1x.svg')}}" alt="..">
 	    							<div class="name">Apple</div>

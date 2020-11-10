@@ -14,6 +14,7 @@
 Route::get('/', 'HomeController@index')->name("home");
 Route::get('/pre-login', 'UserController@preLogin')->name('pre_login');
 Route::get('/login', 'UserController@login')->name('login');
+Route::get('/logout', 'UserController@logout');
 Route::get('/forget-password', 'UserController@forgetPassword')->name('forget_password');
 Route::prefix('employ')->group(function () {
 	Route::get('/', 'EmployController@grid')->name('employ');
@@ -27,18 +28,6 @@ Route::prefix('employ')->group(function () {
 Route::prefix('news')->group(function () {
 	Route::get('/', 'NewsController@index')->name('news');
 	Route::get('detail', 'NewsController@detail')->name('news_detail');
-});
-Route::prefix('user')->group(function () {
-	Route::get('prepaid-info', 'UserController@prepaidInfo')->name('prepaid_info');
-	Route::get('postpaid-info', 'UserController@postpaidInfo')->name('postpaid_info');
-	Route::get('check', 'UserController@check')->name('user_check');
-	Route::get('information', 'UserController@information')->name('user_information');
-	Route::get('update', 'UserController@update')->name('user_update');
-	Route::get('account-history', 'UserController@accountHistory')->name('account_history');
-	Route::get('connect', 'UserController@connect')->name('user_connect');
-	Route::get('gift/detail', 'UserController@giftDetail')->name('gift_detail');
-	Route::get('change-point', 'UserController@changePoint')->name('change_point');
-	Route::get('check-history', 'UserController@checkHistory')->name('check_history');
 });
 Route::prefix('customer')->group(function() {
 	Route::get('reflect', 'CustomerController@reflect')->name('customer_reflect');
@@ -56,14 +45,33 @@ Route::prefix('introduction')->group(function () {
 	Route::get('partner', 'HomeController@partner')->name('introduction_partner');
 	Route::get('supplier', 'HomeController@supplier')->name('introduction_supplier');
 });
-Route::prefix('service')->group(function () {
-	Route::get('/pack-of-data', 'ServiceController@packOfData')->name('pack_of_data');
-	Route::get('/pack-of-charge', 'ServiceController@packOfCharge')->name('pack_of_charge');
-	Route::get('/pack-of-service', 'ServiceController@packOfService')->name('pack_of_service');
-});
+
 Route::prefix('utilities')->group(function () {
 	Route::get('/', 'UtilitiesController@index')->name('utilities_index');
 	Route::get('/payment-method', 'UtilitiesController@paymentMethod')->name('utilities_payment_method');
 	Route::get('/add-phone-prepaid', 'UtilitiesController@addPhonePrepaid')->name('utilities_add_phone_prepaid');
 	Route::get('/add-phone-postpaid', 'UtilitiesController@addPhonePostpaid')->name('utilities_add_phone_postpaid');
 });
+Route::prefix('service')->group(function () {
+	Route::get('/pack-of-data', 'ServiceController@packOfData')->name('pack_of_data');
+	Route::get('/pack-of-charge', 'ServiceController@packOfCharge')->name('pack_of_charge');
+	Route::get('/pack-of-service', 'ServiceController@packOfService')->name('pack_of_service');
+});
+
+Route::group(['middleware' => ['auth']], function () {
+    Route::prefix('user')->group(function () {
+		Route::get('prepaid-info', 'UserController@prepaidInfo')->name('prepaid_info');
+		Route::get('postpaid-info', 'UserController@postpaidInfo')->name('postpaid_info');
+		Route::get('check', 'UserController@check')->name('user_check');
+		Route::get('information', 'UserController@information')->name('user_information');
+		Route::get('update', 'UserController@update')->name('user_update');
+		Route::get('account-history', 'UserController@accountHistory')->name('account_history');
+		Route::get('connect', 'UserController@connect')->name('user_connect');
+		Route::get('gift/detail', 'UserController@giftDetail')->name('gift_detail');
+		Route::get('change-point', 'UserController@changePoint')->name('change_point');
+		Route::get('check-history', 'UserController@checkHistory')->name('check_history');
+	});
+});
+Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/auth/redirect/{provider}', 'SocialController@redirect');
+Route::get('/callback/{provider}', 'SocialController@callback');
