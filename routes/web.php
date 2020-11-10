@@ -58,19 +58,17 @@ Route::prefix('service')->group(function () {
 	Route::get('/pack-of-service', 'ServiceController@packOfService')->name('pack_of_service');
 });
 
-Route::group(['middleware' => ['auth']], function () {
-    Route::prefix('user')->group(function () {
-		Route::get('prepaid-info', 'UserController@prepaidInfo')->name('prepaid_info');
-		Route::get('postpaid-info', 'UserController@postpaidInfo')->name('postpaid_info');
-		Route::get('check', 'UserController@check')->name('user_check');
-		Route::get('information', 'UserController@information')->name('user_information');
-		Route::get('update', 'UserController@update')->name('user_update');
-		Route::get('account-history', 'UserController@accountHistory')->name('account_history');
-		Route::get('connect', 'UserController@connect')->name('user_connect');
-		Route::get('gift/detail', 'UserController@giftDetail')->name('gift_detail');
-		Route::get('change-point', 'UserController@changePoint')->name('change_point');
-		Route::get('check-history', 'UserController@checkHistory')->name('check_history');
-	});
+Route::prefix('user')->group(function () {
+	Route::get('prepaid-info', 'UserController@prepaidInfo')->name('prepaid_info');
+	Route::get('postpaid-info', 'UserController@postpaidInfo')->name('postpaid_info');
+	Route::get('check', 'UserController@check')->name('user_check');
+	Route::get('information', 'UserController@information')->name('user_information');
+	Route::get('update', 'UserController@update')->name('user_update');
+	Route::get('account-history', 'UserController@accountHistory')->name('account_history');
+	Route::get('connect', 'UserController@connect')->name('user_connect');
+	Route::get('gift/detail', 'UserController@giftDetail')->name('gift_detail');
+	Route::get('change-point', 'UserController@changePoint')->name('change_point');
+	Route::get('check-history', 'UserController@checkHistory')->name('check_history');
 });
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/auth/redirect/{provider}', 'SocialController@redirect');
