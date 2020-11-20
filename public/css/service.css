@@ -236,11 +236,13 @@ li.face-value.lslide.currentSlide {
     background-color: #A675D5;
     height: 100%;
     width: 33.33%;
+    border-radius: 0.5rem;
 }
 #slider-range {
     background-color: #02B875;
     background-image: none;
     border: 0;
+    border-radius: 0.5rem;
 }
 @media screen and (min-width: 768px){
 	.using-pack-content .content-header {
@@ -321,26 +323,6 @@ li.face-value.lslide.currentSlide {
 		grid-column-gap: 1rem;
 		grid-row-gap: 1rem;
 	}
-	/*ul.list-face-value {
-		display: flex;
-		justify-content: center;
-		border-bottom: 1px solid #D8D8D8;
-	    margin: 0 6rem;
-	    padding-bottom: 1.5rem;
-	}
-	ul.list-face-value li.face-value {
-		margin-right: 2rem !important;
-		margin-top: 1rem;
-	    width: 7.5rem;
-	    height: 3.125rem;
-	    line-height: 2rem;
-	}
-	ul.list-face-value li.face-value:last-child {
-		margin-right: 0 !important;
-	}
-	ul.list-face-value li.face-value.active {
-		line-height: 2rem;
-	}*/
 	ul.list-pack-detail {
 		max-width: 33.375rem;
 	    display: flex;
@@ -393,7 +375,7 @@ li.face-value.lslide.currentSlide {
 		width: 33.33333%;
 	}
 	.package-content a.create-pack {
-		margin-bottom: 2.875rem;
+		margin: 2.875rem auto;
 	}
 	.slider2 .m-card.lslide .progress {
 		margin: 3.1875rem 3.375rem 0 1rem;
@@ -405,7 +387,7 @@ li.face-value.lslide.currentSlide {
 		margin: 0;
 	    margin-left: auto;
 	    background: white;
-	    color: #237BD3;
+	    color: #237BD3 !important;
 	    background: white;
 	    border: 1px solid #237BD3;
 	    border-radius: 1.5rem;

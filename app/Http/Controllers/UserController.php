@@ -1,11 +1,15 @@
 <?php
 namespace App\Http\Controllers;
-
+use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\Hash;
+use AuthenticatesUsers;
 
 class UserController extends Controller
 {
+    
     public function preLogin() {
     	return view('user.pre_login');
     }
@@ -13,8 +17,36 @@ class UserController extends Controller
         Auth::logout();
         return view('home');
     }
-    public function login() {
+    public function getLogin() {
     	return view('user.login');
+    }
+    public function login(Request $request) {
+        $data = [
+            'phone' => $request->phone,
+            'password' => $request->password
+        ];
+
+        $message = [
+            'required' => 'Trường thông tin bắt buộc',
+            'string' => 'Nhập sai định dạng',
+            'max' => 'Nhập quá chiều dài quy định',
+            'min' => 'Trường thông tin chưa đủ'
+        ];
+
+        $validatedData = $request->validate([
+            'phone' => ['required', 'string', 'max:10'],
+            'password' => ['required', 'string', 'min:8'],
+        ], $message);
+
+        if(!$validatedData) {
+            if (Auth::attempt($data)) {
+                return Auth::user();
+            } else {
+                return "false";
+            }
+        } else {
+            redirect('login')->withInput($request);
+        }
     }
     public function forgetPassword() {
     	return view('user.forget_password');

@@ -51,14 +51,14 @@
 						            <span><img src="{{asset('source/icons/caret-arrow-up.svg')}}" class="icon-right"/></span>
 						        </div>
 						        <div class="button is-mobile">Gửi</div>
-						        <div class="button is-desktop">Tìm kiếm</div>
+						        <button type="submit" class="button is-desktop">Tìm kiếm</button>
 					        </form>
 					    </div>
 
 					    <div class="location-content">
 					    	<div class="m-card">
 						    	<div class="store">
-						    		<img src="{{asset('source/image/map.png')}}" alt="">
+						    		<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d29790.289833810446!2d105.76086586276935!3d21.04123784140664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1smobifone!5e0!3m2!1svi!2s!4v1605846422206!5m2!1svi!2s" height="450" frameborder="0" style="border:0;" allowfullscreen="true" aria-hidden="false" tabindex="0"></iframe>
 						    		<div class="store-name item-title"><a href="#">Cửa hàng Mobifone Nguyễn Hoàng</a></div>
 						    		<div class="store-address">Số 7, Đội Cấn, Ba Đình, Hà Nội</div>
 						    		<div class="store-phone">0936316699</div>
@@ -124,5 +124,4 @@
 		</div>
 	</div>
 </main>
-
 @endsection

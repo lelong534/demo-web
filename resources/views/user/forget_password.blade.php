@@ -1,31 +1,16 @@
-@extends('base', ['title' => 'Đăng nhập'])
+@extends('child', 
+    [
+        'title' => 'Dịch vụ di động',
+        'page_link_first_level' => 'Đăng nhập',
+        'page_link_second_level' => 'Quên mật khẩu'
+    ]
+)
 
 @section('content')
-<main class="l-main">
-	<div class="main-content">
-        <div class="inner">
-        	<div class="content-title is-desktop">
-		        <h2>Trang chủ</h2>&nbsp;&nbsp;&nbsp;
-		        <span>
-		            <img 
-		                src="https://img.icons8.com/fluent-systems-filled/24/000000/more-than.png"
-		                class="icon"       
-		            />
-		        </span>&nbsp;&nbsp;&nbsp;
-		        <h2>Đăng nhập</h2>&nbsp;&nbsp;&nbsp;
-		        <span>
-		            <img 
-		                src="https://img.icons8.com/fluent-systems-filled/24/000000/more-than.png"
-		                class="icon"       
-		            />
-		        </span>&nbsp;&nbsp;&nbsp;
-		        <h2 class="text-primary">Quên mật khẩu</h2>
-		    </div>
-		    <div class="content-title is-mobile">
-		        Quên mật khẩu
-		    </div>
-
-		    <div class="login-content">
+<div class="body-content">
+    <div class="login-content">
+	    <div class="login-content">
+	    	<div class="card-no-bg-mobile" id="normal-login">
 	    		<div class="login-body">
 	    			<div class="input-box">
 			            <input type="text" name="phone" id="phone" class="input-box-data" placeholder="Nhập số điện thoại">	
@@ -44,5 +29,5 @@
 		    </div>
 		</div>
 	</div>
-</main>
+</div>
 @endsection

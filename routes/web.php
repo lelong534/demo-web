@@ -13,7 +13,8 @@
 
 Route::get('/', 'HomeController@index')->name("home");
 Route::get('/pre-login', 'UserController@preLogin')->name('pre_login');
-Route::get('/login', 'UserController@login')->name('login');
+Route::get('/login', 'UserController@getLogin')->name('get_login');
+Route::post('/login', 'UserController@login')->name('login');
 Route::get('/logout', 'UserController@logout');
 Route::get('/forget-password', 'UserController@forgetPassword')->name('forget_password');
 Route::prefix('employ')->group(function () {

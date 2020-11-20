@@ -100,6 +100,7 @@
 }
 .location-content .m-card {
 	padding-bottom: 1rem;
+	overflow: hidden;
 }
 .location-content .store div {
 	margin: 0.2rem 1rem;
@@ -203,6 +204,7 @@
 	}
 	.location-body__right .body-content {
 		overflow-y: scroll;
+		min-height: 20rem;
     }
     .location-body__right .body-title {
     	font-size: 1.125rem;

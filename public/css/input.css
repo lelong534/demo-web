@@ -1,5 +1,6 @@
 .input-box{
 	position: relative;
+	margin-bottom: 0.75rem;
 }
 .input-box-data {
 	position: relative;
@@ -16,7 +17,7 @@
 	letter-spacing: 0.196px;
 	-webkit-appearance: none;
 	outline:none;
-	margin-bottom: 0.625rem;
+	/*margin-bottom: 0.75rem;*/
 }
 textarea.input-box-data {
 	margin-bottom: 0;
@@ -38,8 +39,8 @@ textarea.input-box-data {
 	border-radius: 0.5rem;
 	letter-spacing: 0.196px;
 	-webkit-appearance: none;
-	margin-bottom: 1rem;
 	outline: none;
+	/*margin-bottom: 0.75rem;*/
 }
 select.input-box-data {
 	padding-right: 3.375rem;
@@ -82,12 +83,16 @@ input[type="radio"] {
 @media screen and (min-width: 768px){ 
 	.input-box-data {
 		padding-left: 3.375rem;
+		/*margin-bottom: 1rem;*/
+	}
+	.input-box-default {
+		/*margin-bottom: 1rem;*/
 	}
 	.input-box-icon {
 		left: 1.1875rem;
 	}
-	.input-box-data {
-		margin-bottom: 0.875rem;
+	.input-box{
+		margin-bottom: 1rem;
 	}
 }
 @media screen and (min-width: 992px){ 
@@ -98,8 +103,5 @@ input[type="radio"] {
 		left: 1.1875rem;
 		right: 1.25rem;
 		top: 0.9rem;
-	}
-	.input-box-data {
-		margin-bottom: 1rem;
 	}
 }

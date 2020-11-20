@@ -65,8 +65,8 @@
 			        <div class="input-box">
 			            <textarea type="text" name="invitation" style="height: 112px; padding-top: 0.8rem;" class="input-box-data" placeholder="Viết thư giới thiệu (không bắt buộc)" ></textarea>
 			            <span><img src="{{asset('source/icons/icon-letter_gray.svg')}}" class="input-box-icon"/></span>
+			        	<p class="note">Tối đa 500 kí tự</p>
 			        </div>
-			        <p class="note">Tối đa 500 kí tự</p>
 			        <a href="{{route('customer_question')}}" class="button">Tiếp tục</a>
 		    	</div>
 		    </div>

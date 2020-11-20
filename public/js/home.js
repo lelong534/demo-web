@@ -180,6 +180,18 @@ $('.x-symbol-pay').on('click', function() {
     $('#modalPayment').modal('hide');
 })
 
+//pre-login
+$(".btn-border[data-toggle]").on("click", function() {
+    $("#js-phone-number-otp").html($("input#phone").val());   
+    $i = 30;
+    setInterval(function() {
+        $i--;
+        if($i > 0)
+            $("#js-time-remain-otp").html($i);    
+        else $("#js-time-remain-otp").html("0");
+    }, 1000);
+})
+
 // login OTP
 $('.digit-group').find('input').each(function() {
     $(this).attr('maxlength', 1);
